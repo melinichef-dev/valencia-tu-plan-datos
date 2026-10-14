@@ -1,0 +1,233 @@
+DIAGNÓSTICO DE WEBS
+
+======================================================================
+16 Toneladas
+https://www.16toneladas.com/
+robots.txt: PERMITIDO (no tiene robots.txt)
+estado HTTP: 200 | tamaño: 784616 caracteres | URL final: https://www.16toneladas.com/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 58
+fechas tipo 'mes escrito': 2
+enlaces de venta de entradas: 67
+  https://www.enterticket.es/eventos/carmen-ferre-concierto-en-valencia-506187
+  https://movingtickets.com/Entradas-Hard-Rock-Legends-Festival-concierto-en-16-Toneladas-Valencia/
+  https://movingtickets.com/Entradas-CLOSING-PARTY-10-EDICION-VOLUMENS-en-16-Toneladas-Valencia/
+--- muestra de HTML alrededor de una fecha ---
+darse."])</script><script>self.__next_f.push([1,"26:[\"$\",\"$L29\",null,{\"children\":[\"$\",\"div\",null,{\"className\":\"xl:max-w-7xl mx-auto px-4\",\"children\":[\"$\",\"$L79\",null,{\"month\":\"2026-10\",\"events\":[{\"id\":\"ed36aab4-35f2-47fd-a822-98d8edb7bf11\",\"title\":\"YAWNING MAN + SOFTSUN\",\"slug\":\"yawning-man-softsun\",\"date\":\"2026-10-02\",\"doorsTime\":\"18:30:00\",\"showTime\":\"19:00:00\",\"priceAdvance\":\"18.00\",\"priceDoor\":\"22.00\",\"ticketUrl\":\"https://movingtickets.com/Entradas-Yawning-Man-Softsun-concierto-en-16-Toneladas-Valencia/\",\"imageUrl\":\"https://pub-4a66a75c270c488fa45c0fddab35bc01.r2.dev/events/j63eFnzSGmod-d-lGg98D.jpg\",\"isPublished\":true,\"isStarred
+--- muestra de HTML alrededor de una fecha ---
+GRnwAAABXRUJQVlA4IHAAAAAQAgCdASoNABAAA4BaJbACdEf/gTNgjxhgAP5CyMMt3wNN2Iab5vRh+xpdUIZaB/MMOkFkfjq9Tnvlq5dw+a0VrM8iEPBCW5FV0QEGKUXEO+UJAfZ6wzG4ymMlFLJfbEcB7xzw/Pg3AfwrO+rIhoAA\"}},{\"id\":\"83d64be8-66aa-41ca-8d1f-84c65563f53f\",\"title\":\"HILLBILLY MOON EXPLOSION + THE PICKIN' BOPPERS\",\"slug\":\"hillbilly-moon-explosion-2-02-10-2026\",\"date\":\"2026-10-02\",\"doorsTime\":\"23:00:00\",\"showTime\":\"23:30:00\",\"priceAdvance\":\"18.00\",\"priceDoor\":\"22.00\",\"ticketUrl\":\"https://movingtickets.com/Entradas-Hillbilly-Moon-Explosion-2026-concierto-en-16-Toneladas-Valencia/\",\"imageUrl\":\"https://pub-4a66a75c270c488fa45c0fddab35bc01.r2.dev/events/hillbilly-moon-explosion-2-02-10-2026.webp\",\"isP
+
+======================================================================
+Loco Club
+https://lococlub.es/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 478860 caracteres | URL final: https://lococlub.es/
+eventos en datos estructurados (JSON-LD): 62
+  ejemplo: {"@context": "http://schema.org", "@type": "Event", "eventStatus": "https://schema.org/EventScheduled", "startDate": "2026-10-14T21:15:00+02:00", "endDate": "2026-10-14", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "", "image": "", "address": ""}, "organizer": {"@type": "Person", "name": "", "url": ""}, "offers": {"url": "https://lococlub.es/events/teo-lucadamo-sofoquina/", "price": "Anticipada: 19,50€", "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "validFrom": "2026-10-14T00:00"}, "performer": "", "des
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 80
+fechas tipo 'mes escrito': 83
+enlaces de venta de entradas: 0
+--- muestra de HTML alrededor de una fecha ---
+itle> <link rel="canonical" href="https://lococlub.es/" /> <meta property="og:locale" content="es_ES" /> <meta property="og:locale:alternate" content="en_GB" /> <meta property="og:type" content="website" /> <meta property="og:title" content="Loco Club | Música en Directo | Live Music" /> <meta property="og:description" content="WILL HOGE15 Y 16 OCTUBRECOMPRAR ENTRADASTHE EXBATS + THE SLEEVEENS13 OCTUBRECOMPRAR ENTRADASCINEMA STEREO28 OCTUBRECOMPRAR ENTRADAS 11 Oct 18:00 Otros THE JAZZ ROOM: UN VIAJE AL CORAZÓN DE NUEVA ORLEANS 13 Oct 20:00 Rock &#8216;n&#8217; Roll THE EXBATS + THE SLEEVEENS 14 Oct 19:15 TEO LUCADAMO + SOFOQUINA 15 Oct 20:30 CountryRock &#8216;n&#8217; RollWill Hoge 2 [&hellip;]" /> <
+--- muestra de HTML alrededor de una fecha ---
+erty="og:locale:alternate" content="en_GB" /> <meta property="og:type" content="website" /> <meta property="og:title" content="Loco Club | Música en Directo | Live Music" /> <meta property="og:description" content="WILL HOGE15 Y 16 OCTUBRECOMPRAR ENTRADASTHE EXBATS + THE SLEEVEENS13 OCTUBRECOMPRAR ENTRADASCINEMA STEREO28 OCTUBRECOMPRAR ENTRADAS 11 Oct 18:00 Otros THE JAZZ ROOM: UN VIAJE AL CORAZÓN DE NUEVA ORLEANS 13 Oct 20:00 Rock &#8216;n&#8217; Roll THE EXBATS + THE SLEEVEENS 14 Oct 19:15 TEO LUCADAMO + SOFOQUINA 15 Oct 20:30 CountryRock &#8216;n&#8217; RollWill Hoge 2 [&hellip;]" /> <meta property="og:url" content="https://lococlub.es/" /> <meta property="og:site_name" content="Loco Club"
+
+======================================================================
+Rock City
+https://www.rockcity.es/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 117830 caracteres | URL final: https://www.rockcity.es/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 0
+fechas tipo 'mes escrito': 8
+enlaces de venta de entradas: 0
+--- muestra de HTML alrededor de una fecha ---
+ploads/2026/01/web-muerdo-350x350.jpg" class="eme_event_image" alt="" /></div></div> </div> <div class="titulo-evento"><a href="https://www.rockcity.es/eventos/muerdo-en-valencia-rock-city/" title="Muerdo en Valencia @Rock City">Muerdo en Valencia @Rock City</a></div> <div class="fecha-evento"><p>16 Oct 2026<br> 21:30H</p></div> </div> </div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cabeza"> <div class="evento-lista"> <div class="thumbnail-evento"> <div class="caption-evento"> <h4></h4> <p></p> <p><a href="https://www.rockcity.es/eventos/reincidentes-en-valencia-d
+--- muestra de HTML alrededor de una fecha ---
+></div> </div> <div class="titulo-evento"><a href="https://www.rockcity.es/eventos/reincidentes-en-valencia-directos-vibra-mahou/" title="Reincidentes + Annacrusa en Valencia | DIRECTOS VIBRA MAHOU">Reincidentes + Annacrusa en Valencia | DIRECTOS VIBRA MAHOU</a></div> <div class="fecha-evento"><p>17 Oct 2026<br> 21:30H</p></div> </div> </div><div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 cabeza"> <div class="evento-lista"> <div class="thumbnail-evento"> <div class="caption-evento"> <h4></h4> <p></p> <p><a href="https://www.rockcity.es/eventos/steve-e2-80-99n-e2-80-99-s
+
+======================================================================
+Radio City
+https://radiocityvalencia.es/agenda/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 165908 caracteres | URL final: https://radiocityvalencia.es/agenda/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 3
+fechas tipo 'mes escrito': 0
+enlaces de venta de entradas: 13
+  https://entradium.com/es/events/flamenco-en-vivo
+  https://entradium.com/es/organizers/radio-city
+  https://entradium.com/es/events/cenk-essen
+--- muestra de HTML alrededor de una fecha ---
+'text direction\u0004ltr':['ltr']})</script> <script id="contact-form-7-js-translations" type="litespeed/javascript">(function(domain,translations){var localeData=translations.locale_data[domain]||translations.locale_data.messages;localeData[""].domain=domain;wp.i18n.setLocaleData(localeData,domain)})("contact-form-7",{"translation-revision-date":"2025-12-01 15:45:40+0000","generator":"GlotPress\/4.0.3","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"es"},"This contact form is placed in the wrong place.":["Este formulario de contacto est\u00e1 situado en el lugar incorrecto."],"Error:":["Error:"]}},"comment":{"reference":"inclu
+--- muestra de HTML alrededor de una fecha ---
+oll:1,autoplay:!0,autoplaySpeed:3000,infinite:!0,swipeToSlide:!0,touchMove:!0,arrows:!1,centerMode:!0,responsive:[{breakpoint:1200,settings:{slidesToShow:3,slidesToScroll:1,}},{breakpoint:999,settings:{slidesToShow:2,slidesToScroll:1}},{breakpoint:500,settings:{slidesToShow:1,slidesToScroll:1}}]})})</script> <!-- Page optimized by LiteSpeed Cache @2026-10-14 08:33:52 --> <!-- Page cached by LiteSpeed Cache 7.9.1 on 2026-10-14 08:33:52 --> <!-- Guest Mode --> <!-- QUIC.cloud UCSS in queue -->
+
+======================================================================
+Peter Rock Club
+https://www.peterrockclub.es/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 278075 caracteres | URL final: https://www.peterrockclub.es/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 2
+fechas tipo 'mes escrito': 40
+enlaces de venta de entradas: 13
+  https://ticketere.com/evento/16-10-26-cod-routers-cantaditas-remember
+  https://ticketere.com/evento/23-10-26-gran-fiesta-latinoamericana
+  https://www.vivaticket.es/ticket/alejandro-astola-valencia/14575#/sell/events/14575/sessions/21806
+--- muestra de HTML alrededor de una fecha ---
+6 h-6 stroke-1"><path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4"></path><path d="M16 3v4"></path><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z"></path><path d="M19 18v.01"></path><path d="M8 3v4"></path><path d="M4 11h16"></path></svg><span>Miércoles, 14 de octubre de 2026</span></div><div class="flex justify-start items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-clock w-6 h-6 stroke-1"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></p
+--- muestra de HTML alrededor de una fecha ---
+w-6 h-6 stroke-1"><path d="M12.5 21h-6.5a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4"></path><path d="M16 3v4"></path><path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z"></path><path d="M19 18v.01"></path><path d="M8 3v4"></path><path d="M4 11h16"></path></svg><span>Viernes, 16 de octubre de 2026</span></div><div class="flex justify-start items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-clock w-6 h-6 stroke-1"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></p
+
+======================================================================
+Palau de la Música
+https://palauvalencia.com/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 420124 caracteres | URL final: https://palauvalencia.com/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 275
+fechas tipo 'aaaa-mm-dd': 16
+fechas tipo 'mes escrito': 0
+enlaces de venta de entradas: 97
+  https://tickets.palauvalencia.com/tus-entradas.html
+  https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-0217.html?webfecha=17/10/2026&amp;webhora=19:00
+  https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-0217.html?webfecha=17/10/2026&amp;webhora=19:00
+--- muestra de HTML alrededor de una fecha ---
+MEZ-2-nuevo-1.jpg" height="850" width="1900" alt="" class="slider-39818 slide-40340 msDefaultImage" title="171026-ALEXEJ-GERASSIMEZ-2-nuevo" /><div class="caption-wrap"><div class="caption"><div class="ms-button-group"><a class="ms-custom-button ms-primary" href="https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-0217.html?webfecha=17/10/2026&amp;webhora=19:00">COMPRAR ENTRADA</a> <a class="ms-custom-button ms-secondary" href="https://palauvalencia.com/event/?id=2630&amp;mod=1791541320">MÁS...</a></div></div></div></li> <li style="display: none; width: 100%;" class="slide-40342 ms-image " aria-roledescription="slide" data-date="2026-10-13 14:00:27" data-filename="171026
+--- muestra de HTML alrededor de una fecha ---
+6/10/171026-LIEBREICH-jpg.jpg" height="850" width="1900" alt="" class="slider-39818 slide-40342 msDefaultImage" title="171026-LIEBREICH-jpg" /><div class="caption-wrap"><div class="caption"><div class="ms-button-group"><a class="ms-custom-button ms-primary" href="https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-0217.html?webfecha=17/10/2026&amp;webhora=19:00">COMPRAR ENTRADA</a> <a class="ms-custom-button ms-secondary" href="https://palauvalencia.com/event/?id=2630&amp;mod=1791541320">MÁS...</a></div></div></div></li> <li style="display: none; width: 100%;" class="slide-40259 ms-image " aria-roledescription="slide" data-date="2026-09-18 09:50:49" data-filename="Slider
+
+======================================================================
+La Rambleta
+https://larambleta.com/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 216858 caracteres | URL final: https://larambleta.com/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 2
+fechas tipo 'aaaa-mm-dd': 3
+fechas tipo 'mes escrito': 143
+enlaces de venta de entradas: 0
+--- muestra de HTML alrededor de una fecha ---
+kground-size: cover;"></div><div class="swiper_contenedor_info"><div class="subcontenedor"><div class="subsubcontenedor"><div class="swiper_titulo"><a href="https://larambleta.com/muestra-de-teatro-emergente-y-academia-de-espectadores-rambleta-2026/">Muestra de Teatro Emergente y Academia de Espectadores 2026</a></div><div class="swiper_fecha">Del 23 de marzo de 2026 al 1 de enero de 2027</div><div class="swiper_texto_slider"><a href="https://larambleta.com/muestra-de-teatro-emergente-y-academia-de-espectadores-rambleta-2026/">[vc_row][vc_column][vc_column_text css=""]Después del...</a></div><div class="swiper_contenedor_info_datos"><div class="categoria">Factoría</div><a class="masinfo" href="https://laramble
+--- muestra de HTML alrededor de una fecha ---
+/div><div class="swiper_contenedor_info"><div class="subcontenedor"><div class="subsubcontenedor"><div class="swiper_titulo"><a href="https://larambleta.com/muestra-de-teatro-emergente-y-academia-de-espectadores-rambleta-2026/">Muestra de Teatro Emergente y Academia de Espectadores 2026</a></div><div class="swiper_fecha">Del 23 de marzo de 2026 al 1 de enero de 2027</div><div class="swiper_texto_slider"><a href="https://larambleta.com/muestra-de-teatro-emergente-y-academia-de-espectadores-rambleta-2026/">[vc_row][vc_column][vc_column_text css=""]Después del...</a></div><div class="swiper_contenedor_info_datos"><div class="categoria">Factoría</div><a class="masinfo" href="https://larambleta.com/muestra-de-teat
+
+======================================================================
+Teatre Talia
+https://www.teatretalia.es/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 186898 caracteres | URL final: https://www.teatretalia.es/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 0
+fechas tipo 'mes escrito': 155
+enlaces de venta de entradas: 84
+  https://entradas.teatroenvalencia.com/janto/main.php?Nivel=Recinto&idRecinto=TTALIA
+  https://entradas.teatroenvalencia.com/janto/main.php?Nivel=Recinto&idRecinto=TTALIA
+  https://entradas.teatroenvalencia.com/janto/main.php?Nivel=Evento&idEvento=&idRecinto=TTALIA
+--- muestra de HTML alrededor de una fecha ---
+; top:-80px;width:100%; margin-left:0px"><a href="https://www.teatretalia.es/besos" class="">BESOS</a></span><span class="link tp-caption cap-subtitle font-accident-one-normal lfb ltt tp-resizeme rs-parallaxlevel-1" style=" position:absolute;margin-top:80vh; top:-30px;width:100%; margin-left:0px"><a href="https://www.teatretalia.es/besos" class="">23 septiembre - 1 noviembre</a></span><span class="link tp-caption lfb ltt tp-resizeme rs-parallaxlevel-1" style=" position:absolute;margin-top:80vh;width:100%; margin-left:0px"><a href="https://www.teatretalia.es/besos" class="btn btn-lg btn-rd">Consigue tus entradas aquí </a></span> </div> <i class="helper"></i>
+--- muestra de HTML alrededor de una fecha ---
+:100%; margin-left:0px"><a href="https://www.teatretalia.es/besos" class="">BESOS</a></span><span class="link tp-caption cap-subtitle font-accident-one-normal lfb ltt tp-resizeme rs-parallaxlevel-1" style=" position:absolute;margin-top:80vh; top:-30px;width:100%; margin-left:0px"><a href="https://www.teatretalia.es/besos" class="">23 septiembre - 1 noviembre</a></span><span class="link tp-caption lfb ltt tp-resizeme rs-parallaxlevel-1" style=" position:absolute;margin-top:80vh;width:100%; margin-left:0px"><a href="https://www.teatretalia.es/besos" class="btn btn-lg btn-rd">Consigue tus entradas aquí </a></span> </div> <i class="helper"></i> 
+
+======================================================================
+Les Arts
+https://www.lesarts.com/es/programacion.html
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 857359 caracteres | URL final: https://www.lesarts.com/es/programacion.html
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 9
+fechas tipo 'mes escrito': 0
+enlaces de venta de entradas: 61
+  https://lesarts.koobin.com/?action=PU_ident_unica
+  https://lesarts.koobin.com/?action=PU_ident_unica
+  https://lesarts.koobin.com/
+--- muestra de HTML alrededor de una fecha ---
+ class="small-12 columns"> <div tabindex="-1" class="contenidor-imatge "> <a tabindex="-1" class="imatge" href="https://www.lesarts.com/es/programacion/c/1303-sabine-devieilhe.html" title="SABINE DEVIEILHE"> <img data-eventis-responsive-image="1" src="/img/image/fotos/2021-03-10--sabine-warner-0965_v3--srgb.webp?w=480&amp;aoe=1&amp;q=80&amp;h=551&amp;f=webp&amp;sx=1206.74&amp;sy=350.56&amp;sw=1436.97&amp;sh=1651.69" srcset="/img/image/fotos/2021-03-10--sabine-warner-0965_v3--srgb.webp?w=360&amp;aoe=1&amp;q=80&amp;h=413&amp;f=webp&amp;sx=1206.74&amp;sy=350.56&amp;sw=1436.97&amp;sh=1651.69 360w, /img/image/fotos/202
+--- muestra de HTML alrededor de una fecha ---
+s.com/es/programacion/c/1303-sabine-devieilhe.html" title="SABINE DEVIEILHE"> <img data-eventis-responsive-image="1" src="/img/image/fotos/2021-03-10--sabine-warner-0965_v3--srgb.webp?w=480&amp;aoe=1&amp;q=80&amp;h=551&amp;f=webp&amp;sx=1206.74&amp;sy=350.56&amp;sw=1436.97&amp;sh=1651.69" srcset="/img/image/fotos/2021-03-10--sabine-warner-0965_v3--srgb.webp?w=360&amp;aoe=1&amp;q=80&amp;h=413&amp;f=webp&amp;sx=1206.74&amp;sy=350.56&amp;sw=1436.97&amp;sh=1651.69 360w, /img/image/fotos/2021-03-10--sabine-warner-0965_v3--srgb.webp?w=480&amp;aoe=1&amp;q=80&amp;h=551&amp;f=webp&amp;sx=1206.74&amp;sy=350.56&amp;sw=1436.97&amp;sh=1651.69 480w, /img/image/fotos/2021-03-10--sa
+
+======================================================================
+Palau Alameda
+https://palaualameda.com/agenda-de-conciertos
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 104609 caracteres | URL final: https://palaualameda.com/agenda-de-conciertos
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 0
+fechas tipo 'mes escrito': 36
+enlaces de venta de entradas: 8
+  https://www.fourvenues.com/palau-alameda/MJEU
+  https://www.fourvenues.com/palau-alameda/MJEU
+  https://www.universe.com/events/elyella-lo-mas-importante-valencia-tickets-45K63N?ref=PALAU
+--- muestra de HTML alrededor de una fecha ---
+f="#gigs">Ver próximos conciertos</a><a class="btn btn--ghost" href="/musica-en-directo-valencia">Palau Live</a></div></div><a class="ac-feature" target="_blank" rel="noopener noreferrer" href="https://www.fourvenues.com/palau-alameda/MJEU"><span class="chip">Próximo concierto</span><h2>DERALI COFFEE PARTY ✨</h2><p class="ac-feature__date">Domingo 18 octubre 2026</p><p class="ac-feature__time">De 15:00 a 21:00</p><span class="ac-feature__cta">Comprar<!-- --> · <!-- -->Desde 15€</span></a></div></section><section class="gigs" id="gigs"><div class="container"><div class="sec-head"><span class="eyebrow eyebrow--blue">Próximos conciertos</span><h2 style="color:var(--pa-blue)">Entradas a la venta</h2><p>Consult
+--- muestra de HTML alrededor de una fecha ---
+o Palau Alameda for a new edition of the DERALI Coffee Party. An afternoon bringing together the energy, connection and sound that make our Coffee Parties what they are. What to…</p><span class="gig__price">Desde 15€</span><p class="gig__foot"><span class="gig__foot-icon" aria-hidden="true"></span><span class="gig__foot-text" aria-label="Domingo 18 octubre 2026 De 15:00 a 21:00"><span>Domingo 18 octubre 2026</span><span>De 15:00 a 21:00</span></span></p></div></a><a class="gig" target="_blank" rel="noopener noreferrer" href="https://www.universe.com/events/elyella-lo-mas-importante-valencia-tickets-45K63N?ref=PALAU"><div class="gig__poster"><img alt="ELYELLA" decoding="async" data-nimg="fill" class="gig_
+
+======================================================================
+Teatre Principal
+https://ivc.gva.es/es/escena/programacion-escena/teatro-principal-de-valencia-escena
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 40269 caracteres | URL final: https://ivc.gva.es/es/escena/programacion-escena/teatro-principal-de-valencia-escena
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 0
+fechas tipo 'mes escrito': 12
+enlaces de venta de entradas: 8
+  https://taquilla.ivc.gva.es/va/busqueda?palabra=Teatro+Principal+Valencia
+  https://taquilla.ivc.gva.es/va/productos/descripcion/el-narciso-en-su-opinio
+  https://taquilla.ivc.gva.es/va/productos/descripcion/a-puerta-cerrada
+--- muestra de HTML alrededor de una fecha ---
+bloque-tipo-programacion bloque-tipo-propia"><div id="destacados" class="franja fondo-blanco"><div class="interno"><div class="minificha "><img src="https://ivc.gva.es/admin/assets/images/p/r/dest_princib.jpg" alt="ABONO A LA CARTA EL PRINCIPAL EN EL TEATRE MARTÍN I SOLER" /><div class="transparencia"></div><div class="textos"><p class="fecha">del 01 octubre de 2026 al 31 enero de 2027 · <strong>Teatre Principal de València al Teatre Martín i Soler</strong></p><h2><a href="https://ivc.gva.es/es/escena/programacion-escena/teatro-principal-de-valencia-escena/abono-a-la-carta-el-principal-en-el-teatre-martin-i-soler" title="ABONO A LA CARTA EL PRINCIPAL EN EL TEATRE MARTÍN I SOLER">ABONO A LA CARTA EL PRINCIPAL 
+--- muestra de HTML alrededor de una fecha ---
+on bloque-tipo-propia"><div id="destacados" class="franja fondo-blanco"><div class="interno"><div class="minificha "><img src="https://ivc.gva.es/admin/assets/images/p/r/dest_princib.jpg" alt="ABONO A LA CARTA EL PRINCIPAL EN EL TEATRE MARTÍN I SOLER" /><div class="transparencia"></div><div class="textos"><p class="fecha">del 01 octubre de 2026 al 31 enero de 2027 · <strong>Teatre Principal de València al Teatre Martín i Soler</strong></p><h2><a href="https://ivc.gva.es/es/escena/programacion-escena/teatro-principal-de-valencia-escena/abono-a-la-carta-el-principal-en-el-teatre-martin-i-soler" title="ABONO A LA CARTA EL PRINCIPAL EN EL TEATRE MARTÍN I SOLER">ABONO A LA CARTA EL PRINCIPAL EN EL TEATRE MARTÍN 
+
+======================================================================
+Teatre Rialto
+https://ivc.gva.es/es/escena/programacion-escena/teatro-rialto-de-valencia-escena
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 45053 caracteres | URL final: https://ivc.gva.es/es/escena/programacion-escena/teatro-rialto-de-valencia-escena
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 0
+fechas tipo 'mes escrito': 17
+enlaces de venta de entradas: 15
+  https://taquilla.ivc.gva.es/va/busqueda?palabra=abono
+  https://ivc.sacatuentrada.es/va/productos/descripcion/corol-lar
+  https://ivc.sacatuentrada.es/va/productos/descripcion/karma-letal
+--- muestra de HTML alrededor de una fecha ---
+alencia-escena"></div><div class="bloque-tipo-programacion bloque-tipo-propia"><div id="destacados" class="franja fondo-blanco"><div class="interno"><div class="minificha "><img src="https://ivc.gva.es/admin/assets/images/r/i/dest_rialtob.jpg" alt="Abono a la carta Rialto" /><div class="transparencia"></div><div class="textos"><p class="fecha">del 01 octubre de 2026 al 31 enero de 2027 · <strong>Teatro Rialto</strong></p><h2><a href="https://ivc.gva.es/es/escena/programacion-escena/teatro-rialto-de-valencia-escena/abono-rialto-2627-1" title="Abono a la carta Rialto">Abono a la carta Rialto</a></h2></div><a class="boton-venta fondo-unidad" href="https://taquilla.ivc.gva.es/va/busqueda?palabra=abono" target="_b
+--- muestra de HTML alrededor de una fecha ---
+<div class="bloque-tipo-programacion bloque-tipo-propia"><div id="destacados" class="franja fondo-blanco"><div class="interno"><div class="minificha "><img src="https://ivc.gva.es/admin/assets/images/r/i/dest_rialtob.jpg" alt="Abono a la carta Rialto" /><div class="transparencia"></div><div class="textos"><p class="fecha">del 01 octubre de 2026 al 31 enero de 2027 · <strong>Teatro Rialto</strong></p><h2><a href="https://ivc.gva.es/es/escena/programacion-escena/teatro-rialto-de-valencia-escena/abono-rialto-2627-1" title="Abono a la carta Rialto">Abono a la carta Rialto</a></h2></div><a class="boton-venta fondo-unidad" href="https://taquilla.ivc.gva.es/va/busqueda?palabra=abono" target="_blank" title="Abono a
+
+======================================================================
+Sala Moon
+https://www.salamoon.com/
+robots.txt: PERMITIDO (robots.txt leído)
+estado HTTP: 200 | tamaño: 114 caracteres | URL final: https://www.salamoon.com/
+eventos en datos estructurados (JSON-LD): 0
+contiene __NEXT_DATA__ (web Next.js): False
+fechas tipo 'dd/mm/aaaa': 0
+fechas tipo 'aaaa-mm-dd': 0
+fechas tipo 'mes escrito': 0
+enlaces de venta de entradas: 0
