@@ -1,5 +1,18 @@
 [
   {
+    "id": "rambleta-2026-10-15-el-acontecimiento",
+    "titulo": "El acontecimiento",
+    "artista": "",
+    "sala": "La Rambleta",
+    "fecha": "2026-10-15",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://larambleta.com/el-acontecimiento/#entradas",
+    "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
+    "fuente": "larambleta.com (lectura automática 15/10/2026)",
+    "fechaFin": "2026-11-13"
+  },
+  {
     "id": "principal-2026-10-15-el-narciso-en-su-opinion",
     "titulo": "El Narciso en su opinión",
     "artista": "",
@@ -303,6 +316,18 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2026-10-18T19:00:00-concierto-700-aniversario",
+    "titulo": "Concierto 700 aniversario",
+    "artista": "Asociación Amics del Corpus de la Ciudad de València",
+    "sala": "Palau de la Música",
+    "fecha": "2026-10-18T19:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2781&mod=1791909677",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2026-10-18-2000-the-james-oliver-band-feat-norman-watt-r",
     "titulo": "The James Oliver Band Feat Norman Watt-roy",
     "artista": "",
@@ -398,6 +423,30 @@
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)",
     "fechaFin": "2026-12-16"
+  },
+  {
+    "id": "palaumusica-2026-10-21T19:15:00-sociedad-filarmonica-de-valencia",
+    "titulo": "Sociedad Filarmónica de València",
+    "artista": "Cuarteto de cuerda de los Trondheim Soloists",
+    "sala": "Palau de la Música",
+    "fecha": "2026-10-21T19:15:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2785&mod=1791054357",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2026-10-21T19:30:00-pablo-marquez-organo",
+    "titulo": "Pablo Márquez, órgano",
+    "artista": "Orquestra de València · Alexander Liebreich, director",
+    "sala": "Palau de la Música",
+    "fecha": "2026-10-21T19:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2740&mod=1791494980",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
     "id": "arts-2026-10-21T19:30:00-lea-desandre-thomas-dunford",
@@ -824,6 +873,18 @@
     "fechaFin": "2026-10-28"
   },
   {
+    "id": "palaumusica-2026-10-27T19:15:00-sociedad-filarmonica-de-valencia",
+    "titulo": "Sociedad Filarmónica de València",
+    "artista": "Trio Concept",
+    "sala": "Palau de la Música",
+    "fecha": "2026-10-27T19:15:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2786&mod=1791054411",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "loco-2026-10-27-2000-ivette-cepeda",
     "titulo": "Ivette Cepeda",
     "artista": "",
@@ -870,6 +931,18 @@
     "urlEntradas": "https://larambleta.com/classica-a-la-cambra-youkali/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2026-10-28T19:30:00-concierto-de-apertura-del-curso-academic",
+    "titulo": "Concierto de Apertura del Curso Académico 2026/2027",
+    "artista": "David Fons, viola solista · Orquestra Filharmònica de la Universitat de València · Hilari Garcia Gázquez, director",
+    "sala": "Palau de la Música",
+    "fecha": "2026-10-28T19:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2762&mod=1791896122",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
     "id": "arts-2026-10-28T19:30:00-ramon-gener-la-verbena-de-la-paloma",
@@ -1354,6 +1427,18 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2026-11-05T19:15:00-sociedad-filarmonica-de-valencia",
+    "titulo": "Sociedad Filarmónica de València",
+    "artista": "Víctor Martínez Soto, concertino y director",
+    "sala": "Palau de la Música",
+    "fecha": "2026-11-05T19:15:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2787&mod=1791369454",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "loco-2026-11-05-2030-dirty-sound-magnet",
     "titulo": "Dirty Sound Magnet",
     "artista": "",
@@ -1666,6 +1751,18 @@
     "urlEntradas": "https://entradas.teatroenvalencia.com/espectaculo/tomas-de-los-santos/TALTOMASSANTOS",
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "teatretalia.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2026-11-10T19:30:00-41-mostra-de-valencia-cinema-del-mediter",
+    "titulo": "41 Mostra de València. Cinema del Mediterrani",
+    "artista": "Banda Sinfónica Municipal de València · Miguel Vidagany, director",
+    "sala": "Palau de la Música",
+    "fecha": "2026-11-10T19:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2768&mod=1790779685",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
     "id": "talia-2026-11-11-rocio-durcal-es-inolvidable",
@@ -2711,6 +2808,18 @@
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2026-11-29T11:30:00-banda-sinfonica-municipal-de-valencia",
+    "titulo": "Banda Sinfónica Municipal de València",
+    "artista": "Mario Biendicho, saxofón · Félix Hauswirth, director",
+    "sala": "Palau de la Música",
+    "fecha": "2026-11-29T11:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2771&mod=1791296709",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2026-11-29-1900-esbarzer-night-hearth",
     "titulo": "Esbarzer + Night Hearth",
     "artista": "",
@@ -2866,6 +2975,18 @@
     "urlEntradas": "https://larambleta.com/nomad/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2026-12-05T11:30:00-sociedad-filarmonica-de-valencia",
+    "titulo": "Sociedad Filarmónica de València",
+    "artista": "Aurelien Pascal, violonchelo · Raphäel Feulliatre, guitarra",
+    "sala": "Palau de la Música",
+    "fecha": "2026-12-05T11:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2788&mod=1791054559",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
     "id": "loco-2026-12-05-2100-gazella-sara-zozaya-fin-de-gira",
@@ -3305,6 +3426,18 @@
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2026-12-20T11:30:00-concierto-de-navidad",
+    "titulo": "Concierto de Navidad",
+    "artista": "Juan Bautista Fons, trompeta · Coral Juan Bautista Comes · Banda Sinfónica Municipal de València",
+    "sala": "Palau de la Música",
+    "fecha": "2026-12-20T11:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2773&mod=1791296734",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2026-12-20-1900-def-con-dos-segunda-fecha",
     "titulo": "Def Con Dos - Segunda Fecha",
     "artista": "",
@@ -3656,6 +3789,18 @@
     "urlEntradas": "https://www.notikumi.com/2027/1/16/el-nido-en-16-toneladas-valencia-traca?lang=es",
     "descripcion": "Concierto en 16 Toneladas. Apertura de puertas: 18:30. Consulta los detalles en la web de la sala.",
     "fuente": "16toneladas.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2027-01-17T11:30:00-banda-sinfonica-municipal-de-valencia",
+    "titulo": "Banda Sinfónica Municipal de València",
+    "artista": "Criatóbal Soler, director",
+    "sala": "Palau de la Música",
+    "fecha": "2027-01-17T11:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2775&mod=1791296750",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
     "id": "loco-2027-01-17-1700-the-jazz-room-un-viaje-al-corazon-de-nue",
@@ -4611,6 +4756,18 @@
     "fuente": "rockcity.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2027-03-07T11:30:00-en-clave-femenina",
+    "titulo": "En Clave Femenina",
+    "artista": "Banda Sinfónica Municipal de València · Virginia Martínez, directora invitada",
+    "sala": "Palau de la Música",
+    "fecha": "2027-03-07T11:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2776&mod=1791296771",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2027-03-10-2030-iberian-tour",
     "titulo": "Iberian Tour",
     "artista": "",
@@ -4803,6 +4960,18 @@
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2027-04-11T11:30:00-gustavo-fontana",
+    "titulo": "Gustavo Fontana",
+    "artista": "Björn Nyman, clarinete · Pedro Vicente Alamá, clarinete · Banda Sinfónica Municipal de València",
+    "sala": "Palau de la Música",
+    "fecha": "2027-04-11T11:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2767&mod=1791366244",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rambleta-2027-04-15-the-watch-plays-genesis",
     "titulo": "The Watch Plays Genesis",
     "artista": "",
@@ -4875,6 +5044,18 @@
     "fuente": "lesarts.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2027-04-22T19:30:00-el-palau-amb-les-bandes",
+    "titulo": "El Palau amb les Bandes",
+    "artista": "Ateneu Musical del Port",
+    "sala": "Palau de la Música",
+    "fecha": "2027-04-22T19:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2757&mod=1789554830",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "arts-2027-04-22T19:30:00-preestrena-hasta-28-anos-v",
     "titulo": "Preestrena Hasta 28 Años_(V)",
     "artista": "Nixon in China",
@@ -4911,6 +5092,30 @@
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "palaumusica-2027-04-24T11:30:00-el-palau-con-las-bandas",
+    "titulo": "El Palau con las Bandas",
+    "artista": "Agrupación Musical San José de Pignatelli",
+    "sala": "Palau de la Música",
+    "fecha": "2027-04-24T11:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2758&mod=1789551733",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2027-04-25T19:00:00-el-palau-amb-les-bandes",
+    "titulo": "El Palau amb les Bandes",
+    "artista": "Agrupación Musical Santa Cecilia del Grao",
+    "sala": "Palau de la Música",
+    "fecha": "2027-04-25T19:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2759&mod=1789551926",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "loco-2027-04-28-2030-ben-poole",
     "titulo": "Ben Poole",
     "artista": "",
@@ -4932,6 +5137,18 @@
     "precio": null,
     "urlEntradas": "https://tickets.palauvalencia.com/entradas/70/capella-de-ministrers-5902.html?webfecha=29/04/2027&webhora=19:30",
     "descripcion": "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2027-04-30T19:30:00-el-palau-amb-les-bandes",
+    "titulo": "El Palau amb les Bandes",
+    "artista": "AC Falla Jerónima Galés",
+    "sala": "Palau de la Música",
+    "fecha": "2027-04-30T19:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2760&mod=1790242621",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
@@ -5244,6 +5461,18 @@
     "precio": null,
     "urlEntradas": "https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-1652.html?webfecha=09/07/2027&webhora=19:30",
     "descripcion": "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
+    "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "palaumusica-2027-07-24T19:00:00-el-palau-amb-les-bandes",
+    "titulo": "El Palau amb les Bandes",
+    "artista": "CIM Banda de Torrefiel",
+    "sala": "Palau de la Música",
+    "fecha": "2027-07-24T19:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://palauvalencia.com/event?id=2761&mod=1789552233",
+    "descripcion": "Concierto en el Palau de la Música de València. La venta online aparece oculta en la web: consulta la ficha del concierto.",
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   }
 ]
