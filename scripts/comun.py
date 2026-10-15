@@ -59,11 +59,22 @@ def bonito(titulo):
     if not letras or sum(c.isupper() for c in letras) < 0.8 * len(letras):
         return t
 
+    pequenas = {"de", "del", "la", "las", "el", "los", "y", "e", "o", "u", "a", "al",
+                "en", "por", "para", "un", "una", "the", "of", "and", "in", "on",
+                "to", "for", "i", "amb", "els", "les"}
+
     def cambiar(m):
         w = m.group(0)
         if w in MANTENER:
             return w
-        if len(w) == 1 and m.start() > 0 and t[m.start() - 1] in "'’":
+        previo = t[m.start() - 1] if m.start() > 0 else ""
+        if previo and len(w) == 1 and previo in "'’":
+            return w.lower()
+        if previo == "·":
+            return w.lower()
+        if previo == "-" and len(w) <= 3:
+            return w.lower()
+        if m.start() > 0 and w.lower() in pequenas and t[:m.start()].strip()[-1:] not in ":.-¡¿":
             return w.lower()
         return w.capitalize()
 
@@ -81,3 +92,12 @@ def euros(valor):
     if n <= 0:
         return None
     return f"{int(n)} €" if n == int(n) else f"{n:.2f}".replace(".", ",") + " €"
+
+
+def es_venta(url):
+    """¿La dirección parece de una plataforma de venta de entradas?"""
+    host = url.lower().split("/")[2] if url.count("/") >= 2 else url.lower()
+    claves = ("ticket", "entrad", "fever", "universe", "passline", "dice.fm",
+              "eventbrite", "woutick", "fourvenues", "vibess", "koobin",
+              "taquilla", "sacatuentrada", "enterticket", "notikumi", "mutick")
+    return any(c in host for c in claves)

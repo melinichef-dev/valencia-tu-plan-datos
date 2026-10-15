@@ -21,6 +21,21 @@ MESES = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7,
 MINIMO_EVENTOS = 5  # menos que esto se considera una lectura fallida
 
 
+NOTAS = []  # observaciones que se copian al informe
+
+
+def agotado(d):
+    """¿El evento está agotado? Se mira cualquier campo que lo indique."""
+    for k, v in d.items():
+        k = k.lower()
+        if isinstance(v, bool) and v and ("sold" in k or "agot" in k):
+            return True
+        if isinstance(v, str) and k not in ("title", "slug", "ticketurl", "imageurl") \
+                and re.search(r"sold[ _-]?out|agotad", v, re.I):
+            return True
+    return False
+
+
 def evento(prefijo, sala, fecha, titulo, url, precio, descripcion, fuente):
     return {
         "id": f"{prefijo}-{fecha[:10]}-{fecha[11:13] + fecha[14:16] if len(fecha) > 10 else 'x'}-{slug(titulo)}",
@@ -48,6 +63,7 @@ def leer_16_toneladas():
     paginas = ["https://www.16toneladas.com/"] + [
         f"https://www.16toneladas.com/?month={m // 12}-{m % 12 + 1:02d}" for m in meses]
     vistos, resultado = set(), []
+    claves_vistas, agotados = set(), 0
     decodificador = json.JSONDecoder()
     for url in paginas:
         try:
@@ -65,27 +81,38 @@ def leer_16_toneladas():
                 continue
             if not isinstance(d, dict) or "title" not in d or "date" not in d:
                 continue
+            claves_vistas.update(d.keys())
             if d.get("isPublished") is False:
                 continue
-            if any("sold" in k.lower() and d[k] for k in d):
+            if agotado(d):
+                agotados += 1
                 continue
             enlace = d.get("ticketUrl")
             if not enlace:
                 continue
             hora = d.get("showTime") or d.get("doorsTime")
-            if not hora:
+            if not hora or not re.match(r"\d{4}-\d\d-\d\d$", str(d["date"])):
+                continue
+            dia = datetime.date.fromisoformat(d["date"])
+            if dia < HOY:
                 continue
             clave = (d.get("slug"), d["date"])
             if clave in vistos:
                 continue
             vistos.add(clave)
-            fecha = f"{d['date']}T{hora[:5]}:00"
+            puertas = (d.get("doorsTime") or "")[:5]
+            nota = f" Apertura de puertas: {puertas}." if puertas and puertas != hora[:5] else ""
+            if int(hora[:2]) < 6:  # sesión de madrugada: pertenece a la noche del día anterior
+                nota += f" Sesión de madrugada de la noche del {dia:%d/%m}."
+                dia = dia + datetime.timedelta(days=1)
+            fecha = f"{dia:%Y-%m-%d}T{hora[:5]}:00"
             a, b = euros(d.get("priceAdvance")), euros(d.get("priceDoor"))
             precio = " / ".join(x for x in (a, b) if x) or None
             resultado.append(evento(
                 "16t", sala, fecha, bonito(d["title"]), enlace, precio,
-                "Concierto en 16 Toneladas. Consulta los detalles en la web de la sala.",
+                "Concierto en 16 Toneladas." + nota + " Consulta los detalles en la web de la sala.",
                 f"16toneladas.com (lectura automática {HOY:%d/%m/%Y})"))
+    NOTAS.append(f"16 Toneladas: campos de cada evento = {sorted(claves_vistas)}; descartados por agotados: {agotados}")
     return sala, resultado
 
 
@@ -120,6 +147,21 @@ def leer_loco_club():
     return sala, resultado
 
 
+def _precio_loco(texto):
+    """Deja solo las tarifas generales (anticipada y taquilla) y limpia el formato."""
+    if not texto:
+        return None
+    partes = [p.strip() for p in str(texto).split("/") if p.strip()]
+    elegidas, vistas = [], set()
+    for p in partes:
+        tipo = p.split(":")[0].strip().lower()
+        if tipo.startswith(("anticipada", "taquilla")) and tipo not in vistas:
+            vistas.add(tipo)
+            elegidas.append(p)
+    resultado = " / ".join(elegidas or partes[:2])
+    return resultado.replace("€", " €").replace("  ", " ").strip() or None
+
+
 def _evento_loco(d, sala, excluir):
     estado = str(d.get("eventStatus", ""))
     if "Cancelled" in estado or "Postponed" in estado:
@@ -138,11 +180,20 @@ def _evento_loco(d, sala, excluir):
     if not titulo:
         titulo = url.rstrip("/").split("/")[-1].replace("-", " ")
     titulo = bonito(html_lib.unescape(titulo))
-    if excluir.search(titulo):
+    if excluir.search(titulo) or re.search(r"agotad|sold[ -]?out", titulo, re.I):
         return None
-    hora = inicio[11:16] if len(inicio) >= 16 else "00:00"
-    fecha = inicio[:10] if hora == "00:00" else f"{inicio[:10]}T{hora}:00"
-    precio = str(ofertas.get("price", "")).strip().replace("€", " €").replace("  ", " ") or None
+    # La web publica la hora local MÁS su desfase horario (p. ej. 22:30+02:00 para
+    # un concierto a las 20:30). La hora real es la publicada menos ese desfase.
+    try:
+        dt = datetime.datetime.fromisoformat(inicio.replace("Z", "+00:00"))
+        local = dt.replace(tzinfo=None) - (dt.utcoffset() or datetime.timedelta(0))
+    except ValueError:
+        return None
+    if local.date() < HOY:
+        return None
+    hora = f"{local:%H:%M}" if len(inicio) > 10 else "00:00"
+    fecha = f"{local:%Y-%m-%d}" if hora == "00:00" else f"{local:%Y-%m-%dT%H:%M}:00"
+    precio = _precio_loco(ofertas.get("price"))
     return evento("loco", sala, fecha, titulo, url, precio,
                   "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
                   f"lococlub.es (lectura automática {HOY:%d/%m/%Y})")
@@ -194,7 +245,9 @@ def leer_rock_city():
     return sala, resultado
 
 
-LECTORES = [leer_16_toneladas, leer_loco_club, leer_rock_city]
+from lectores2 import LECTORES_NUEVOS  # noqa: E402
+
+LECTORES = [leer_16_toneladas, leer_loco_club, leer_rock_city] + LECTORES_NUEVOS
 
 
 # ---------------------------------------------------------------------- Principal
@@ -231,6 +284,7 @@ def main():
     resultado.sort(key=lambda e: e["fecha"])
     with open("eventos.json", "w", encoding="utf-8") as f:
         json.dump(resultado, f, ensure_ascii=False, indent=2)
+    informe.extend(NOTAS)
     informe.append(f"Total en eventos.json: {len(resultado)}")
     with open("informe.txt", "w", encoding="utf-8") as f:
         f.write("\n".join(informe) + "\n")
