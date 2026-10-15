@@ -499,6 +499,8 @@ def _leer_grupo_salas(url, sala, prefijo, dominio):
         if dia < HOY:
             continue
         titulo = re.sub(r"\s*\d{2}/\d{2}/\d{4}\s*$", "", limpio(t.group(1)))
+        if re.search(r"cancelad|aplazad|suspendid|agotad|sold[ -]?out", titulo, re.I):
+            continue
         enlace = html_lib.unescape(u.group(1))
         clave = (enlace, dia)
         if not titulo or clave in vistos:
@@ -737,6 +739,55 @@ def leer_la_mutant():
     return sala, res
 
 
+# -------------------------------------------------------------- Fundación Bancaja
+def leer_bancaja():
+    sala = "Fundación Bancaja"
+    pagina = descargar("https://www.fundacionbancaja.es/")
+    excluir = re.compile(r"taller|curso|visita|club de lectura|mayores|infantil|familias|campus", re.I)
+    res, vistos = [], set()
+    n = {"tarjetas": 0, "talleres_y_similares": 0}
+    for m, b in trozos(pagina, r'<div class="listado-item">'):
+        n["tarjetas"] += 1
+        u = re.search(r'<div class="item-content">.*?<a href="([^"]+)">(.*?)</a>', b, re.S)
+        f = re.search(r'<div class="item-fechas">(.*?)</div>', b, re.S)
+        if not (u and f):
+            continue
+        titulo = limpio(u.group(2))
+        if excluir.search(titulo):
+            n["talleres_y_similares"] += 1
+            continue
+        fechas = []
+        for d, mes, a in re.findall(r"(\d{1,2})\s+([A-Za-zÀ-ÿ]+)\s+(20\d\d)", limpio(f.group(1))):
+            if mes.lower() in MESES_ES:
+                try:
+                    fechas.append(datetime.date(int(a), MESES_ES[mes.lower()], int(d)))
+                except ValueError:
+                    pass
+        if not fechas:
+            continue
+        v = vigente(fechas[0], fechas[-1] if len(fechas) > 1 else None)
+        if not v:
+            continue
+        tl = titulo.lower()
+        if re.search(r"concierto|concert|música|musica|recital|jazz|flamenco", tl):
+            categoria = "musica"
+        elif re.search(r"teatro|teatre|danza|dansa|espectáculo|espectacle", tl):
+            categoria = "teatro"
+        else:
+            categoria = "otros"
+        enlace = html_lib.unescape(u.group(1))
+        clave = (enlace, v[0])
+        if clave in vistos:
+            continue
+        vistos.add(clave)
+        res.append(evento("bancaja", sala, fecha_hora(v[0]), bonito(titulo), enlace,
+                          "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+                          "fundacionbancaja.es", categoria=categoria,
+                          fin=fecha_hora(v[1]) if v[1] else None))
+    NOTAS.append(f"Fundación Bancaja: " + ", ".join(f"{k}={v}" for k, v in n.items()))
+    return sala, res
+
+
 LECTORES_NUEVOS = [leer_palau_musica, leer_peter_rock, leer_rambleta, leer_talia,
                    leer_les_arts, leer_palau_alameda, leer_principal, leer_rialto,
-                   leer_radio_city, leer_jerusalem, leer_roig_arena, leer_micalet, leer_la_mutant, leer_moon]
+                   leer_radio_city, leer_jerusalem, leer_roig_arena, leer_micalet, leer_la_mutant, leer_moon, leer_bancaja]

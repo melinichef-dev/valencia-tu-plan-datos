@@ -7,20 +7,7 @@ import re
 from comun import descargar
 
 # (nombre, dirección, textos que buscamos para localizar eventos; None = primera fecha de 2026)
-OBJETIVOS = [
-    ("Sala Moon", "https://www.moonvalencia.es/web/conciertos/", None),
-    ("Plaza de Toros de València", "https://www.plazadetorosdevalencia.es/", None),
-    ("Palacio de Congresos", "https://www.palcongres-vlc.com/", None),
-    ("Ciutat de les Arts i les Ciències", "https://cac.es/", None),
-    ("Fundación Bancaja", "https://www.fundacionbancaja.es/", None),
-    ("Casino de Agricultura", "https://www.casinodeagricultura.com/", None),
-    ("Ateneo Mercantil", "https://www.ateneovalencia.es/", None),
-    ("Octubre Centre de Cultura Contemporània", "https://octubre.cat/", None),
-    ("Centre del Carme (Consorci de Museus)", "https://www.consorcimuseus.gva.es/", None),
-    ("Institut Français de València", "https://www.institutfrancais.es/valencia/", None),
-    ("Societat Coral El Micalet", "https://www.micalet.com/", None),
-    ("IVC Música", "https://ivc.gva.es/es/musica", None),
-]
+OBJETIVOS = []  # de momento sin objetivos: se rellena cuando haya webs nuevas que probar
 
 # Primera fecha que parezca de un evento futuro: "21 de octubre", "21/10/2026", "21 oct"...
 PATRON_FECHA = re.compile(
