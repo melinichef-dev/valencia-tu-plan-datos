@@ -63,16 +63,16 @@
     "fuente": "16toneladas.com (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-cenk-essen-2026-10-15",
+    "id": "radiocity-2026-10-15T22:00:00-cenk-essen",
     "titulo": "Cenk Essen",
-    "artista": "Cenk Essen",
+    "artista": "",
     "sala": "Radio City",
     "fecha": "2026-10-15T22:00:00",
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://entradium.com/es/events/cenk-essen",
     "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026)"
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "prueba-actualizacion",
@@ -112,6 +112,18 @@
     "fechaFin": "2026-11-15"
   },
   {
+    "id": "roig-2026-10-16-jorge-drexler",
+    "titulo": "Jorge Drexler",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "arts-2026-10-16T19:30:00-sir-mark-elder",
     "titulo": "Sir Mark Elder",
     "artista": "Chaikovski | Strauss",
@@ -136,18 +148,6 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-malmono-2026-10-16",
-    "titulo": "Malmono + Florencio André + Aluo",
-    "artista": "Malmono, Florencio André y Aluo",
-    "sala": "Radio City",
-    "fecha": "2026-10-16T21:30:00",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://entradium.com/es/events/malmono-aluo-florencio-andre",
-    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026)"
-  },
-  {
     "id": "rock-2026-10-16-2130-muerdo",
     "titulo": "Muerdo",
     "artista": "",
@@ -158,6 +158,18 @@
     "urlEntradas": "https://www.rockcity.es/eventos/muerdo-en-valencia-rock-city/",
     "descripcion": "Concierto en Rock City. Consulta los detalles y las entradas en la página del evento.",
     "fuente": "rockcity.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "radiocity-2026-10-16T21:30:00-malmono-florencio-andre-aluo",
+    "titulo": "Malmono Florencio Andre Aluo",
+    "artista": "",
+    "sala": "Radio City",
+    "fecha": "2026-10-16T21:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/malmono-aluo-florencio-andre",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-10-16-2230-hard-rock-legends-festival",
@@ -194,6 +206,30 @@
     "urlEntradas": "https://larambleta.com/pica-pica-operacion-halloween/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2026-10-17-pedro-pastor",
+    "titulo": "Pedro Pastor",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-17",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/0/pedro-pastor-17-10-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-17-antonio-orozco",
+    "titulo": "Antonio Orozco",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/antonio-orozco-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-10-17T19:00:00-obras-sinfonicas-de-strauss-y-wagner",
@@ -256,16 +292,16 @@
     "fuente": "peterrockclub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-el-ring-2026-10-17",
-    "titulo": "El Ring: tributo al mejor rock",
-    "artista": "El Ring",
+    "id": "radiocity-2026-10-17T22:30:00-el-ring",
+    "titulo": "El Ring",
+    "artista": "",
     "sala": "Radio City",
     "fecha": "2026-10-17T22:30:00",
     "categoria": "musica",
-    "precio": "8 € anticipada · 10 € taquilla",
+    "precio": null,
     "urlEntradas": "https://entradium.com/es/events/el-ring-valencia-radio-city-valencia",
-    "descripcion": "Banda valenciana de versiones de rock anglosajón y español, formada en 2009.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026) y página del evento"
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-10-17-2330-closing-party-10a-edicion-volumens",
@@ -364,6 +400,18 @@
     "fuente": "teatretalia.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "jerusalem-2026-10-20-indios-en-espana",
+    "titulo": "Indios en España",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-20",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/1/indios-en-espana-20-10-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-10-20T19:30:00-tercera-sinfonia-de-mahler",
     "titulo": "Tercera Sinfonía de Mahler",
     "artista": "Catriona Morison, mezzosoprano · Orquesta Sinfónica de Düsseldorf · Adam Fischer, director",
@@ -388,16 +436,28 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-flamenco-2026-10-20",
-    "titulo": "Noche de flamenco",
-    "artista": "Lorena Martínez, Tomás de los Cariños y Manolo Reyes",
+    "id": "radiocity-2026-10-20T22:30:00-flamenco-show-que-te-quiten-lo-bailao",
+    "titulo": "Flamenco Show: ¡Que te quiten lo bailao!",
+    "artista": "con los mejores artistas",
     "sala": "Radio City",
     "fecha": "2026-10-20T22:30:00",
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://entradium.com/es/events/flamenco-en-vivo",
-    "descripcion": "Espectáculo de flamenco en directo, cada martes en Radio City.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026)"
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala. Noche semanal: confirma el cartel de cada fecha en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "radiocity-2026-10-20T22:30:00-noche-de-flamenco-show",
+    "titulo": "Noche De Flamenco Show",
+    "artista": "",
+    "sala": "Radio City",
+    "fecha": "2026-10-20T22:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/flamenco-en-vivo",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "rambleta-2026-10-21-joe-jackson",
@@ -547,6 +607,18 @@
     "fechaFin": "2026-10-24"
   },
   {
+    "id": "jerusalem-2026-10-23-mimosas-negocios-bikini-laiaya",
+    "titulo": "Mimosas + Negocios Bikini + Laiaya",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-23",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/2/mimosas-negocios-bikini-laiaya/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-10-23T19:30:00-orquesta-nacional-de-espana",
     "titulo": "Orquesta Nacional de España",
     "artista": "Frank Peter Zimmermann, violín · David Afkham, director",
@@ -656,6 +728,30 @@
     "fechaFin": "2027-05-28"
   },
   {
+    "id": "jerusalem-2026-10-24-valira",
+    "titulo": "Valira",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-24",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/3/valira-24-10-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "radiocity-2026-10-24T18:00:00-thin-picks",
+    "titulo": "Thin Picks",
+    "artista": "",
+    "sala": "Radio City",
+    "fecha": "2026-10-24T18:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/thin-picks-valencia",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-10-24T19:00:00-orquesta-nacional-de-espana",
     "titulo": "Orquesta Nacional de España",
     "artista": "Frank Peter Zimmermann, violín · David Afkham, director",
@@ -692,18 +788,6 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-pared-con-pared-2026-10-24",
-    "titulo": "Pared con Pared + Planeta West",
-    "artista": "Pared con Pared y Planeta West",
-    "sala": "Radio City",
-    "fecha": "2026-10-24T22:00:00",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://entradium.com/es/events/pared-con-pared-planeta-west",
-    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026)"
-  },
-  {
     "id": "peter-2026-10-24T22:00:00-alejandro-astola-gira-2026",
     "titulo": "Alejandro Astola / Gira 2026",
     "artista": "",
@@ -714,6 +798,18 @@
     "urlEntradas": "https://www.vivaticket.es/ticket/alejandro-astola-valencia/14575#/sell/events/14575/sessions/21806",
     "descripcion": "Concierto en Peter Rock Club. Consulta los detalles en la web de la sala.",
     "fuente": "peterrockclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "radiocity-2026-10-24T22:00:00-pared-con-pared-planeta-west",
+    "titulo": "Pared Con Pared Planeta West",
+    "artista": "",
+    "sala": "Radio City",
+    "fecha": "2026-10-24T22:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/pared-con-pared-planeta-west",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-10-24-2230-kim-salmon-sandre-banani",
@@ -774,6 +870,18 @@
     "urlEntradas": "https://larambleta.com/the-lemon-twigs-world-tour-2026/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2026-10-25-leo-rizzi",
+    "titulo": "Leo Rizzi",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-25",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/4/leo-rizzi-25-10-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "arts-2026-10-25T18:00:00-riccardo-primo",
@@ -909,16 +1017,28 @@
     "fuente": "16toneladas.com (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-flamenco-2026-10-27",
-    "titulo": "Noche de flamenco",
-    "artista": "Ana Luisa Cardona, José 'El Potri' y Juan de Pilar",
+    "id": "radiocity-2026-10-27T22:30:00-flamenco-show-que-te-quiten-lo-bailao",
+    "titulo": "Flamenco Show: ¡Que te quiten lo bailao!",
+    "artista": "con los mejores artistas",
     "sala": "Radio City",
     "fecha": "2026-10-27T22:30:00",
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://entradium.com/es/events/flamenco-en-vivo",
-    "descripcion": "Espectáculo de flamenco en directo, cada martes en Radio City.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026)"
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala. Noche semanal: confirma el cartel de cada fecha en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "radiocity-2026-10-27T22:30:00-noche-de-flamenco-show",
+    "titulo": "Noche De Flamenco Show",
+    "artista": "",
+    "sala": "Radio City",
+    "fecha": "2026-10-27T22:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/flamenco-en-vivo",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "rambleta-2026-10-28-classica-a-la-cambra-youkali",
@@ -993,6 +1113,18 @@
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "jerusalem-2026-10-29-querido",
+    "titulo": "Querido",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-29",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/5/querido-29-10-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2026-10-29-2100-rascanya-sound-arre-ak",
     "titulo": "Rascanya Sound + Arre Ak",
     "artista": "",
@@ -1017,16 +1149,16 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-sua-2026-10-29",
-    "titulo": "SUA presenta «Deshielo»",
-    "artista": "SUA",
+    "id": "radiocity-2026-10-29T22:00:00-sua",
+    "titulo": "Sua",
+    "artista": "",
     "sala": "Radio City",
     "fecha": "2026-10-29T22:00:00",
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://entradium.com/es/events/sua-presenta-deshielo",
     "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026)"
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "rambleta-2026-10-30-maria-del-mar-bonet-laigua-no-cansa",
@@ -1051,6 +1183,18 @@
     "urlEntradas": "https://larambleta.com/patax/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2026-10-30-marquitos",
+    "titulo": "Marquitos",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-30",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/6/marquitos-30-10-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-10-30T19:30:00-london-philharmonic-orchestra",
@@ -1172,6 +1316,18 @@
     "descripcion": "Artes escénicas en Teatre Rialto. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-11-01"
+  },
+  {
+    "id": "jerusalem-2026-10-31-colectivo-panamera",
+    "titulo": "Colectivo Panamera",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-10-31",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/7/colectivo-panamera-31-10-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-10-31-1200-jalowin-especial-gigatrin",
@@ -1402,6 +1558,18 @@
     "fuente": "16toneladas.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "radiocity-2026-11-03T22:30:00-flamenco-show-que-te-quiten-lo-bailao",
+    "titulo": "Flamenco Show: ¡Que te quiten lo bailao!",
+    "artista": "con los mejores artistas",
+    "sala": "Radio City",
+    "fecha": "2026-11-03T22:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/flamenco-en-vivo",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala. Noche semanal: confirma el cartel de cada fecha en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "talia-2026-11-04-carmen-nada-de-nadie",
     "titulo": "Carmen, nada de nadie",
     "artista": "La historia de una mujer libre",
@@ -1621,6 +1789,30 @@
     "fechaFin": "2026-11-08"
   },
   {
+    "id": "jerusalem-2026-11-07-andres-obregon",
+    "titulo": "Andrés Obregón",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-07",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/8/andres-obregon-07-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-11-07-house-arena",
+    "titulo": "House Arena",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-11-07",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/house-arena-20261107/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2026-11-07-1930-the-activist",
     "titulo": "The Activist",
     "artista": "",
@@ -1765,6 +1957,18 @@
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "radiocity-2026-11-10T22:30:00-flamenco-show-que-te-quiten-lo-bailao",
+    "titulo": "Flamenco Show: ¡Que te quiten lo bailao!",
+    "artista": "con los mejores artistas",
+    "sala": "Radio City",
+    "fecha": "2026-11-10T22:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/flamenco-en-vivo",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala. Noche semanal: confirma el cartel de cada fecha en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "talia-2026-11-11-rocio-durcal-es-inolvidable",
     "titulo": "Rocío Dúrcal es inolvidable",
     "artista": "Protagonizada por Carmen Morales",
@@ -1776,6 +1980,18 @@
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "teatretalia.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-11-15"
+  },
+  {
+    "id": "jerusalem-2026-11-11-frazey-ford",
+    "titulo": "Frazey Ford",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-11",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/9/frazey-ford-11-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-11-11T19:30:00-concierto-para-violin-de-beethoven",
@@ -1899,16 +2115,16 @@
     "fuente": "rockcity.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "rc-holistiks-2026-11-13",
+    "id": "radiocity-2026-11-13T22:00:00-canter-presenta-holistiks-low-kost",
     "titulo": "CÁNTER presenta: Holistiks + Low Kost",
-    "artista": "Holistiks y Low Kost",
+    "artista": "Rap, Funk, Rock",
     "sala": "Radio City",
     "fecha": "2026-11-13T22:00:00",
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://entradium.com/es/events/holistiks-low-kost",
-    "descripcion": "Noche de rap, funk y rock.",
-    "fuente": "radiocityvalencia.es/agenda (revisado 14/10/2026)"
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "peter-2026-11-13T23:00:00-ama-tributo-extremoduro",
@@ -1946,6 +2162,18 @@
     "descripcion": "Artes escénicas en Teatre Rialto. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-11-15"
+  },
+  {
+    "id": "jerusalem-2026-11-14-diversos-turno-de-noche",
+    "titulo": "Diversos + Turno de Noche",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-14",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/10/diversos-turno-de-noche-14-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-11-14-1900-the-buzzlovers",
@@ -2006,6 +2234,18 @@
     "urlEntradas": "https://www.peterrockclub.es/eventos/fito-en-vena--tributo-fito--fitipaldis--platero-y-t",
     "descripcion": "Concierto en Peter Rock Club. Consulta los detalles en la web de la sala.",
     "fuente": "peterrockclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "radiocity-2026-11-14T22:30:00-marya",
+    "titulo": "Marya",
+    "artista": "",
+    "sala": "Radio City",
+    "fecha": "2026-11-14T22:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://radiocityvalencia.es/eventos/marya-14-11-2026/",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-11-14-2330-aviador-dro",
@@ -2165,6 +2405,18 @@
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "jerusalem-2026-11-19-zeballos",
+    "titulo": "Zeballos",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-19",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/11/zeballos-19-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rock-2026-11-19-2030-spike-and-the-gimme-gimmes",
     "titulo": "Spike and The Gimme Gimmes",
     "artista": "",
@@ -2211,6 +2463,18 @@
     "urlEntradas": "https://larambleta.com/ram-session-sedajazz-latin-sextet-nov-2026/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2026-11-20-tierra-santa",
+    "titulo": "Tierra Santa",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-20",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/12/tierra-santa-20-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-11-20T19:30:00-wagner-parsifal",
@@ -2333,6 +2597,18 @@
     "descripcion": "Artes escénicas en Teatre Rialto. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-11-22"
+  },
+  {
+    "id": "jerusalem-2026-11-21-clan-of-xymox",
+    "titulo": "Clan of Xymox",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-21",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/15/clan-of-xymox-21-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-11-21T20:00:00-sabineando-homenaje-a-joaquin-sabina",
@@ -2525,6 +2801,18 @@
     "urlEntradas": "https://larambleta.com/levi-sct/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2026-11-26-soca",
+    "titulo": "Soca",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-26",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/13/soca-26-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-11-26-2030-dinosaur-pile-up",
@@ -2748,6 +3036,18 @@
     "fechaFin": "2026-11-29"
   },
   {
+    "id": "jerusalem-2026-11-28-cien-galgos-joder-juan",
+    "titulo": "Cien Galgos + Joder Juan",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-11-28",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/14/cien-galgos-joder-juan-28-11-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "arts-2026-11-28T19:00:00-franco-fagioli",
     "titulo": "Franco Fagioli",
     "artista": "Farinelli",
@@ -2879,6 +3179,18 @@
     "descripcion": "Artes escénicas en Teatre Rialto. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-12-06"
+  },
+  {
+    "id": "jerusalem-2026-12-03-blanco-palmera",
+    "titulo": "Blanco Palmera",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-12-03",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/16/blanco-palmera-03-12-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "loco-2026-12-03-2000-grossal-los-snails",
@@ -3134,6 +3446,18 @@
     "fechaFin": "2026-12-12"
   },
   {
+    "id": "jerusalem-2026-12-11-andres-koi",
+    "titulo": "Andres Koi",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-12-11",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/17/andres-koi-11-12-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "arts-2026-12-11T19:00:00-lawrence-brownlee",
     "titulo": "Lawrence Brownlee",
     "artista": "Tenor",
@@ -3181,6 +3505,18 @@
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)",
     "fechaFin": "2026-12-13"
+  },
+  {
+    "id": "jerusalem-2026-12-12-la-corredera",
+    "titulo": "La Corredera",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-12-12",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/18/la-corredera-12-12-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-12-12T19:00:00-sheherazade-de-rimski-korsakov",
@@ -3339,6 +3675,18 @@
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "teatretalia.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-12-19"
+  },
+  {
+    "id": "jerusalem-2026-12-18-carmen-113",
+    "titulo": "Carmen 113",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2026-12-18",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/19/carmen-113-18-12-2026/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-12-18T19:30:00-primera-sinfonia-de-mahler",
@@ -3743,6 +4091,18 @@
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "jerusalem-2027-01-15-la-milagrosa",
+    "titulo": "La Milagrosa",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2027-01-15",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/20/la-milagrosa-15-01-2027/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2027-01-15T19:30:00-la-octava-de-bruckner",
     "titulo": "La octava de Bruckner",
     "artista": "Orquestra de València · Alexander Liebreich, director",
@@ -3765,6 +4125,18 @@
     "urlEntradas": "https://lococlub.es/events/extasis/",
     "descripcion": "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "radiocity-2027-01-15T22:00:00-amante-laffon-finde-fantasma",
+    "titulo": "Amante Laffon Finde Fantasma",
+    "artista": "",
+    "sala": "Radio City",
+    "fecha": "2027-01-15T22:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://entradium.com/es/events/amante-laffon-finde-fantasma",
+    "descripcion": "Concierto en Radio City. Consulta los detalles en la web de la sala.",
+    "fuente": "radiocityvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "rambleta-2027-01-16-tanxugueiras-o-cuarto-tour",
@@ -4480,6 +4852,18 @@
     "fuente": "lesarts.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "jerusalem-2027-02-19-drugos",
+    "titulo": "Drugos",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2027-02-19",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/21/drugos-19-02-2027/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2027-02-19T19:30:00-mahler-sexta-sinfonia",
     "titulo": "Mahler Sexta Sinfonía",
     "artista": "Orquestra de València · Alexander Liebreich, director",
@@ -4490,6 +4874,18 @@
     "urlEntradas": "https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-2923.html?webfecha=19/02/2027&webhora=19:30",
     "descripcion": "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2027-02-20-bosco-herrero",
+    "titulo": "Bosco Herrero",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2027-02-20",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/22/bosco-herrero-20-02-2027/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2027-02-20T18:30:00-la-musica-de-las-galaxias",
@@ -4610,6 +5006,18 @@
     "urlEntradas": "https://larambleta.com/daniele-silvestri/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2027-02-26-laura-munoz",
+    "titulo": "Laura Muñoz",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2027-02-26",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/23/laura-munoz-26-02-2027/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2027-02-26T19:30:00-los-planetas-ov",
@@ -4864,6 +5272,18 @@
     "fuente": "lesarts.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "jerusalem-2027-04-02-el-angelito",
+    "titulo": "El Angelito",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2027-04-02",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/26/el-angelito-02-04-2027/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2027-04-02T19:30:00-requiem-de-faure",
     "titulo": "Requiem de Fauré",
     "artista": "Sarah Wegener, soprano · Edicson Ruiz, contrabajo · Ludwig Mittelhammer, barítono",
@@ -4886,6 +5306,18 @@
     "urlEntradas": "https://entradas.teatroenvalencia.com/espectaculo/tombola/TALIRENERAM",
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta. Hora según el horario general de Las noches del Talia.",
     "fuente": "teatretalia.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "jerusalem-2027-04-03-balkan-paradise",
+    "titulo": "Balkan Paradise",
+    "artista": "",
+    "sala": "Sala Jerusalem",
+    "fecha": "2027-04-03",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/24/balkan-paradise-03-04-2027/",
+    "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2027-04-04T18:30:00-odisea-film-symphony-orchestra",
