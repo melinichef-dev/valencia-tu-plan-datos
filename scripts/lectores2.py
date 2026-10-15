@@ -502,22 +502,63 @@ def leer_jerusalem():
 # ---------------------------------------------------------------------- Roig Arena
 def leer_roig_arena():
     sala = "Roig Arena"
-    excluir = re.compile(r"valencia basket|baloncesto|euroliga|eurocup|partido|\bacb\b|supercopa|boxeo|\bufc\b|\bwwe\b", re.I)
+    base = "https://www.roigarena.com"
+    excluir = re.compile(r"valencia basket|baloncesto|euroliga|eurocup|partido|\bacb\b|supercopa|boxeo|\bufc\b|\bwwe\b|\bvs\.?\s", re.I)
     res, vistos = [], set()
-    n = {"tarjetas": 0, "sin_enlace_con_fecha": 0, "deporte": 0}
-    for pagina_url in ("https://www.roigarena.com/", "https://www.roigarena.com/es/eventos/"):
+    n = {"tarjetas": 0, "deporte": 0, "sin_fecha": 0, "pasadas": 0}
+
+    def anadir(titulo, dia, hora, url):
+        clave = (url, dia, hora)
+        if clave in vistos:
+            return
+        vistos.add(clave)
+        res.append(evento("roig", sala, fecha_hora(dia, hora), bonito(titulo), url,
+                          "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+                          "roigarena.com", categoria="musica"))
+
+    for pagina_url in (base + "/es/eventos/", base + "/"):
         try:
             pagina = descargar(pagina_url)
             NOTAS.append(f"Roig Arena: {pagina_url} leída ({len(pagina)} caracteres)")
         except Exception as error:  # noqa: BLE001
             NOTAS.append(f"Roig Arena: {pagina_url} NO se pudo leer ({str(error)[:120]})")
             continue
-        for m, b in trozos(pagina, r'<div class="m-card(?: [^"]*)?"'):
+
+        # Listado completo: una tarjeta por evento, con fecha, hora y enlaces de entradas
+        for m, b in trozos(pagina, r'<article class="m-event-card'):
             n["tarjetas"] += 1
+            t = re.search(r'itemprop="name">(.*?)</h3>', b, re.S)
+            d = re.search(r'datetime="(\d{2})/(\d{2})/(\d{4})(?: (\d{1,2}:\d{2}))?"', b)
+            info = re.search(r'<a href="(/es/event/[^"]+)"', b)
+            if not (t and d and info):
+                n["sin_fecha"] += 1
+                continue
+            titulo = limpio(t.group(1))
+            if excluir.search(titulo):
+                n["deporte"] += 1
+                continue
+            dia = datetime.date(int(d.group(3)), int(d.group(2)), int(d.group(1)))
+            if dia < HOY:
+                n["pasadas"] += 1
+                continue
+            hora = d.group(4).zfill(5) if d.group(4) else None
+            candidatos = []
+            for h in re.findall(r'href="([^"]+)"', b):
+                h = html_lib.unescape(h)
+                if "valenciabasket" in h:
+                    continue
+                if "/tickets/" in h:
+                    candidatos.append(base + h if h.startswith("/") else h)
+                elif h.startswith("http") and es_venta(h):
+                    candidatos.append(h)
+            url = candidatos[0] if candidatos else base + info.group(1)
+            anadir(titulo, dia, hora, url)
+
+        # Carrusel de destacados (la fecha va dentro del enlace: ...-AAAAMMDD/)
+        for m, b in trozos(pagina, r'<div class="m-card(?: [^"]*)?"'):
             t = re.search(r'itemprop="headline">(.*?)</', b, re.S)
             u = re.search(r'href="(https://www\.roigarena\.com/es/event/[a-z0-9-]+-(\d{8})/tickets/?)"', b)
             if not (t and u):
-                n["sin_enlace_con_fecha"] += 1
                 continue
             ds = u.group(2)
             try:
@@ -525,18 +566,10 @@ def leer_roig_arena():
             except ValueError:
                 continue
             titulo = limpio(t.group(1))
-            if excluir.search(titulo):
-                n["deporte"] += 1
+            if excluir.search(titulo) or dia < HOY:
                 continue
-            if dia < HOY or not titulo:
-                continue
-            clave = (u.group(1), dia)
-            if clave in vistos:
-                continue
-            vistos.add(clave)
-            res.append(evento("roig", sala, fecha_hora(dia), bonito(titulo), html_lib.unescape(u.group(1)),
-                              "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
-                              "roigarena.com", categoria="musica"))
+            if not any(r[0] == u.group(1) for r in vistos):
+                anadir(titulo, dia, None, html_lib.unescape(u.group(1)))
     NOTAS.append("Roig Arena: " + ", ".join(f"{k}={v}" for k, v in n.items()))
     return sala, res
 
