@@ -87,6 +87,18 @@
     "fuente": "Evento de prueba creado el 14/10/2026"
   },
   {
+    "id": "roig-2026-10-16-jorge-drexler",
+    "titulo": "Jorge Drexler",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rambleta-2026-10-16-facu-diaz-buenas-noches-in-the-night",
     "titulo": "Facu Díaz: Buenas noches in the night",
     "artista": "",
@@ -110,18 +122,6 @@
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "teatretalia.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-11-15"
-  },
-  {
-    "id": "roig-2026-10-16-jorge-drexler",
-    "titulo": "Jorge Drexler",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-16",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "arts-2026-10-16T19:30:00-sir-mark-elder",
@@ -196,6 +196,18 @@
     "fuente": "peterrockclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-10-17-antonio-orozco",
+    "titulo": "Antonio Orozco",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/antonio-orozco-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rambleta-2026-10-17-pica-pica-operacion-halloween",
     "titulo": "Pica: Pica: Operación Halloween",
     "artista": "",
@@ -218,18 +230,6 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/0/pedro-pastor-17-10-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "roig-2026-10-17-antonio-orozco",
-    "titulo": "Antonio Orozco",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-17",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/antonio-orozco-20261017/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-10-17T19:00:00-obras-sinfonicas-de-strauss-y-wagner",
@@ -1739,6 +1739,18 @@
     "fuente": "teatretalia.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-11-07-house-arena",
+    "titulo": "House Arena",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-11-07",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/house-arena-20261107/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rambleta-2026-11-07-abian-diaz-show-patetico",
     "titulo": "Abián Díaz: Show patético",
     "artista": "",
@@ -1799,18 +1811,6 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/8/andres-obregon-07-11-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "roig-2026-11-07-house-arena",
-    "titulo": "House Arena",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-11-07",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/house-arena-20261107/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-11-07-1930-the-activist",
