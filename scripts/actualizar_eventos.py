@@ -18,7 +18,8 @@ HOY = datetime.date.today()
 MESES = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7,
          "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12,
          "jan": 1, "apr": 4, "aug": 8, "dec": 12}
-MINIMO_EVENTOS = 5  # menos que esto se considera una lectura fallida
+MINIMO_EVENTOS = 5
+FORZAR_SALAS = {"Roig Arena"}  # reemplazo único: los datos anteriores tenían repetidos  # menos que esto se considera una lectura fallida
 
 
 def agotado(d):
@@ -299,7 +300,9 @@ def main():
         if len(nuevos) == 0 or (len(nuevos) < MINIMO_EVENTOS and antiguos_futuros):
             informe.append(f"{sala}: solo {len(nuevos)} eventos leídos, se conservan los {len(antiguos_futuros)} anteriores")
             continue
-        if len(antiguos_futuros) >= 8 and len(nuevos) < 0.8 * len(antiguos_futuros):
+        if sala in FORZAR_SALAS:
+            informe.append(f"{sala}: reemplazo forzado (datos anteriores con repetidos): {len(antiguos_futuros)} -> {len(nuevos)}")
+        elif len(antiguos_futuros) >= 8 and len(nuevos) < 0.8 * len(antiguos_futuros):
             informe.append(f"{sala}: lectura sospechosa ({len(nuevos)} frente a {len(antiguos_futuros)} anteriores), se conservan los anteriores")
             continue
         resultado = [e for e in resultado if e["sala"] != sala] + nuevos

@@ -517,19 +517,26 @@ def leer_roig_arena():
     n = {"tarjetas": 0, "deporte": 0, "sin_fecha": 0, "pasadas": 0, "repetidas": 0}
     lista = []
 
-    por_clave = {}  # (título, fecha, hora) -> posición en res
+    claves = []  # (título normalizado, fecha, hora), en paralelo a res
 
     def anadir(titulo, dia, hora, url):
-        # La web muestra cada evento dos veces con enlaces distintos: se compara por título y fecha.
-        clave = (re.sub(r"\W+", "", titulo.lower()), dia, hora)
-        if clave in por_clave:
-            n["repetidas"] += 1
-            previo = res[por_clave[clave]]
-            if "/tickets/" in url and "/tickets/" not in previo["urlEntradas"]:
-                previo["urlEntradas"] = url  # nos quedamos con el enlace directo de compra
-            return
-        por_clave[clave] = len(res)
-        vistos.add(clave)
+        # La web muestra cada evento dos veces, a veces con otro título y enlace:
+        # mismo día y un título contenido en el otro = el mismo evento.
+        norm = re.sub(r"\W+", "", titulo.lower())
+        for k, (n2, d2, h2) in enumerate(claves):
+            parecido = n2 == norm or (min(len(n2), len(norm)) >= 6 and (n2 in norm or norm in n2))
+            if d2 == dia and parecido and (hora is None or h2 is None or hora == h2):
+                n["repetidas"] += 1
+                previo = res[k]
+                if hora and not h2:
+                    previo["fecha"] = fecha_hora(dia, hora)
+                    claves[k] = (n2, d2, hora)
+                if "/tickets/" in url and "/tickets/" not in previo["urlEntradas"]:
+                    previo["urlEntradas"] = url
+                if len(titulo) > len(previo["titulo"]):
+                    previo["titulo"] = bonito(titulo)
+                return
+        claves.append((norm, dia, hora))
         lista.append(f"{titulo[:28]} {dia:%d/%m}")
         res.append(evento("roig", sala, fecha_hora(dia, hora), bonito(titulo), url,
                           "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
@@ -595,8 +602,7 @@ def leer_roig_arena():
             titulo = limpio(t.group(1))
             if excluir.search(titulo) or dia < HOY:
                 continue
-            if not any(r[0] == u.group(1) for r in vistos):
-                anadir(titulo, dia, None, html_lib.unescape(u.group(1)))
+            anadir(titulo, dia, None, html_lib.unescape(u.group(1)))
     NOTAS.append("Roig Arena: " + ", ".join(f"{k}={v}" for k, v in n.items()))
     NOTAS.append("Roig Arena eventos: " + "; ".join(lista))
     return sala, res
