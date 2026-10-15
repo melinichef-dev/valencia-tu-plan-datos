@@ -1,0 +1,5 @@
+ACTUALIZACIÓN 15/10/2026 10:57
+16 Toneladas: 84 eventos actualizados (antes 69)
+Loco Club: 57 eventos actualizados (antes 56)
+Rock City: 27 eventos actualizados (antes 27)
+Total en eventos.json: 453
