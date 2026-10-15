@@ -1,0 +1,39 @@
+name: Actualizar eventos
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install requests
+
+      - name: Actualizar eventos
+        run: python scripts/actualizar_eventos.py
+
+      - name: Recoger muestras de otras webs
+        run: python scripts/muestras.py
+        continue-on-error: true
+
+      - name: Guardar los cambios en el repositorio
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add eventos.json eventos_anterior.json informe.txt muestras.txt
+          git commit -m "Actualizacion automatica de eventos" || echo "Sin cambios"
+          git push
