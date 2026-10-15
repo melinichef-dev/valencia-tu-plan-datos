@@ -483,11 +483,13 @@ def leer_radio_city():
 
 
 # ------------------------------------------------------------------ Sala Jerusalem
-def leer_jerusalem():
-    sala = "Sala Jerusalem"
-    pagina = descargar("https://www.jerusalemclub.es/web/conciertos/")
+def _leer_grupo_salas(url, sala, prefijo, dominio):
+    """Webs del mismo grupo (Sala Jerusalem, Sala Moon...): una tarjeta por concierto con su fecha."""
+    pagina = descargar(url)
     res, vistos = [], set()
+    n = {"tarjetas": 0}
     for m, b in trozos(pagina, r"<div class='brick"):
+        n["tarjetas"] += 1
         u = re.search(r"<a class='inner[^']*' href='([^']+)'", b)
         t = re.search(r"<h2 class='title'>(.*?)</h2>", b, re.S)
         f = re.search(r"fa-calendar'></i>\s*(\d{2})/(\d{2})/(\d{4})", b)
@@ -497,15 +499,26 @@ def leer_jerusalem():
         if dia < HOY:
             continue
         titulo = re.sub(r"\s*\d{2}/\d{2}/\d{4}\s*$", "", limpio(t.group(1)))
-        url = html_lib.unescape(u.group(1))
-        clave = (url, dia)
+        enlace = html_lib.unescape(u.group(1))
+        clave = (enlace, dia)
         if not titulo or clave in vistos:
             continue
         vistos.add(clave)
-        res.append(evento("jerusalem", sala, fecha_hora(dia), bonito(titulo), url,
-                          "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
-                          "jerusalemclub.es"))
+        res.append(evento(prefijo, sala, fecha_hora(dia), bonito(titulo), enlace,
+                          f"Concierto en {sala}. Consulta la hora, el precio y las entradas en la web de la sala.",
+                          dominio))
+    NOTAS.append(f"{sala}: tarjetas encontradas={n['tarjetas']}, eventos futuros={len(res)}")
     return sala, res
+
+
+def leer_jerusalem():
+    return _leer_grupo_salas("https://www.jerusalemclub.es/web/conciertos/",
+                             "Sala Jerusalem", "jerusalem", "jerusalemclub.es")
+
+
+def leer_moon():
+    return _leer_grupo_salas("https://www.moonvalencia.es/web/conciertos/",
+                             "Sala Moon", "moon", "moonvalencia.es")
 
 
 # ---------------------------------------------------------------------- Roig Arena
@@ -726,4 +739,4 @@ def leer_la_mutant():
 
 LECTORES_NUEVOS = [leer_palau_musica, leer_peter_rock, leer_rambleta, leer_talia,
                    leer_les_arts, leer_palau_alameda, leer_principal, leer_rialto,
-                   leer_radio_city, leer_jerusalem, leer_roig_arena, leer_micalet, leer_la_mutant]
+                   leer_radio_city, leer_jerusalem, leer_roig_arena, leer_micalet, leer_la_mutant, leer_moon]

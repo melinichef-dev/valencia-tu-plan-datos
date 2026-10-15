@@ -276,6 +276,31 @@ def vigilar_festivales(informe):
             informe.append(f"Vigilancia {nombre}: sin novedades (no menciona 2027)")
 
 
+def _norm(t):
+    return re.sub(r"\W+", "", str(t).lower())
+
+
+def misma_funcion(a, b):
+    """¿Dos eventos son el mismo? Misma sala, mismo día y un título contenido en el otro."""
+    if a.get("sala") != b.get("sala") or str(a["fecha"])[:10] != str(b["fecha"])[:10]:
+        return False
+    x, y = _norm(a["titulo"]), _norm(b["titulo"])
+    return min(len(x), len(y)) >= 5 and (x in y or y in x)
+
+
+PODCAST = re.compile(r"p[oó]dcast|festivalpod|odio a la gente|el arte del fracaso", re.I)
+
+
+def clasificar_podcasts(eventos):
+    n = 0
+    for e in eventos:
+        texto = f"{e.get('titulo', '')} {e.get('artista', '')} {e.get('descripcion', '')}"
+        if e.get("categoria") != "podcast" and PODCAST.search(texto):
+            e["categoria"] = "podcast"
+            n += 1
+    return n
+
+
 def futuro(e):
     limite = e.get("fechaFin") or e["fecha"]
     return limite[:10] >= HOY.isoformat()
@@ -319,9 +344,17 @@ def main():
         informe.append(f"eventos_manuales.json no se pudo leer: {error}")
     vigentes = [m for m in manuales if isinstance(m, dict) and "id" in m and "fecha" in m and futuro(m)]
     ids = {m["id"] for m in vigentes}
-    resultado = [e for e in resultado if e["id"] not in ids] + vigentes
+    for m in vigentes:  # si el manual no trae enlace, hereda el del evento leído de la misma función
+        if not m.get("urlEntradas"):
+            for e in resultado:
+                if misma_funcion(e, m) and e.get("urlEntradas"):
+                    m["urlEntradas"] = e["urlEntradas"]
+                    break
+    resultado = [e for e in resultado
+                 if e["id"] not in ids and not any(misma_funcion(e, m) for m in vigentes)] + vigentes
     informe.append(f"Eventos manuales incluidos: {len(vigentes)}")
 
+    informe.append(f"Eventos reclasificados como podcast: {clasificar_podcasts(resultado)}")
     vigilar_festivales(informe)
 
     resultado.sort(key=lambda e: e["fecha"])
