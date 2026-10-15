@@ -19,7 +19,7 @@ MESES = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7,
          "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12,
          "jan": 1, "apr": 4, "aug": 8, "dec": 12}
 MINIMO_EVENTOS = 5
-FORZAR_SALAS = {"Roig Arena"}  # reemplazo único: los datos anteriores tenían repetidos  # menos que esto se considera una lectura fallida
+FORZAR_SALAS = set()  # salas cuyo reemplazo se fuerza una vez (normalmente vacío)  # menos que esto se considera una lectura fallida
 
 
 def agotado(d):
