@@ -75,18 +75,6 @@
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
-    "id": "roig-2026-10-15T21:00:00-leoni-torres",
-    "titulo": "Leoni Torres",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-15T21:00:00",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/en/event/leonni-torres-en-valencia-20261015/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
     "id": "radiocity-2026-10-15T22:00:00-cenk-essen",
     "titulo": "Cenk Essen",
     "artista": "",
@@ -136,6 +124,19 @@
     "fechaFin": "2026-11-15"
   },
   {
+    "id": "mutant-2026-10-16-arreglos-florales-corporacion-morritos",
+    "titulo": "Arreglos florales - Corporación Morritos",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-10-16",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/arreglos-florales-corporaci%C3%B3n-morritos",
+    "descripcion": "Artes Vivas en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-10-17"
+  },
+  {
     "id": "arts-2026-10-16T19:30:00-sir-mark-elder",
     "titulo": "Sir Mark Elder",
     "artista": "Chaikovski | Strauss",
@@ -180,30 +181,6 @@
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "roig-2026-10-16T21:00:00-la-gira-de-mr-bond-melon-diesel",
-    "titulo": "La Gira de Mr. Bond - Melon Diesel",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-16T21:00:00",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/en/event/melon-diesel-gira-mr-bond-20261016/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "roig-2026-10-16T21:00:00-gira-taraca-jorge-drexler",
-    "titulo": "Gira Taracá - Jorge Drexler",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-16T21:00:00",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/en/event/jorge-drexler-en-valencia-20261016/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
@@ -336,30 +313,6 @@
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://www.roigarena.com/es/event/antonio-orozco-20261017/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "roig-2026-10-17T21:00:00-el-dia-h-homenaje-a-heroes-del-silencio",
-    "titulo": "El día H - Homenaje a Héroes del Silencio",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-17T21:00:00",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/en/event/heroes-el-culto-el-dia-h-20261017/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "roig-2026-10-17T21:00:00-la-gira-de-tu-vida-antonio-orozco",
-    "titulo": "La Gira de tu Vida - Antonio Orozco",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-17T21:00:00",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/en/event/antonio-orozco-20261017/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
@@ -591,6 +544,19 @@
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)",
     "fechaFin": "2026-12-16"
+  },
+  {
+    "id": "mutant-2026-10-21-una-cosa-lleugera-taller-placer-escalant",
+    "titulo": "Una cosa lleugera - Taller Placer + Escalante",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-10-21",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/una-cosa-lleugera-taller-placer-escalante",
+    "descripcion": "Teatro en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-10-22"
   },
   {
     "id": "palaumusica-2026-10-21T19:15:00-sociedad-filarmonica-de-valencia",
@@ -846,6 +812,19 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/3/valira-24-10-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "mutant-2026-10-24-pov-nuria-guiu",
+    "titulo": "POV - Núria Guiu",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-10-24",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/p.o.v.-n%C3%BAria-guiu",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-10-25"
   },
   {
     "id": "radiocity-2026-10-24T18:00:00-thin-picks",
@@ -1161,6 +1140,18 @@
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-10-28-hard-to-explain-julia-zac",
+    "titulo": "Hard to explain - Julia Zac",
+    "artista": "Zona Grisa",
+    "sala": "La Mutant",
+    "fecha": "2026-10-28",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/hard-to-explain-julia-zac",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-10-28T19:30:00-concierto-de-apertura-del-curso-academic",
     "titulo": "Concierto de Apertura del Curso Académico 2026/2027",
     "artista": "David Fons, viola solista · Orquestra Filharmònica de la Universitat de València · Hilari Garcia Gázquez, director",
@@ -1438,6 +1429,18 @@
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-10-31-i-was-told-not-to-make-eye-contact-with-",
+    "titulo": "I was told not to make eye contact with Tom Cruise - Elena Carvajal",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-10-31",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/i-was-told-not-to-make-eye-contact-with-tom-cruise-elena-carvajal",
+    "descripcion": "Artes Vivas en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2026-10-31-1200-jalowin-especial-gigatrin",
     "titulo": "Jalowín Especial Gigatrín",
     "artista": "",
@@ -1689,6 +1692,18 @@
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "teatretalia.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-11-08"
+  },
+  {
+    "id": "mutant-2026-11-04-unarmoured-clara-furey",
+    "titulo": "Unarmoured - Clara Furey",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-11-04",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/unarmoured-clara-furey",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "loco-2026-11-04-2030-the-vintage-caravan",
@@ -2102,6 +2117,18 @@
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-11-11-proves-nocturnes-de-vol-santiago-de-la-f",
+    "titulo": "Proves nocturnes de vol - Santiago de la Fuente",
+    "artista": "Zona Grisa",
+    "sala": "La Mutant",
+    "fecha": "2026-11-11",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/proves-nocturnes-de-vol-santiago-de-la-fuente",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-11-11T19:30:00-concierto-para-violin-de-beethoven",
     "titulo": "Concierto para violín de Beethoven",
     "artista": "Orquesta Sinfónica Swr Stuttgart · Isabelle Faust, violín · François-Xavier Roth, director",
@@ -2173,6 +2200,19 @@
     "urlEntradas": "https://lococlub.es/events/camellos-2/",
     "descripcion": "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "mutant-2026-11-13-traktorlesbe-paula-pachon",
+    "titulo": "Traktorlesbe - Paula Pachón",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-11-13",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/traktorlesbe-paula-pach%C3%B3n",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-11-14"
   },
   {
     "id": "alameda-2026-11-13T18:00:00-distrito-10",
@@ -2584,6 +2624,19 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/12/tierra-santa-20-11-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "mutant-2026-11-20-sueno-comunal-lucia-jaen",
+    "titulo": "Sueño comunal - Lucía Jaén",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-11-20",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/sue%C3%B1o-comunal-luc%C3%ADa-ja%C3%A9n",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-11-21"
   },
   {
     "id": "palaumusica-2026-11-20T19:30:00-wagner-parsifal",
@@ -3023,6 +3076,19 @@
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-11-27-la-nit-inventada-compania-vicent-gisbert",
+    "titulo": "La Nit Inventada - Compañía Vicent Gisbert",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-11-27",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/la-nit-inventada-compa%C3%B1%C3%ADa-vicent-gisbert",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-11-28"
+  },
+  {
     "id": "palaumusica-2026-11-27T19:30:00-concierto-para-piano-a-cuatro-manos",
     "titulo": "Concierto para piano a cuatro manos",
     "artista": "Orquestra de València · Silver-Garburg, piano duo · Christian Vásquez, director",
@@ -3253,6 +3319,18 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-12-01-laboratorio-cor-eo-flames-maria-tamarit",
+    "titulo": "Laboratorio Cor(eo)flames - Maria Tamarit",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-01",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/laboratorio-cor-eo-flames-maria-tamarit",
+    "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-12-01T19:30:00-recital-homenaje-a-manuel-de-falla",
     "titulo": "Recital homenaje a Manuel de Falla",
     "artista": "JAVIER PERIANES, piano",
@@ -3263,6 +3341,18 @@
     "urlEntradas": "https://tickets.palauvalencia.com/entradas/70/javier-perianes-piano-0833.html?webfecha=01/12/2026&webhora=19:30",
     "descripcion": "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "mutant-2026-12-02-laboratorio-cor-eo-flames-maria-tamarit",
+    "titulo": "Laboratorio Cor(eo)flames - Maria Tamarit",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-02",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/laboratorio-cor-eo-flames-maria-tamarit",
+    "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-12-02-2100-the-sadies",
@@ -3338,6 +3428,18 @@
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-12-04-drone-howl-underthepulse-macarena-bielsk",
+    "titulo": "Drone-Howl - Underthepulse / Macarena Bielski y Laura Ramírez",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-04",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/drone-howl-underthepulse-/-macarena-bielski-y-laura-ram%C3%ADrez",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-12-04T19:30:00-sinfonias-de-haydn-y-mozart",
     "titulo": "Sinfonías de Haydn y Mozart",
     "artista": "Orquestra de València · Christophe Rousset, director",
@@ -3396,6 +3498,18 @@
     "urlEntradas": "https://larambleta.com/nomad/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "mutant-2026-12-05-oasis-of-serenity-laura-ramirez",
+    "titulo": "Oasis of Serenity - Laura Ramírez",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-05",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/oasis-of-serenity-laura-ram%C3%ADrez",
+    "descripcion": "Danza en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-12-05T11:30:00-sociedad-filarmonica-de-valencia",
@@ -3482,6 +3596,18 @@
     "fuente": "16toneladas.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-12-09-laboratorio-cor-eo-flames-maria-tamarit",
+    "titulo": "Laboratorio Cor(eo)flames - Maria Tamarit",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-09",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/laboratorio-cor-eo-flames-maria-tamarit",
+    "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-12-09T19:30:00-sinfonia-la-grande-de-schubert",
     "titulo": "Sinfonía La Grande de Schubert",
     "artista": "Freiburger Barockorchester · Francesca Pia Vitale,soprano · Pablo Heras Casado, director",
@@ -3516,6 +3642,18 @@
     "urlEntradas": "https://movingtickets.com/Entradas-Mamas-Gun-concierto-16-Toneladas-Valencia/",
     "descripcion": "Concierto en 16 Toneladas. Apertura de puertas: 21:00. Consulta los detalles en la web de la sala.",
     "fuente": "16toneladas.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "mutant-2026-12-10-laboratorio-cor-eo-flames-maria-tamarit",
+    "titulo": "Laboratorio Cor(eo)flames - Maria Tamarit",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-10",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/laboratorio-cor-eo-flames-maria-tamarit",
+    "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "peter-2026-12-10T20:30:00-claim-tour-2026",
@@ -3725,6 +3863,18 @@
     "fechaFin": "2027-01-31"
   },
   {
+    "id": "mutant-2026-12-16-motors-de-creacio",
+    "titulo": "Motors de Creació",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-16",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/motors-de-creaci%C3%B3",
+    "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "loco-2026-12-16-2000-sanisidro",
     "titulo": "Sanisidro",
     "artista": "",
@@ -3798,6 +3948,18 @@
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "mutant-2026-12-18-motors-de-creacio",
+    "titulo": "Motors de Creació",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-18",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/motors-de-creaci%C3%B3",
+    "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-12-18T19:30:00-primera-sinfonia-de-mahler",
     "titulo": "Primera sinfonía de Mahler",
     "artista": "Orquestra de València · Pacho Flores, trompeta · Alexander Liebreich, director",
@@ -3845,6 +4007,18 @@
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)",
     "fechaFin": "2026-12-20"
+  },
+  {
+    "id": "mutant-2026-12-19-motors-de-creacio",
+    "titulo": "Motors de Creació",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2026-12-19",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/motors-de-creaci%C3%B3",
+    "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-12-19-2300-def-con-dos",
@@ -4125,6 +4299,18 @@
     "descripcion": "Artes escénicas en Teatre Rialto. Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)",
     "fechaFin": "2027-01-10"
+  },
+  {
+    "id": "mutant-2027-01-09-ya-estan-aqui-rosanayaris",
+    "titulo": "Ya están aquí - Rosanayaris",
+    "artista": "",
+    "sala": "La Mutant",
+    "fecha": "2027-01-09",
+    "categoria": "teatro",
+    "precio": null,
+    "urlEntradas": "https://www.valencia.es/web/guest/w/ya-est%C3%A1n-aqu%C3%AD-rosanayaris",
+    "descripcion": "Artes Vivas en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+    "fuente": "valencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2027-01-09-2303-el-reno-renardo",
