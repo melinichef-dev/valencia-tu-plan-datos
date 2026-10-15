@@ -527,11 +527,14 @@ def leer_roig_arena():
         # Listado completo: una tarjeta por evento, con fecha, hora y enlaces de entradas
         for m, b in trozos(pagina, r'<article class="m-event-card'):
             n["tarjetas"] += 1
-            t = re.search(r'itemprop="name">(.*?)</h3>', b, re.S)
-            d = re.search(r'datetime="(\d{2})/(\d{2})/(\d{4})(?: (\d{1,2}:\d{2}))?"', b)
-            info = re.search(r'<a href="(/es/event/[^"]+)"', b)
-            if not (t and d and info):
+            t = (re.search(r'itemprop="name">(.*?)</h\d>', b, re.S)
+                 or re.search(r'class="m-event-card__title"[^>]*>(.*?)</h\d>', b, re.S))
+            d = (re.search(r'datetime="(\d{2})/(\d{2})/(\d{4})(?: (\d{1,2}:\d{2}))?"', b)
+                 or re.search(r'(\d{2})/(\d{2})/(\d{4})()', b))
+            if not (t and d):
                 n["sin_fecha"] += 1
+                if "muestra" not in n:
+                    n["muestra"] = re.sub(r"\s+", " ", re.sub(r"<img[^>]*>", "", b))[:700]
                 continue
             titulo = limpio(t.group(1))
             if excluir.search(titulo):
@@ -542,7 +545,7 @@ def leer_roig_arena():
                 n["pasadas"] += 1
                 continue
             hora = d.group(4).zfill(5) if d.group(4) else None
-            candidatos = []
+            candidatos, fichas = [], []
             for h in re.findall(r'href="([^"]+)"', b):
                 h = html_lib.unescape(h)
                 if "valenciabasket" in h:
@@ -551,8 +554,13 @@ def leer_roig_arena():
                     candidatos.append(base + h if h.startswith("/") else h)
                 elif h.startswith("http") and es_venta(h):
                     candidatos.append(h)
-            url = candidatos[0] if candidatos else base + info.group(1)
-            anadir(titulo, dia, hora, url)
+                elif h.startswith("/es/event"):
+                    fichas.append(base + h)
+            enlace = (candidatos or fichas or [None])[0]
+            if not enlace:
+                n["sin_enlace"] = n.get("sin_enlace", 0) + 1
+                continue
+            anadir(titulo, dia, hora, enlace)
 
         # Carrusel de destacados (la fecha va dentro del enlace: ...-AAAAMMDD/)
         for m, b in trozos(pagina, r'<div class="m-card(?: [^"]*)?"'):
