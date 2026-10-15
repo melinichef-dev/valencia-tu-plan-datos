@@ -1,4 +1,4 @@
-ACTUALIZACIÓN 15/10/2026 12:01
+ACTUALIZACIÓN 15/10/2026 12:08
 16 Toneladas: 71 eventos actualizados (antes 71)
 Loco Club: 56 eventos actualizados (antes 56)
 Rock City: 27 eventos actualizados (antes 27)
@@ -12,12 +12,12 @@ Teatre Principal (Martín i Soler): 9 eventos actualizados (antes 9)
 Teatre Rialto: 13 eventos actualizados (antes 13)
 Radio City: 15 eventos actualizados (antes 15)
 Sala Jerusalem: 26 eventos actualizados (antes 26)
-Roig Arena: 6 eventos actualizados (antes 3)
+Roig Arena: 7 eventos actualizados (antes 6)
 Teatre Micalet: solo 0 eventos leídos, se conservan los 0 anteriores
 16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 6
 Palau de la Música: tarjetas=89, pasadas=0, excluidas=5, venta_oculta=18, sin_enlace=0, repetidas=0
-Roig Arena: https://www.roigarena.com/es/eventos/ leída (125053 caracteres)
+Roig Arena: https://www.roigarena.com/es/eventos/ leída (125016 caracteres)
 Roig Arena: https://www.roigarena.com/ leída (250846 caracteres)
-Roig Arena: tarjetas=16, deporte=2, sin_fecha=9, pasadas=0
+Roig Arena: tarjetas=16, deporte=4, sin_fecha=0, pasadas=0
 Teatre Micalet: recibidos=0, otra_ciudad=0, sin_fecha_o_enlace=0, pasados=0, taller=0; claves de la respuesta=['events', 'rest_url', 'total', 'total_pages']; total=0; primer evento=null
-Total en eventos.json: 492
+Total en eventos.json: 493

@@ -63,6 +63,18 @@
     "fuente": "16toneladas.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-10-15T21:00:00-leoni-torres",
+    "titulo": "Leoni Torres",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-15T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/leonni-torres-en-valencia-20261015/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "radiocity-2026-10-15T22:00:00-cenk-essen",
     "titulo": "Cenk Essen",
     "artista": "",
@@ -85,18 +97,6 @@
     "urlEntradas": null,
     "descripcion": "Si ves este plan, la actualización por internet funciona. Desaparece solo después del 16 de octubre.",
     "fuente": "Evento de prueba creado el 14/10/2026"
-  },
-  {
-    "id": "roig-2026-10-16-jorge-drexler",
-    "titulo": "Jorge Drexler",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-16",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "rambleta-2026-10-16-facu-diaz-buenas-noches-in-the-night",
@@ -148,6 +148,30 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-10-16T21:00:00-la-gira-de-mr-bond-melon-diesel",
+    "titulo": "La Gira de Mr. Bond - Melon Diesel",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/melon-diesel-gira-mr-bond-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-16T21:00:00-gira-taraca-jorge-drexler",
+    "titulo": "Gira Taracá - Jorge Drexler",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rock-2026-10-16-2130-muerdo",
     "titulo": "Muerdo",
     "artista": "",
@@ -196,18 +220,6 @@
     "fuente": "peterrockclub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "roig-2026-10-17-antonio-orozco",
-    "titulo": "Antonio Orozco",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-17",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/antonio-orozco-20261017/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
     "id": "rambleta-2026-10-17-pica-pica-operacion-halloween",
     "titulo": "Pica: Pica: Operación Halloween",
     "artista": "",
@@ -254,6 +266,30 @@
     "urlEntradas": "https://lococlub.es/events/migue-de-antilopez/",
     "descripcion": "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-17T21:00:00-el-dia-h-homenaje-a-heroes-del-silencio",
+    "titulo": "El día H - Homenaje a Héroes del Silencio",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/heroes-el-culto-el-dia-h-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-17T21:00:00-la-gira-de-tu-vida-antonio-orozco",
+    "titulo": "La Gira de tu Vida - Antonio Orozco",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/antonio-orozco-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "moon-chiquita-movida-2026-10-17",
@@ -1739,18 +1775,6 @@
     "fuente": "teatretalia.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "roig-2026-11-07-house-arena",
-    "titulo": "House Arena",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-11-07",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/house-arena-20261107/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
     "id": "rambleta-2026-11-07-abian-diaz-show-patetico",
     "titulo": "Abián Díaz: Show patético",
     "artista": "",
@@ -1811,6 +1835,18 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/8/andres-obregon-07-11-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-11-07-house-arena",
+    "titulo": "House Arena",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-11-07",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/house-arena-20261107/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-11-07-1930-the-activist",
