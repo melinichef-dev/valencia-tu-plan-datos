@@ -137,6 +137,18 @@
     "fechaFin": "2026-10-17"
   },
   {
+    "id": "moon-2026-10-16-teenage-funclub",
+    "titulo": "Teenage Funclub",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-10-16",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/3/teenage-funclub-16-10-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "arts-2026-10-16T19:30:00-sir-mark-elder",
     "titulo": "Sir Mark Elder",
     "artista": "Chaikovski | Strauss",
@@ -1296,6 +1308,18 @@
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "moon-2026-10-30-hechizo",
+    "titulo": "Hechizo",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-10-30",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/5/hechizo-30-10-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-10-30T19:30:00-london-philharmonic-orchestra",
     "titulo": "London Philharmonic Orchestra",
     "artista": "Julia Fischer, violín · Daniel Müller Schott, violonchelo · Edward Gardner, director",
@@ -1439,6 +1463,18 @@
     "urlEntradas": "https://www.valencia.es/web/guest/w/i-was-told-not-to-make-eye-contact-with-tom-cruise-elena-carvajal",
     "descripcion": "Artes Vivas en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
     "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2026-10-31-modelo-de-respuesta-polar",
+    "titulo": "Modelo de Respuesta Polar",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-10-31",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/6/modelo-de-respuesta-polar-21-10-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-10-31-1200-jalowin-especial-gigatrin",
@@ -1645,6 +1681,18 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "arts-2026-11-03T19:30:00-la-verbena-de-la-paloma",
+    "titulo": "La Verbena de la Paloma",
+    "artista": "Perspectives",
+    "sala": "Palau de les Arts",
+    "fecha": "2026-11-03T19:30:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://lesarts.koobin.com/?action=PU_evento&Ev_id=7161&idioma=ES",
+    "descripcion": "Per a tots · Aula Magistral. Consulta los detalles y las entradas en la web de Les Arts.",
+    "fuente": "lesarts.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "loco-2026-11-03-2000-bliss-tributo-a-muse",
     "titulo": "Bliss – Tributo a Muse",
     "artista": "",
@@ -1776,6 +1824,18 @@
     "urlEntradas": "https://larambleta.com/luis-alvaro-en-valencia/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2026-11-06-chojin-6-11-2026",
+    "titulo": "Chojin 6/11/2026",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-11-06",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/7/chojin-6-11-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-11-06T19:30:00-magnificat-de-johann-sebastian-bach",
@@ -1936,6 +1996,18 @@
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "moon-2026-11-07-tortoise",
+    "titulo": "Tortoise",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-11-07",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/8/tortoise-07-11-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "16t-2026-11-07-1930-the-activist",
     "titulo": "The Activist",
     "artista": "",
@@ -1989,7 +2061,7 @@
     "artista": "Bianca Kovacs y Carmen Romero",
     "sala": "Teatre Talia",
     "fecha": "2026-11-07T23:30:00",
-    "categoria": "teatro",
+    "categoria": "podcast",
     "precio": null,
     "urlEntradas": "https://entradas.teatroenvalencia.com/espectaculo/odio-a-la-gente/TALODIOALAGENTE",
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta. Hora según el horario general de Las noches del Talia.",
@@ -2164,6 +2236,18 @@
     "descripcion": "Artes escénicas en Teatre Principal (Martín i Soler). Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)",
     "fechaFin": "2026-11-15"
+  },
+  {
+    "id": "moon-2026-11-12-los-enemigos",
+    "titulo": "Los Enemigos",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-11-12",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/9/los-enemigos-12-11-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-11-12T19:30:00-gustav-mahler-jugendorchester",
@@ -2639,6 +2723,18 @@
     "fechaFin": "2026-11-21"
   },
   {
+    "id": "moon-2026-11-20-macaco",
+    "titulo": "Macaco",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-11-20",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/10/macaco-20-11-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-11-20T19:30:00-wagner-parsifal",
     "titulo": "Wagner: Parsifal",
     "artista": "Elina Garanca, mezzosoprano · Michael Weinius, tenor · Orquestra de València",
@@ -3089,6 +3185,18 @@
     "fechaFin": "2026-11-28"
   },
   {
+    "id": "moon-2026-11-27-mujeres",
+    "titulo": "Mujeres",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-11-27",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/11/mujeres-27-11-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-11-27T19:30:00-concierto-para-piano-a-cuatro-manos",
     "titulo": "Concierto para piano a cuatro manos",
     "artista": "Orquestra de València · Silver-Garburg, piano duo · Christian Vásquez, director",
@@ -3221,6 +3329,18 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/14/cien-galgos-joder-juan-28-11-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2026-11-28-festival-partiendo-la-pana",
+    "titulo": "Festival Partiendo la Pana",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-11-28",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/12/festival-partiendo-la-pana-28-11-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "arts-2026-11-28T19:00:00-franco-fagioli",
@@ -3512,6 +3632,18 @@
     "fuente": "valencia.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "moon-2026-12-05-salistre-05-12-026",
+    "titulo": "Salistre 05/12/026",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-12-05",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/13/salistre-05-12-026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2026-12-05T11:30:00-sociedad-filarmonica-de-valencia",
     "titulo": "Sociedad Filarmónica de València",
     "artista": "Aurelien Pascal, violonchelo · Raphäel Feulliatre, guitarra",
@@ -3705,6 +3837,18 @@
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "moon-2026-12-11-evil-mama-second-coming",
+    "titulo": "Evil Mama + Second Coming",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-12-11",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/14/evil-mama-second-coming-11-12-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "arts-2026-12-11T19:00:00-lawrence-brownlee",
     "titulo": "Lawrence Brownlee",
     "artista": "Tenor",
@@ -3764,6 +3908,18 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/18/la-corredera-12-12-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2026-12-12-carino",
+    "titulo": "Cariño",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-12-12",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/15/carino-12-12-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-12-12T19:00:00-sheherazade-de-rimski-korsakov",
@@ -4019,6 +4175,18 @@
     "urlEntradas": "https://www.valencia.es/web/guest/w/motors-de-creaci%C3%B3",
     "descripcion": "Otras artes en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
     "fuente": "valencia.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2026-12-19-esto-no-es-rock-radical-vasco",
+    "titulo": "Esto No Es Rock Radical Vasco",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2026-12-19",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/16/esto-no-es-rock-radical-vasco-19-12-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-12-19-2300-def-con-dos",
@@ -4374,6 +4542,18 @@
     "fechaFin": "2027-01-17"
   },
   {
+    "id": "moon-2027-01-14-anni-b",
+    "titulo": "Anni B",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-01-14",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/17/anni-b-14-01-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rambleta-2027-01-15-queen-forever-tribute",
     "titulo": "Queen Forever Tribute",
     "artista": "",
@@ -4396,6 +4576,18 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/20/la-milagrosa-15-01-2027/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2027-01-15-selmouni",
+    "titulo": "Selmouni",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-01-15",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/18/selmouni-15-01-2026/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2027-01-15T19:30:00-la-octava-de-bruckner",
@@ -4444,6 +4636,18 @@
     "urlEntradas": "https://larambleta.com/tanxugueiras/#entradas",
     "descripcion": "Evento en La Rambleta. Consulta los detalles, la hora y las entradas en la web de la sala.",
     "fuente": "larambleta.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2027-01-16-aiko",
+    "titulo": "Aiko",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-01-16",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/19/aiko-16-01-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2027-01-16-1900-el-nido",
@@ -4638,6 +4842,18 @@
     "descripcion": "Artes escénicas en Teatre Principal (Martín i Soler). Consulta los detalles, el horario y las entradas en la web de venta.",
     "fuente": "ivc.gva.es (lectura automática 15/10/2026)",
     "fechaFin": "2027-01-24"
+  },
+  {
+    "id": "moon-2027-01-23-sienna",
+    "titulo": "Sienna",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-01-23",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/20/sienna-23-01-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2027-01-23-2330-mama-ladilla",
@@ -4913,7 +5129,7 @@
     "fecha": "2027-02-06T20:30:00",
     "categoria": "musica",
     "precio": "desde 22 €",
-    "urlEntradas": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/22/rupatrupa-06-02-2027/",
     "descripcion": "Reggae y rumba con el proyecto de Roberto González (Roberto Ruido), presentando su segundo disco.",
     "fuente": "laganzua.net (revisado 14/10/2026). Enlace de compra pendiente."
   },
@@ -4989,6 +5205,18 @@
     "urlEntradas": "https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-2017.html?webfecha=11/02/2027&webhora=19:30",
     "descripcion": "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2027-02-12-mind2mode",
+    "titulo": "Mind2Mode",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-02-12",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/23/mind2mode-12-02-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "arts-2027-02-12T19:30:00-le-murmure-des-songes",
@@ -5183,6 +5411,18 @@
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "moon-2027-02-20-carlangas",
+    "titulo": "Carlangas",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-02-20",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/24/carlangas-20-02-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2027-02-20T18:30:00-la-musica-de-las-galaxias",
     "titulo": "La Música de las Galaxias",
     "artista": "Celebrando 50 años de Star Wars",
@@ -5339,6 +5579,18 @@
     "fuente": "rockcity.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "moon-2027-02-27-raiz-latina",
+    "titulo": "Raiz Latina",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-02-27",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/26/raiz-latina-27-02-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
+  },
+  {
     "id": "palaumusica-2027-02-27T19:00:00-grigory-sokolov-piano",
     "titulo": "Grigory Sokolov, piano",
     "artista": "",
@@ -5349,6 +5601,18 @@
     "urlEntradas": "https://tickets.palauvalencia.com/entradas/70/grigory-sokolov-3652.html?webfecha=27/02/2027&webhora=19:00",
     "descripcion": "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2027-03-03-mannarino",
+    "titulo": "Mannarino",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-03-03",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/27/mannarino-02-03-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "rambleta-2027-03-04-camerata-lirica-madama-butterfly",
@@ -5745,6 +6009,18 @@
     "urlEntradas": "https://www.enterticket.es/eventos/marwan-en-concierto-valencia-405114",
     "descripcion": "Concierto en Palau Alameda. Consulta los detalles en la web de la sala.",
     "fuente": "palaualameda.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-2027-04-17-miguel-campello",
+    "titulo": "Miguel Campello",
+    "artista": "",
+    "sala": "Sala Moon",
+    "fecha": "2027-04-17",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.moonvalencia.es/web/conciertos/detalle-evento/28/miguel-campello-17-04-2027/",
+    "descripcion": "Concierto en Sala Moon. Consulta la hora, el precio y las entradas en la web de la sala.",
+    "fuente": "moonvalencia.es (lectura automática 15/10/2026)"
   },
   {
     "id": "arts-2027-04-17T19:00:00-il-giardino-armonico",

@@ -1,12 +1,12 @@
-ACTUALIZACIÓN 15/10/2026 15:41
-16 Toneladas: 71 eventos actualizados (antes 71)
+ACTUALIZACIÓN 15/10/2026 15:54
+16 Toneladas: 72 eventos actualizados (antes 71)
 Loco Club: 56 eventos actualizados (antes 56)
 Rock City: 27 eventos actualizados (antes 27)
 Palau de la Música: 84 eventos actualizados (antes 84)
 Peter Rock Club: 19 eventos actualizados (antes 19)
 La Rambleta: 72 eventos actualizados (antes 72)
 Teatre Talia: 38 eventos actualizados (antes 38)
-Palau de les Arts: 46 eventos actualizados (antes 45)
+Palau de les Arts: 46 eventos actualizados (antes 46)
 Palau Alameda: 7 eventos actualizados (antes 7)
 Teatre Principal (Martín i Soler): 9 eventos actualizados (antes 9)
 Teatre Rialto: 13 eventos actualizados (antes 13)
@@ -15,7 +15,8 @@ Sala Jerusalem: 26 eventos actualizados (antes 26)
 Roig Arena: 7 eventos actualizados (antes 7)
 Teatre Micalet: solo 0 eventos leídos, se conservan los 0 anteriores
 La Mutant: 20 eventos actualizados (antes 20)
-Sala Moon: 24 eventos actualizados (antes 3)
+Sala Moon: 24 eventos actualizados (antes 25)
+Fundación Bancaja: 8 eventos actualizados (antes 0)
 Eventos manuales incluidos: 4
 Eventos reclasificados como podcast: 1
 Vigilancia Festival de les Arts: sin novedades (no menciona 2027)
@@ -26,10 +27,11 @@ Vigilancia Festival de Jazz de València (IVC): sin novedades (no menciona 2027)
 16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 6
 Palau de la Música: tarjetas=89, pasadas=0, excluidas=5, venta_oculta=18, sin_enlace=0, repetidas=0
 Sala Jerusalem: tarjetas encontradas=27, eventos futuros=26
-Roig Arena: https://www.roigarena.com/es/eventos/ leída (125016 caracteres)
-Roig Arena: https://www.roigarena.com/ leída (250846 caracteres)
-Roig Arena: tarjetas=16, deporte=4, sin_fecha=0, pasadas=0, repetidas=8
+Roig Arena: https://www.roigarena.com/es/eventos/ leída (125053 caracteres)
+Roig Arena: https://www.roigarena.com/ leída (253685 caracteres)
+Roig Arena: tarjetas=16, deporte=4, sin_fecha=0, pasadas=0, repetidas=7, sin_enlace=1
 Roig Arena eventos: Leoni Torres 15/10; La Gira de Mr. Bond - Melon  16/10; Gira Taracá - Jorge Drexler 16/10; El día H - Homenaje a Héroes 17/10; La Gira de tu Vida - Antonio 17/10; Las Noches del Arena - Himno 17/10; House Arena 07/11
 Teatre Micalet: recibidos=0, otra_ciudad=0, sin_fecha_o_enlace=0, pasados=0, taller=0; claves de la respuesta=['events', 'rest_url', 'total', 'total_pages']; total=0; primer evento=null
 Sala Moon: tarjetas encontradas=30, eventos futuros=24
-Total en eventos.json: 537
+Fundación Bancaja: tarjetas=26, talleres_y_similares=8
+Total en eventos.json: 546
