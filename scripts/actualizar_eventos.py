@@ -269,7 +269,7 @@ def main():
             informe.append(f"{nombre}: ERROR, se conservan los datos anteriores\n{traceback.format_exc(limit=3)}")
             continue
         antiguos_futuros = [e for e in actuales if e["sala"] == sala and futuro(e)]
-        if len(nuevos) < MINIMO_EVENTOS:
+        if len(nuevos) == 0 or (len(nuevos) < MINIMO_EVENTOS and antiguos_futuros):
             informe.append(f"{sala}: solo {len(nuevos)} eventos leídos, se conservan los {len(antiguos_futuros)} anteriores")
             continue
         if len(antiguos_futuros) >= 10 and len(nuevos) < 0.5 * len(antiguos_futuros):

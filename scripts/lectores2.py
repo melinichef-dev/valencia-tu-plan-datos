@@ -4,6 +4,7 @@ recogido en muestras.txt.
 """
 import datetime
 import html as html_lib
+import json
 import re
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
@@ -14,6 +15,10 @@ MESES_ES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio"
             "julio": 7, "agosto": 8, "septiembre": 9, "setiembre": 9, "octubre": 10,
             "noviembre": 11, "diciembre": 12}
 NOMBRES_MES = "|".join(MESES_ES)
+MES_ABREV = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7,
+             "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12}
+DIAS_SEMANA = {"lunes": 0, "martes": 1, "miércoles": 2, "miercoles": 2, "jueves": 3,
+               "viernes": 4, "sábado": 5, "sabado": 5, "domingo": 6}
 
 
 # ------------------------------------------------------------------ utilidades
@@ -401,5 +406,171 @@ def leer_rialto():
                      "Teatre Rialto", "rialto")
 
 
+# --------------------------------------------------------------------- Radio City
+def _titulo_de_slug(url):
+    m = re.search(r"/eventos/(.+?)(?:-\d{1,2}-\d{1,2}-\d{4})?/?$", url)
+    texto = (m.group(1) if m else "").replace("-", " ").strip() or "evento"
+    return bonito(" ".join(w.capitalize() for w in texto.split()))
+
+
+def leer_radio_city():
+    sala = "Radio City"
+    pagina = descargar("https://radiocityvalencia.es/agenda/")
+    res, vistos = [], set()
+    for m, b in trozos(pagina, r'<div class="card-container'):
+        info = re.search(r'href="(https://radiocityvalencia\.es/eventos/[^"]+)"[^>]*>\s*\+\s*Info', b)
+        fecha = re.search(r'class="Fecha_Banner">\s*([^<]+?)\s*<', b)
+        hora = re.search(r'class="Hora_Banner">\s*(\d{1,2}:\d{2})\s*<', b)
+        if not (info and fecha and hora):
+            continue
+        hora = hora.group(1).zfill(5)
+        venta = re.search(r'href="(https://entradium\.com/es/events/[^"]+)"', b)
+        generico = re.search(r'href="(https://entradium\.com/es/(?:search|organizers)[^"]*)"', b)
+        t = re.search(r'class="Titulo_Banner[^"]*">(.*?)</p>', b, re.S)
+        detalles = [limpio(x) for x in re.findall(r'class="Detalle_Banner">(.*?)</p>', b, re.S)]
+        titulo_base = limpio(t.group(1)) if t else ""
+        if titulo_base and detalles:
+            if titulo_base.endswith(":"):
+                titulo = f"{titulo_base} {detalles[0]}"
+            elif titulo_base[:1] in "¡¿" or titulo_base.endswith(("!", "?")):
+                titulo = f"{detalles[0]}: {titulo_base}"
+            else:
+                titulo = f"{titulo_base}: {detalles[0]}"
+            artista = " · ".join(detalles[1:])
+        else:
+            titulo, artista = (titulo_base or _titulo_de_slug(info.group(1))), ""
+        titulo = bonito(titulo)
+        txt = fecha.group(1).strip()
+        dm = re.match(r"(\d{1,2})-([A-Za-z]{3})", txt)
+        if dm and dm.group(2).lower() in MES_ABREV:
+            dia = datetime.date(inferir_anio(MES_ABREV[dm.group(2).lower()], int(dm.group(1))),
+                                MES_ABREV[dm.group(2).lower()], int(dm.group(1)))
+            if dia < HOY:
+                continue
+            if venta:
+                url, nota = venta.group(1), ""
+            elif generico and hora != "23:59":
+                url, nota = info.group(1), ""
+            else:
+                continue  # sesiones sin entrada (pinchadiscos, jams)
+            fechas = [dia]
+        elif txt.lower() in DIAS_SEMANA and venta:
+            # noche semanal con entrada: se generan las próximas 4 semanas
+            objetivo = DIAS_SEMANA[txt.lower()]
+            primero = HOY + datetime.timedelta(days=(objetivo - HOY.weekday()) % 7)
+            fechas = [primero + datetime.timedelta(weeks=i) for i in range(4)]
+            url, nota = venta.group(1), " Noche semanal: confirma el cartel de cada fecha en la web de la sala."
+        else:
+            continue
+        for dia in fechas:
+            clave = (info.group(1), dia)
+            if clave in vistos:
+                continue
+            vistos.add(clave)
+            res.append(evento("radiocity", sala, fecha_hora(dia, hora), titulo, url,
+                              "Concierto en Radio City. Consulta los detalles en la web de la sala." + nota,
+                              "radiocityvalencia.es", artista=artista))
+    return sala, res
+
+
+# ------------------------------------------------------------------ Sala Jerusalem
+def leer_jerusalem():
+    sala = "Sala Jerusalem"
+    pagina = descargar("https://www.jerusalemclub.es/web/conciertos/")
+    res, vistos = [], set()
+    for m, b in trozos(pagina, r"<div class='brick"):
+        u = re.search(r"<a class='inner[^']*' href='([^']+)'", b)
+        t = re.search(r"<h2 class='title'>(.*?)</h2>", b, re.S)
+        f = re.search(r"fa-calendar'></i>\s*(\d{2})/(\d{2})/(\d{4})", b)
+        if not (u and t and f):
+            continue
+        dia = datetime.date(int(f.group(3)), int(f.group(2)), int(f.group(1)))
+        if dia < HOY:
+            continue
+        titulo = re.sub(r"\s*\d{2}/\d{2}/\d{4}\s*$", "", limpio(t.group(1)))
+        url = html_lib.unescape(u.group(1))
+        clave = (url, dia)
+        if not titulo or clave in vistos:
+            continue
+        vistos.add(clave)
+        res.append(evento("jerusalem", sala, fecha_hora(dia), bonito(titulo), url,
+                          "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
+                          "jerusalemclub.es"))
+    return sala, res
+
+
+# ---------------------------------------------------------------------- Roig Arena
+def leer_roig_arena():
+    sala = "Roig Arena"
+    excluir = re.compile(r"valencia basket|baloncesto|euroliga|eurocup|partido|\bacb\b|supercopa|boxeo|\bufc\b|\bwwe\b", re.I)
+    res, vistos = [], set()
+    for pagina_url in ("https://www.roigarena.com/", "https://www.roigarena.com/es/eventos/"):
+        try:
+            pagina = descargar(pagina_url)
+        except Exception:  # noqa: BLE001
+            continue
+        for m, b in trozos(pagina, r'<div class="m-card(?: [^"]*)?"'):
+            t = re.search(r'itemprop="headline">(.*?)</', b, re.S)
+            u = re.search(r'href="(https://www\.roigarena\.com/es/event/[a-z0-9-]+-(\d{8})/tickets/?)"', b)
+            if not (t and u):
+                continue
+            ds = u.group(2)
+            try:
+                dia = datetime.date(int(ds[:4]), int(ds[4:6]), int(ds[6:]))
+            except ValueError:
+                continue
+            titulo = limpio(t.group(1))
+            if dia < HOY or not titulo or excluir.search(titulo):
+                continue
+            clave = (u.group(1), dia)
+            if clave in vistos:
+                continue
+            vistos.add(clave)
+            res.append(evento("roig", sala, fecha_hora(dia), bonito(titulo), html_lib.unescape(u.group(1)),
+                              "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
+                              "roigarena.com", categoria="musica"))
+    return sala, res
+
+
+# ------------------------------------------------------------------- Teatre Micalet
+def leer_micalet():
+    sala = "Teatre Micalet"
+    url = ("https://companyiateatremicalet.com/wp-json/tribe/events/v1/events"
+           f"?per_page=50&start_date={HOY:%Y-%m-%d}")
+    res, vistos = [], set()
+    for _ in range(4):
+        datos = json.loads(descargar(url))
+        for e in datos.get("events", []):
+            v = e.get("venue") or {}
+            if isinstance(v, dict) and v:
+                nombre, ciudad = str(v.get("venue", "")).lower(), str(v.get("city", "")).lower()
+                if "micalet" not in nombre and "val" not in ciudad:
+                    continue  # gira fuera de Valencia
+            inicio = str(e.get("start_date", ""))
+            m = re.match(r"(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?", inicio)
+            if not m or not e.get("url"):
+                continue
+            dia = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
+            if dia < HOY:
+                continue
+            hora = f"{m.group(4)}:{m.group(5)}" if m.group(4) and not e.get("all_day") else None
+            titulo = bonito(limpio(str(e.get("title", ""))))
+            if re.search(r"taller|curso|casting|audici|campus", titulo, re.I):
+                continue
+            clave = (e["url"], dia, hora)
+            if not titulo or clave in vistos:
+                continue
+            vistos.add(clave)
+            coste = limpio(str(e.get("cost", ""))) or None
+            res.append(evento("micalet", sala, fecha_hora(dia, hora), titulo, e["url"],
+                              "Función en el Teatre Micalet. Consulta los detalles y las entradas en la web de la compañía.",
+                              "companyiateatremicalet.com", categoria="teatro", precio=coste))
+        url = datos.get("next_rest_url")
+        if not url:
+            break
+    return sala, res
+
+
 LECTORES_NUEVOS = [leer_palau_musica, leer_peter_rock, leer_rambleta, leer_talia,
-                   leer_les_arts, leer_palau_alameda, leer_principal, leer_rialto]
+                   leer_les_arts, leer_palau_alameda, leer_principal, leer_rialto,
+                   leer_radio_city, leer_jerusalem, leer_roig_arena, leer_micalet]
