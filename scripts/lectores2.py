@@ -641,6 +641,72 @@ def leer_micalet():
     return sala, res
 
 
+# -------------------------------------------------------------------- La Mutant
+def fechas_municipal(texto):
+    """'16 y 17 octubre', '28 octubre', '1, 2, 9 y 10 diciembre', 'Del 5 al 10 noviembre'
+    -> lista de fechas (date), ordenadas. Los años se deducen."""
+    t = limpio(texto).lower()
+    mm = re.search(rf"({NOMBRES_MES})", t)
+    if not mm:
+        return []
+    mes = MESES_ES[mm.group(1)]
+    dias = [int(x) for x in re.findall(r"(?<!\d)\d{1,2}(?!\d)", t[:mm.start()])]
+    ym = re.search(r"(20\d\d)", t[mm.end():])
+    fechas = set()
+    for d in dias:
+        anio = int(ym.group(1)) if ym else inferir_anio(mes, d)
+        try:
+            fechas.add(datetime.date(anio, mes, d))
+        except ValueError:
+            continue
+    return sorted(fechas)
+
+
+def leer_la_mutant():
+    sala = "La Mutant"
+    pagina = descargar("https://www.valencia.es/cas/la-mutant/portada")
+    res, vistos = [], set()
+    for m, b in trozos(pagina, r'<div class="[^"]*recurso-evento-mutant[^"]*"'):
+        u = re.search(r'<a href="([^"]+)"', b)
+        t = re.search(r'field-article-text-titulo"><span>(.*?)</span>', b, re.S)
+        sub = re.search(r'field-article-text-subtitulo"><span>(.*?)</span>', b, re.S)
+        g = re.search(r'field-article-text-genero"><span>(.*?)</span>', b, re.S)
+        f = re.search(r'field-article-fechas"><span>(.*?)</span>', b, re.S)
+        if not (u and t and f):
+            continue
+        fechas = fechas_municipal(f.group(1))
+        if not fechas:
+            continue
+        genero = limpio(g.group(1)) if g else ""
+        gl = genero.lower()
+        categoria = "musica" if "música" in gl or "musica" in gl else ("otros" if "otras artes" in gl else "teatro")
+        titulo = bonito(limpio(t.group(1)))
+        artista = limpio(sub.group(1)) if sub else ""
+        url = html_lib.unescape(u.group(1))
+        if url.startswith("/"):
+            url = "https://www.valencia.es" + url
+        texto_fecha = limpio(f.group(1)).lower()
+        consecutivas = all((b2 - a2).days == 1 for a2, b2 in zip(fechas, fechas[1:]))
+        es_rango = " al " in texto_fecha or "–" in texto_fecha
+        if len(fechas) > 1 and (consecutivas or es_rango):
+            grupos = [(fechas[0], fechas[-1])]
+        else:
+            grupos = [(d, None) for d in fechas]
+        for ini, fin in grupos:
+            v = vigente(ini, fin)
+            if not v:
+                continue
+            clave = (url, v[0])
+            if clave in vistos:
+                continue
+            vistos.add(clave)
+            res.append(evento("mutant", sala, fecha_hora(v[0]), titulo, url,
+                              f"{genero or 'Artes escénicas'} en La Mutant. Consulta la hora, el precio y las entradas en la web del Ayuntamiento de València.",
+                              "valencia.es", categoria=categoria, artista=artista,
+                              fin=fecha_hora(v[1]) if v[1] else None))
+    return sala, res
+
+
 LECTORES_NUEVOS = [leer_palau_musica, leer_peter_rock, leer_rambleta, leer_talia,
                    leer_les_arts, leer_palau_alameda, leer_principal, leer_rialto,
-                   leer_radio_city, leer_jerusalem, leer_roig_arena, leer_micalet]
+                   leer_radio_city, leer_jerusalem, leer_roig_arena, leer_micalet, leer_la_mutant]
