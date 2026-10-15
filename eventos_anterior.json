@@ -75,6 +75,18 @@
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-10-15T21:00:00-leoni-torres",
+    "titulo": "Leoni Torres",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-15T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/leonni-torres-en-valencia-20261015/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "radiocity-2026-10-15T22:00:00-cenk-essen",
     "titulo": "Cenk Essen",
     "artista": "",
@@ -168,6 +180,30 @@
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-16T21:00:00-la-gira-de-mr-bond-melon-diesel",
+    "titulo": "La Gira de Mr. Bond - Melon Diesel",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/melon-diesel-gira-mr-bond-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-16T21:00:00-gira-taraca-jorge-drexler",
+    "titulo": "Gira Taracá - Jorge Drexler",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/jorge-drexler-en-valencia-20261016/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
@@ -304,16 +340,28 @@
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
-    "id": "moon-chiquita-movida-2026-10-17",
-    "titulo": "Chiquita Movida: presentación de «Alta Vaina»",
-    "artista": "Chiquita Movida",
-    "sala": "Sala Moon",
-    "fecha": "2026-10-17T21:30:00",
+    "id": "roig-2026-10-17T21:00:00-el-dia-h-homenaje-a-heroes-del-silencio",
+    "titulo": "El día H - Homenaje a Héroes del Silencio",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17T21:00:00",
     "categoria": "musica",
-    "precio": "desde 20 €",
-    "urlEntradas": "https://feverup.com/m/518169/en",
-    "descripcion": "Presentación en directo del disco debut del grupo liderado por Rayden. Las puertas abren a las 20:30.",
-    "fuente": "laganzua.net, feverup.com (revisado 14/10/2026)"
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/heroes-el-culto-el-dia-h-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-17T21:00:00-la-gira-de-tu-vida-antonio-orozco",
+    "titulo": "La Gira de tu Vida - Antonio Orozco",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/antonio-orozco-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "rock-2026-10-17-2130-reincidentes-annacrusa-directos-vibra-ma",
@@ -326,6 +374,18 @@
     "urlEntradas": "https://www.rockcity.es/eventos/reincidentes-en-valencia-directos-vibra-mahou/",
     "descripcion": "Concierto en Rock City. Consulta los detalles y las entradas en la página del evento.",
     "fuente": "rockcity.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "moon-chiquita-movida-2026-10-17",
+    "titulo": "Chiquita Movida: presentación de «Alta Vaina»",
+    "artista": "Chiquita Movida",
+    "sala": "Sala Moon",
+    "fecha": "2026-10-17T21:30:00",
+    "categoria": "musica",
+    "precio": "desde 20 €",
+    "urlEntradas": "https://feverup.com/m/518169/en",
+    "descripcion": "Presentación en directo del disco debut del grupo liderado por Rayden. Las puertas abren a las 20:30.",
+    "fuente": "laganzua.net, feverup.com (revisado 14/10/2026)"
   },
   {
     "id": "peter-2026-10-17T22:00:00-noche-de-tributos-foo-fighters-red-hot-c",
@@ -2124,7 +2184,8 @@
     "precio": null,
     "urlEntradas": "https://www.fourvenues.com/palau-alameda/HQB1",
     "descripcion": "Concierto en Palau Alameda. Consulta los detalles en la web de la sala.",
-    "fuente": "palaualameda.com (lectura automática 15/10/2026)"
+    "fuente": "palaualameda.com (lectura automática 15/10/2026)",
+    "gratis": true
   },
   {
     "id": "palaumusica-2026-11-13T19:30:00-noches-en-los-jardines-de-espana",
