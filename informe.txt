@@ -1,14 +1,15 @@
-ACTUALIZACIÓN 15/10/2026 11:17
-16 Toneladas: 71 eventos actualizados (antes 74)
-Loco Club: 56 eventos actualizados (antes 57)
+ACTUALIZACIÓN 15/10/2026 11:35
+16 Toneladas: 71 eventos actualizados (antes 71)
+Loco Club: 56 eventos actualizados (antes 56)
 Rock City: 27 eventos actualizados (antes 27)
-Palau de la Música: 66 eventos actualizados (antes 84)
+Palau de la Música: 84 eventos actualizados (antes 66)
 Peter Rock Club: 19 eventos actualizados (antes 19)
-La Rambleta: 71 eventos actualizados (antes 70)
-Teatre Talia: 38 eventos actualizados (antes 37)
-Palau de les Arts: 45 eventos actualizados (antes 35)
-Palau Alameda: 7 eventos actualizados (antes 6)
+La Rambleta: 72 eventos actualizados (antes 71)
+Teatre Talia: 38 eventos actualizados (antes 38)
+Palau de les Arts: 45 eventos actualizados (antes 45)
+Palau Alameda: 7 eventos actualizados (antes 7)
 Teatre Principal (Martín i Soler): 9 eventos actualizados (antes 9)
 Teatre Rialto: 13 eventos actualizados (antes 13)
 16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 6
-Total en eventos.json: 434
+Palau de la Música: tarjetas=89, pasadas=0, excluidas=5, venta_oculta=18, sin_enlace=0, repetidas=0
+Total en eventos.json: 453
