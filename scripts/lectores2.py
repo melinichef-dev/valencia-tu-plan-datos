@@ -504,15 +504,20 @@ def leer_roig_arena():
     sala = "Roig Arena"
     excluir = re.compile(r"valencia basket|baloncesto|euroliga|eurocup|partido|\bacb\b|supercopa|boxeo|\bufc\b|\bwwe\b", re.I)
     res, vistos = [], set()
+    n = {"tarjetas": 0, "sin_enlace_con_fecha": 0, "deporte": 0}
     for pagina_url in ("https://www.roigarena.com/", "https://www.roigarena.com/es/eventos/"):
         try:
             pagina = descargar(pagina_url)
-        except Exception:  # noqa: BLE001
+            NOTAS.append(f"Roig Arena: {pagina_url} leída ({len(pagina)} caracteres)")
+        except Exception as error:  # noqa: BLE001
+            NOTAS.append(f"Roig Arena: {pagina_url} NO se pudo leer ({str(error)[:120]})")
             continue
         for m, b in trozos(pagina, r'<div class="m-card(?: [^"]*)?"'):
+            n["tarjetas"] += 1
             t = re.search(r'itemprop="headline">(.*?)</', b, re.S)
             u = re.search(r'href="(https://www\.roigarena\.com/es/event/[a-z0-9-]+-(\d{8})/tickets/?)"', b)
             if not (t and u):
+                n["sin_enlace_con_fecha"] += 1
                 continue
             ds = u.group(2)
             try:
@@ -520,7 +525,10 @@ def leer_roig_arena():
             except ValueError:
                 continue
             titulo = limpio(t.group(1))
-            if dia < HOY or not titulo or excluir.search(titulo):
+            if excluir.search(titulo):
+                n["deporte"] += 1
+                continue
+            if dia < HOY or not titulo:
                 continue
             clave = (u.group(1), dia)
             if clave in vistos:
@@ -529,6 +537,7 @@ def leer_roig_arena():
             res.append(evento("roig", sala, fecha_hora(dia), bonito(titulo), html_lib.unescape(u.group(1)),
                               "Evento en el Roig Arena. Consulta la hora, el precio y las entradas en la web del recinto.",
                               "roigarena.com", categoria="musica"))
+    NOTAS.append("Roig Arena: " + ", ".join(f"{k}={v}" for k, v in n.items()))
     return sala, res
 
 
@@ -538,24 +547,34 @@ def leer_micalet():
     url = ("https://companyiateatremicalet.com/wp-json/tribe/events/v1/events"
            f"?per_page=50&start_date={HOY:%Y-%m-%d}")
     res, vistos = [], set()
+    n = {"recibidos": 0, "otra_ciudad": 0, "sin_fecha_o_enlace": 0, "pasados": 0, "taller": 0}
+    ejemplo = None
     for _ in range(4):
         datos = json.loads(descargar(url))
+        if ejemplo is None:
+            ejemplo = (f"claves de la respuesta={sorted(datos.keys())}; total={datos.get('total')}; "
+                       f"primer evento={json.dumps((datos.get('events') or [None])[0], ensure_ascii=False)[:350]}")
         for e in datos.get("events", []):
+            n["recibidos"] += 1
             v = e.get("venue") or {}
             if isinstance(v, dict) and v:
                 nombre, ciudad = str(v.get("venue", "")).lower(), str(v.get("city", "")).lower()
                 if "micalet" not in nombre and "val" not in ciudad:
+                    n["otra_ciudad"] += 1
                     continue  # gira fuera de Valencia
             inicio = str(e.get("start_date", ""))
             m = re.match(r"(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?", inicio)
             if not m or not e.get("url"):
+                n["sin_fecha_o_enlace"] += 1
                 continue
             dia = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
             if dia < HOY:
+                n["pasados"] += 1
                 continue
             hora = f"{m.group(4)}:{m.group(5)}" if m.group(4) and not e.get("all_day") else None
             titulo = bonito(limpio(str(e.get("title", ""))))
             if re.search(r"taller|curso|casting|audici|campus", titulo, re.I):
+                n["taller"] += 1
                 continue
             clave = (e["url"], dia, hora)
             if not titulo or clave in vistos:
@@ -568,6 +587,7 @@ def leer_micalet():
         url = datos.get("next_rest_url")
         if not url:
             break
+    NOTAS.append("Teatre Micalet: " + ", ".join(f"{k}={v}" for k, v in n.items()) + f"; {ejemplo}")
     return sala, res
 
 

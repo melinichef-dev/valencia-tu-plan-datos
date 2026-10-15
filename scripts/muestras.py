@@ -8,14 +8,12 @@ from comun import descargar
 
 # (nombre, dirección, textos que buscamos para localizar eventos; None = primera fecha de 2026)
 OBJETIVOS = [
-    ("Radio City", "https://radiocityvalencia.es/agenda/",
-     ["entradium.com/es/events/flamenco-en-vivo", "entradium.com/es/events/holistiks-low-kost"]),
-    ("Black Note Club", "https://www.blacknoteclub.com/", None),
-    ("Sala Jerusalem", "https://www.jerusalemclub.es/web/conciertos/", None),
-    ("Roig Arena", "https://www.roigarena.com/", None),
-    ("Teatre Micalet", "https://www.teatremicalet.org/", None),
-    ("Teatre El Musical", "https://www.teatreelmusical.es/", None),
-    ("Teatre Escalante", "https://www.escalantecentreteatral.dival.es/", None),
+    ("Roig Arena (listado de eventos)", "https://www.roigarena.com/es/eventos/",
+     ["/es/event/", "m-card__title"]),
+    ("Teatre Micalet (agenda técnica)",
+     "https://companyiateatremicalet.com/wp-json/tribe/events/v1/events?per_page=5",
+     ["\"events\""]),
+    ("Teatre Micalet (web)", "https://companyiateatremicalet.com/agenda/", None),
 ]
 
 
