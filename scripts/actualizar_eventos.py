@@ -1,0 +1,241 @@
+"""
+Actualiza eventos.json leyendo directamente las webs de algunas salas.
+
+- Solo sustituye los eventos de las salas que ha podido leer bien.
+- Si una sala falla o devuelve muy pocos eventos, CONSERVA sus datos anteriores.
+- Escribe informe.txt con lo ocurrido.
+"""
+import datetime
+import html as html_lib
+import json
+import re
+import shutil
+import traceback
+
+from comun import bonito, descargar, euros, slug
+
+HOY = datetime.date.today()
+MESES = {"ene": 1, "feb": 2, "mar": 3, "abr": 4, "may": 5, "jun": 6, "jul": 7,
+         "ago": 8, "sep": 9, "oct": 10, "nov": 11, "dic": 12,
+         "jan": 1, "apr": 4, "aug": 8, "dec": 12}
+MINIMO_EVENTOS = 5  # menos que esto se considera una lectura fallida
+
+
+def evento(prefijo, sala, fecha, titulo, url, precio, descripcion, fuente):
+    return {
+        "id": f"{prefijo}-{fecha[:10]}-{fecha[11:13] + fecha[14:16] if len(fecha) > 10 else 'x'}-{slug(titulo)}",
+        "titulo": titulo, "artista": "", "sala": sala, "fecha": fecha,
+        "categoria": "musica", "precio": precio, "urlEntradas": url,
+        "descripcion": descripcion, "fuente": fuente,
+    }
+
+
+def trozos_next(pagina):
+    """Lee los datos que Next.js guarda dentro de la página (cadenas JavaScript)."""
+    salida = []
+    for m in re.finditer(r'self\.__next_f\.push\(\[\d+,("(?:[^"\\]|\\.)*")\]\)', pagina):
+        try:
+            salida.append(json.loads(m.group(1)))
+        except ValueError:
+            continue
+    return "\n".join(salida)
+
+
+# ---------------------------------------------------------------- 16 Toneladas
+def leer_16_toneladas():
+    sala = "16 Toneladas"
+    meses = [(HOY.year * 12 + HOY.month - 1 + i) for i in range(0, 11)]
+    paginas = ["https://www.16toneladas.com/"] + [
+        f"https://www.16toneladas.com/?month={m // 12}-{m % 12 + 1:02d}" for m in meses]
+    vistos, resultado = set(), []
+    decodificador = json.JSONDecoder()
+    for url in paginas:
+        try:
+            pagina = descargar(url)
+        except Exception:  # noqa: BLE001
+            continue
+        texto = trozos_next(pagina) or pagina.replace('\\"', '"')
+        for m in re.finditer(r'"title":"', texto):
+            inicio = texto.rfind("{", 0, m.start())
+            if inicio < 0:
+                continue
+            try:
+                d, _ = decodificador.raw_decode(texto, inicio)
+            except ValueError:
+                continue
+            if not isinstance(d, dict) or "title" not in d or "date" not in d:
+                continue
+            if d.get("isPublished") is False:
+                continue
+            if any("sold" in k.lower() and d[k] for k in d):
+                continue
+            enlace = d.get("ticketUrl")
+            if not enlace:
+                continue
+            hora = d.get("showTime") or d.get("doorsTime")
+            if not hora:
+                continue
+            clave = (d.get("slug"), d["date"])
+            if clave in vistos:
+                continue
+            vistos.add(clave)
+            fecha = f"{d['date']}T{hora[:5]}:00"
+            a, b = euros(d.get("priceAdvance")), euros(d.get("priceDoor"))
+            precio = " / ".join(x for x in (a, b) if x) or None
+            resultado.append(evento(
+                "16t", sala, fecha, bonito(d["title"]), enlace, precio,
+                "Concierto en 16 Toneladas. Consulta los detalles en la web de la sala.",
+                f"16toneladas.com (lectura automática {HOY:%d/%m/%Y})"))
+    return sala, resultado
+
+
+# -------------------------------------------------------------------- Loco Club
+def leer_loco_club():
+    sala = "Loco Club"
+    pagina = descargar("https://lococlub.es/")
+    excluir = re.compile(r"feria del disco|concurso|weekender|christmas|jam session", re.I)
+    resultado, vistos = [], set()
+    for bloque in re.findall(r'<script[^>]+application/ld\+json[^>]*>(.*?)</script>',
+                             pagina, re.S | re.I):
+        try:
+            datos = json.loads(bloque.strip())
+        except ValueError:
+            continue
+        pila = [datos]
+        while pila:
+            d = pila.pop()
+            if isinstance(d, list):
+                pila.extend(d)
+                continue
+            if not isinstance(d, dict):
+                continue
+            tipo = d.get("@type")
+            tipos = tipo if isinstance(tipo, list) else [tipo]
+            if any(isinstance(t, str) and "Event" in t for t in tipos):
+                ev = _evento_loco(d, sala, excluir)
+                if ev and (ev["id"] not in vistos):
+                    vistos.add(ev["id"])
+                    resultado.append(ev)
+            pila.extend(v for v in d.values() if isinstance(v, (list, dict)))
+    return sala, resultado
+
+
+def _evento_loco(d, sala, excluir):
+    estado = str(d.get("eventStatus", ""))
+    if "Cancelled" in estado or "Postponed" in estado:
+        return None
+    ofertas = d.get("offers")
+    if isinstance(ofertas, list):
+        ofertas = ofertas[0] if ofertas else {}
+    ofertas = ofertas or {}
+    if "SoldOut" in str(ofertas.get("availability", "")):
+        return None
+    url = ofertas.get("url")
+    inicio = str(d.get("startDate", ""))
+    if not url or not re.match(r"\d{4}-\d\d-\d\d", inicio):
+        return None
+    titulo = d.get("name") or ""
+    if not titulo:
+        titulo = url.rstrip("/").split("/")[-1].replace("-", " ")
+    titulo = bonito(html_lib.unescape(titulo))
+    if excluir.search(titulo):
+        return None
+    hora = inicio[11:16] if len(inicio) >= 16 else "00:00"
+    fecha = inicio[:10] if hora == "00:00" else f"{inicio[:10]}T{hora}:00"
+    precio = str(ofertas.get("price", "")).strip().replace("€", " €").replace("  ", " ") or None
+    return evento("loco", sala, fecha, titulo, url, precio,
+                  "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
+                  f"lococlub.es (lectura automática {HOY:%d/%m/%Y})")
+
+
+# -------------------------------------------------------------------- Rock City
+PATRON_ROCK = re.compile(
+    r'class="titulo-evento">\s*<a href="([^"]+)"[^>]*>(.*?)</a>\s*</div>\s*'
+    r'<div class="fecha-evento">\s*<p>\s*(\d{1,2})\s+([A-Za-z]{3})[a-z]*\.?\s+(\d{4})\s*<br\s*/?>\s*'
+    r'(\d{1,2}:\d{2})\s*H', re.S | re.I)
+
+
+def limpiar_titulo_rock(t):
+    t = html_lib.unescape(re.sub(r"<[^>]+>", "", t)).strip()
+    m = re.search(r"\s+en\s+Val[eè]ncia\s*(?:@\s*Rock City)?\s*(?:\|\s*(.*))?$", t, re.I)
+    if m:
+        extra = (m.group(1) or "").strip()
+        t = t[:m.start()] + (f" ({bonito(extra)})" if extra else "")
+    return t.strip()
+
+
+def leer_rock_city():
+    sala = "Rock City"
+    resultado, vistos = [], set()
+    for desplazamiento in range(0, 200, 8):
+        pagina = descargar(f"https://www.rockcity.es/?eme_offset={desplazamiento}")
+        encontrados = PATRON_ROCK.findall(pagina)
+        if not encontrados:
+            break
+        nuevos = 0
+        for url, titulo, dia, mes, anio, hora in encontrados:
+            if "agotad" in titulo.lower():
+                continue
+            numero_mes = MESES.get(mes.lower())
+            if not numero_mes:
+                continue
+            fecha = f"{int(anio):04d}-{numero_mes:02d}-{int(dia):02d}T{int(hora[:2]):02d}:{hora[-2:]}:00"
+            clave = (url, fecha)
+            if clave in vistos:
+                continue
+            vistos.add(clave)
+            nuevos += 1
+            resultado.append(evento(
+                "rock", sala, fecha, limpiar_titulo_rock(titulo), url, None,
+                "Concierto en Rock City. Consulta los detalles y las entradas en la página del evento.",
+                f"rockcity.es (lectura automática {HOY:%d/%m/%Y})"))
+        if nuevos == 0:
+            break
+    return sala, resultado
+
+
+LECTORES = [leer_16_toneladas, leer_loco_club, leer_rock_city]
+
+
+# ---------------------------------------------------------------------- Principal
+def futuro(e):
+    limite = e.get("fechaFin") or e["fecha"]
+    return limite[:10] >= HOY.isoformat()
+
+
+def main():
+    with open("eventos.json", encoding="utf-8") as f:
+        actuales = json.load(f)
+    shutil.copy("eventos.json", "eventos_anterior.json")
+
+    informe = [f"ACTUALIZACIÓN {datetime.datetime.now():%d/%m/%Y %H:%M}"]
+    resultado = list(actuales)
+
+    for lector in LECTORES:
+        nombre = lector.__name__
+        try:
+            sala, nuevos = lector()
+        except Exception:  # noqa: BLE001
+            informe.append(f"{nombre}: ERROR, se conservan los datos anteriores\n{traceback.format_exc(limit=3)}")
+            continue
+        antiguos_futuros = [e for e in actuales if e["sala"] == sala and futuro(e)]
+        if len(nuevos) < MINIMO_EVENTOS:
+            informe.append(f"{sala}: solo {len(nuevos)} eventos leídos, se conservan los {len(antiguos_futuros)} anteriores")
+            continue
+        if len(antiguos_futuros) >= 10 and len(nuevos) < 0.5 * len(antiguos_futuros):
+            informe.append(f"{sala}: lectura sospechosa ({len(nuevos)} frente a {len(antiguos_futuros)} anteriores), se conservan los anteriores")
+            continue
+        resultado = [e for e in resultado if e["sala"] != sala] + nuevos
+        informe.append(f"{sala}: {len(nuevos)} eventos actualizados (antes {len(antiguos_futuros)})")
+
+    resultado.sort(key=lambda e: e["fecha"])
+    with open("eventos.json", "w", encoding="utf-8") as f:
+        json.dump(resultado, f, ensure_ascii=False, indent=2)
+    informe.append(f"Total en eventos.json: {len(resultado)}")
+    with open("informe.txt", "w", encoding="utf-8") as f:
+        f.write("\n".join(informe) + "\n")
+    print("\n".join(informe))
+
+
+if __name__ == "__main__":
+    main()
