@@ -514,13 +514,16 @@ def leer_roig_arena():
     base = "https://www.roigarena.com"
     excluir = re.compile(r"valencia basket|baloncesto|euroliga|eurocup|partido|\bacb\b|supercopa|boxeo|\bufc\b|\bwwe\b|\bvs\.?\s", re.I)
     res, vistos = [], set()
-    n = {"tarjetas": 0, "deporte": 0, "sin_fecha": 0, "pasadas": 0}
+    n = {"tarjetas": 0, "deporte": 0, "sin_fecha": 0, "pasadas": 0, "repetidas": 0}
+    lista = []
 
     def anadir(titulo, dia, hora, url):
         clave = (url, dia, hora)
         if clave in vistos:
+            n["repetidas"] += 1
             return
         vistos.add(clave)
+        lista.append(f"{titulo[:28]} {dia:%d/%m}")
         res.append(evento("roig", sala, fecha_hora(dia, hora), bonito(titulo), url,
                           "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
                           "roigarena.com", categoria="musica"))
@@ -588,6 +591,7 @@ def leer_roig_arena():
             if not any(r[0] == u.group(1) for r in vistos):
                 anadir(titulo, dia, None, html_lib.unescape(u.group(1)))
     NOTAS.append("Roig Arena: " + ", ".join(f"{k}={v}" for k, v in n.items()))
+    NOTAS.append("Roig Arena eventos: " + "; ".join(lista))
     return sala, res
 
 

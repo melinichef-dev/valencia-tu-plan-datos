@@ -299,7 +299,7 @@ def main():
         if len(nuevos) == 0 or (len(nuevos) < MINIMO_EVENTOS and antiguos_futuros):
             informe.append(f"{sala}: solo {len(nuevos)} eventos leídos, se conservan los {len(antiguos_futuros)} anteriores")
             continue
-        if len(antiguos_futuros) >= 10 and len(nuevos) < 0.5 * len(antiguos_futuros):
+        if len(antiguos_futuros) >= 8 and len(nuevos) < 0.8 * len(antiguos_futuros):
             informe.append(f"{sala}: lectura sospechosa ({len(nuevos)} frente a {len(antiguos_futuros)} anteriores), se conservan los anteriores")
             continue
         resultado = [e for e in resultado if e["sala"] != sala] + nuevos

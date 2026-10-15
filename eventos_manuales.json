@@ -34,5 +34,18 @@
     "urlEntradas": null,
     "descripcion": "Reggae y rumba con el proyecto de Roberto González (Roberto Ruido), presentando su segundo disco.",
     "fuente": "laganzua.net (revisado 14/10/2026). Enlace de compra pendiente."
+  },
+  {
+    "id": "manual-bigsound-2027-06-18",
+    "titulo": "BIGSOUND Festival 2027",
+    "artista": "Festival de música en Torrent",
+    "sala": "BIGSOUND Festival (Torrent)",
+    "fecha": "2027-06-18",
+    "fechaFin": "2027-06-19",
+    "categoria": "musica",
+    "precio": "Abono general desde 63 €",
+    "urlEntradas": "https://bigsoundfestival.com/valencia-comprar/",
+    "descripcion": "Dos días de festival (18 y 19 de junio de 2027) en Torrent, Valencia. Venta por abonos: abono general, Front Stage y VIPSOUND. La web indica lista de espera para la venta general; consulta el cartel y la disponibilidad en su web.",
+    "fuente": "bigsoundfestival.com (revisado 15/10/2026). Añadido a mano tras detectarlo la vigilancia anual."
   }
 ]
