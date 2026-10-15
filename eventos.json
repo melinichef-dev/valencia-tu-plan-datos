@@ -51,18 +51,6 @@
     "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "16t-2026-10-15-2100-carmen-ferre",
-    "titulo": "Carmen Ferre",
-    "artista": "",
-    "sala": "16 Toneladas",
-    "fecha": "2026-10-15T21:00:00",
-    "categoria": "musica",
-    "precio": "15 €",
-    "urlEntradas": "https://www.enterticket.es/eventos/carmen-ferre-concierto-en-valencia-506187",
-    "descripcion": "Concierto en 16 Toneladas. Apertura de puertas: 20:00. Consulta los detalles en la web de la sala.",
-    "fuente": "16toneladas.com (lectura automática 15/10/2026)"
-  },
-  {
     "id": "roig-2026-10-15T21:00:00-leoni-torres",
     "titulo": "Leoni Torres",
     "artista": "",
@@ -85,6 +73,18 @@
     "urlEntradas": "https://www.roigarena.com/en/event/leonni-torres-en-valencia-20261015/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "16t-2026-10-15-2100-carmen-ferre",
+    "titulo": "Carmen Ferre",
+    "artista": "",
+    "sala": "16 Toneladas",
+    "fecha": "2026-10-15T21:00:00",
+    "categoria": "musica",
+    "precio": "15 €",
+    "urlEntradas": "https://www.enterticket.es/eventos/carmen-ferre-concierto-en-valencia-506187",
+    "descripcion": "Concierto en 16 Toneladas. Apertura de puertas: 20:00. Consulta los detalles en la web de la sala.",
+    "fuente": "16toneladas.com (lectura automática 15/10/2026)"
   },
   {
     "id": "radiocity-2026-10-15T22:00:00-cenk-essen",
@@ -161,18 +161,6 @@
     "fuente": "lesarts.com (lectura automática 15/10/2026)"
   },
   {
-    "id": "loco-2026-10-16-2100-will-hoge-night-2",
-    "titulo": "Will Hoge – Night 2",
-    "artista": "",
-    "sala": "Loco Club",
-    "fecha": "2026-10-16T21:00:00",
-    "categoria": "musica",
-    "precio": "Anticipada: 20 € / Taquilla: 25 €",
-    "urlEntradas": "https://lococlub.es/events/will-hoge-night-2/",
-    "descripcion": "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
-    "fuente": "lococlub.es (lectura automática 15/10/2026)"
-  },
-  {
     "id": "roig-2026-10-16T21:00:00-la-gira-de-mr-bond-melon-diesel",
     "titulo": "La Gira de Mr. Bond - Melon Diesel",
     "artista": "",
@@ -219,6 +207,18 @@
     "urlEntradas": "https://www.roigarena.com/en/event/jorge-drexler-en-valencia-20261016/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "loco-2026-10-16-2100-will-hoge-night-2",
+    "titulo": "Will Hoge – Night 2",
+    "artista": "",
+    "sala": "Loco Club",
+    "fecha": "2026-10-16T21:00:00",
+    "categoria": "musica",
+    "precio": "Anticipada: 20 € / Taquilla: 25 €",
+    "urlEntradas": "https://lococlub.es/events/will-hoge-night-2/",
+    "descripcion": "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
+    "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "rock-2026-10-16-2130-muerdo",
@@ -269,6 +269,18 @@
     "fuente": "peterrockclub.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-10-17-las-noches-del-arena-himnos-del-rock",
+    "titulo": "Las Noches del Arena - Himnos del Rock",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/himnos-del-rock-20261017/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rambleta-2026-10-17-pica-pica-operacion-halloween",
     "titulo": "Pica: Pica: Operación Halloween",
     "artista": "",
@@ -293,18 +305,6 @@
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "roig-2026-10-17-las-noches-del-arena-himnos-del-rock",
-    "titulo": "Las Noches del Arena - Himnos del Rock",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-10-17",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/himnos-del-rock-20261017/",
-    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
-  },
-  {
     "id": "palaumusica-2026-10-17T19:00:00-obras-sinfonicas-de-strauss-y-wagner",
     "titulo": "Obras sinfónicas de Strauss y Wagner",
     "artista": "Alexej Gerassimez, percusión · Orquestra de València · Alexander Liebreich, director",
@@ -315,18 +315,6 @@
     "urlEntradas": "https://tickets.palauvalencia.com/entradas/70/orquesta-de-valencia-0217.html?webfecha=17/10/2026&webhora=19:00",
     "descripcion": "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
     "fuente": "palauvalencia.com (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "loco-2026-10-17-2100-migue-de-antilopez",
-    "titulo": "Migue de Antílopez",
-    "artista": "",
-    "sala": "Loco Club",
-    "fecha": "2026-10-17T21:00:00",
-    "categoria": "musica",
-    "precio": "Anticipada: 22 €",
-    "urlEntradas": "https://lococlub.es/events/migue-de-antilopez/",
-    "descripcion": "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
-    "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "roig-2026-10-17T21:00:00-el-dia-h-homenaje-a-heroes-del-silencio",
@@ -375,6 +363,18 @@
     "urlEntradas": "https://www.roigarena.com/en/event/antonio-orozco-20261017/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "loco-2026-10-17-2100-migue-de-antilopez",
+    "titulo": "Migue de Antílopez",
+    "artista": "",
+    "sala": "Loco Club",
+    "fecha": "2026-10-17T21:00:00",
+    "categoria": "musica",
+    "precio": "Anticipada: 22 €",
+    "urlEntradas": "https://lococlub.es/events/migue-de-antilopez/",
+    "descripcion": "Concierto en Loco Club. Consulta los detalles y las entradas en la página del evento.",
+    "fuente": "lococlub.es (lectura automática 15/10/2026)"
   },
   {
     "id": "rock-2026-10-17-2130-reincidentes-annacrusa-directos-vibra-ma",
@@ -1404,8 +1404,8 @@
     "fuente": "rockcity.es (lectura automática 15/10/2026)"
   },
   {
-    "id": "16t-2026-10-30-2300-miguel-costas-longo",
-    "titulo": "Miguel Costas + Longo",
+    "id": "16t-2026-10-30-2300-miguel-costas-los-calcetines",
+    "titulo": "Miguel Costas + los Calcetines",
     "artista": "",
     "sala": "16 Toneladas",
     "fecha": "2026-10-30T23:00:00",
@@ -1922,6 +1922,18 @@
     "fuente": "teatretalia.es (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-11-07-house-arena",
+    "titulo": "House Arena",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-11-07",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/es/event/house-arena-20261107/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "rambleta-2026-11-07-abian-diaz-show-patetico",
     "titulo": "Abián Díaz: Show patético",
     "artista": "",
@@ -1982,18 +1994,6 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/8/andres-obregon-07-11-2026/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
-  },
-  {
-    "id": "roig-2026-11-07-house-arena",
-    "titulo": "House Arena",
-    "artista": "",
-    "sala": "Roig Arena",
-    "fecha": "2026-11-07",
-    "categoria": "musica",
-    "precio": null,
-    "urlEntradas": "https://www.roigarena.com/es/event/house-arena-20261107/tickets/",
-    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
-    "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
     "id": "16t-2026-11-07-1930-the-activist",

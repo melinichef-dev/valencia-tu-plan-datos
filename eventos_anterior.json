@@ -75,6 +75,18 @@
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
   {
+    "id": "roig-2026-10-15T21:00:00-leoni-torres",
+    "titulo": "Leoni Torres",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-15T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/leonni-torres-en-valencia-20261015/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
     "id": "radiocity-2026-10-15T22:00:00-cenk-essen",
     "titulo": "Cenk Essen",
     "artista": "",
@@ -181,6 +193,30 @@
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://www.roigarena.com/es/event/jorge-drexler-en-valencia-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-16T21:00:00-la-gira-de-mr-bond-melon-diesel",
+    "titulo": "La Gira de Mr. Bond - Melon Diesel",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/melon-diesel-gira-mr-bond-20261016/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-16T21:00:00-gira-taraca-jorge-drexler",
+    "titulo": "Gira Taracá - Jorge Drexler",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-16T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/jorge-drexler-en-valencia-20261016/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
@@ -313,6 +349,30 @@
     "categoria": "musica",
     "precio": null,
     "urlEntradas": "https://www.roigarena.com/es/event/antonio-orozco-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-17T21:00:00-el-dia-h-homenaje-a-heroes-del-silencio",
+    "titulo": "El día H - Homenaje a Héroes del Silencio",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/heroes-el-culto-el-dia-h-20261017/tickets/",
+    "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
+    "fuente": "roigarena.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "roig-2026-10-17T21:00:00-la-gira-de-tu-vida-antonio-orozco",
+    "titulo": "La Gira de tu Vida - Antonio Orozco",
+    "artista": "",
+    "sala": "Roig Arena",
+    "fecha": "2026-10-17T21:00:00",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.roigarena.com/en/event/antonio-orozco-20261017/tickets/",
     "descripcion": "Evento en el Roig Arena. Consulta los detalles y las entradas en la web del recinto.",
     "fuente": "roigarena.com (lectura automática 15/10/2026)"
   },
@@ -6141,6 +6201,19 @@
     "urlEntradas": "https://lesarts.koobin.com/es/ocv---vasily-petrenko-20270610-1930",
     "descripcion": "Simfònic · Auditori. Consulta los detalles y las entradas en la web de Les Arts.",
     "fuente": "lesarts.com (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "manual-bigsound-2027-06-18",
+    "titulo": "BIGSOUND Festival 2027",
+    "artista": "Festival de música en Torrent",
+    "sala": "BIGSOUND Festival (Torrent)",
+    "fecha": "2027-06-18",
+    "fechaFin": "2027-06-19",
+    "categoria": "musica",
+    "precio": "Abono general desde 63 €",
+    "urlEntradas": "https://bigsoundfestival.com/valencia-comprar/",
+    "descripcion": "Dos días de festival (18 y 19 de junio de 2027) en Torrent, Valencia. Venta por abonos: abono general, Front Stage y VIPSOUND. La web indica lista de espera para la venta general; consulta el cartel y la disponibilidad en su web.",
+    "fuente": "bigsoundfestival.com (revisado 15/10/2026). Añadido a mano tras detectarlo la vigilancia anual."
   },
   {
     "id": "palaumusica-2027-06-18T19:30:00-de-beethoven-a-coll",
