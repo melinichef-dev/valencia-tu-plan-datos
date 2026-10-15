@@ -517,11 +517,18 @@ def leer_roig_arena():
     n = {"tarjetas": 0, "deporte": 0, "sin_fecha": 0, "pasadas": 0, "repetidas": 0}
     lista = []
 
+    por_clave = {}  # (título, fecha, hora) -> posición en res
+
     def anadir(titulo, dia, hora, url):
-        clave = (url, dia, hora)
-        if clave in vistos:
+        # La web muestra cada evento dos veces con enlaces distintos: se compara por título y fecha.
+        clave = (re.sub(r"\W+", "", titulo.lower()), dia, hora)
+        if clave in por_clave:
             n["repetidas"] += 1
+            previo = res[por_clave[clave]]
+            if "/tickets/" in url and "/tickets/" not in previo["urlEntradas"]:
+                previo["urlEntradas"] = url  # nos quedamos con el enlace directo de compra
             return
+        por_clave[clave] = len(res)
         vistos.add(clave)
         lista.append(f"{titulo[:28]} {dia:%d/%m}")
         res.append(evento("roig", sala, fecha_hora(dia, hora), bonito(titulo), url,
