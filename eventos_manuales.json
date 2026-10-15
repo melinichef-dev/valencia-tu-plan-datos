@@ -1,0 +1,38 @@
+[
+  {
+    "id": "moon-chiquita-movida-2026-10-17",
+    "titulo": "Chiquita Movida: presentación de «Alta Vaina»",
+    "artista": "Chiquita Movida",
+    "sala": "Sala Moon",
+    "fecha": "2026-10-17T21:30:00",
+    "categoria": "musica",
+    "precio": "desde 20 €",
+    "urlEntradas": "https://feverup.com/m/518169/en",
+    "descripcion": "Presentación en directo del disco debut del grupo liderado por Rayden. Las puertas abren a las 20:30.",
+    "fuente": "laganzua.net, feverup.com (revisado 14/10/2026)"
+  },
+  {
+    "id": "moon-razorlight-2026-11-17",
+    "titulo": "Razorlight: gira 20 aniversario",
+    "artista": "Razorlight",
+    "sala": "Sala Moon",
+    "fecha": "2026-11-17T21:00:00",
+    "categoria": "musica",
+    "precio": "desde 31,3 €",
+    "urlEntradas": null,
+    "descripcion": "La banda británica de indie rock celebra los 20 años de su segundo disco.",
+    "fuente": "laganzua.net (revisado 14/10/2026). Enlace de compra pendiente."
+  },
+  {
+    "id": "moon-rupatrupa-2027-02-06",
+    "titulo": "Rupatrupa: gira «Puro Sudor»",
+    "artista": "Rupatrupa",
+    "sala": "Sala Moon",
+    "fecha": "2027-02-06T20:30:00",
+    "categoria": "musica",
+    "precio": "desde 22 €",
+    "urlEntradas": null,
+    "descripcion": "Reggae y rumba con el proyecto de Roberto González (Roberto Ruido), presentando su segundo disco.",
+    "fuente": "laganzua.net (revisado 14/10/2026). Enlace de compra pendiente."
+  }
+]

@@ -8,12 +8,10 @@ from comun import descargar
 
 # (nombre, dirección, textos que buscamos para localizar eventos; None = primera fecha de 2026)
 OBJETIVOS = [
-    ("Roig Arena (listado de eventos)", "https://www.roigarena.com/es/eventos/",
-     ["/es/event/", "m-card__title"]),
-    ("Teatre Micalet (agenda técnica)",
-     "https://companyiateatremicalet.com/wp-json/tribe/events/v1/events?per_page=5",
-     ["\"events\""]),
-    ("Teatre Micalet (web)", "https://companyiateatremicalet.com/agenda/", None),
+    ("La Mutant (portada)", "https://www.valencia.es/cas/la-mutant/portada",
+     ["Arreglos florales", "Hard to explain"]),
+    ("UVcultura (portada)", "https://www.uv.es/cultura",
+     ["Lluís Vich Vocalis", "Un estiu, de Clàudia Serra"]),
 ]
 
 

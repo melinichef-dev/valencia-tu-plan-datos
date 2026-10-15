@@ -26,17 +26,24 @@ def limpio(t):
     return re.sub(r"\s+", " ", html_lib.unescape(re.sub(r"<[^>]+>", "", t))).strip()
 
 
+def texto_plano(t):
+    """Como limpio(), pero separa con un espacio lo que estaba en etiquetas distintas."""
+    return re.sub(r"\s+", " ", html_lib.unescape(re.sub(r"<[^>]+>", " ", t))).strip()
+
+
 def fuente(dominio):
     return f"{dominio} (lectura automática {HOY:%d/%m/%Y})"
 
 
 def evento(prefijo, sala, fecha, titulo, url, descripcion, dominio,
-           categoria="musica", artista="", precio=None, fin=None):
+           categoria="musica", artista="", precio=None, fin=None, gratis=False):
     e = {"id": f"{prefijo}-{fecha}-{slug(titulo)}", "titulo": titulo, "artista": artista,
          "sala": sala, "fecha": fecha, "categoria": categoria, "precio": precio,
          "urlEntradas": url, "descripcion": descripcion, "fuente": fuente(dominio)}
     if fin:
         e["fechaFin"] = fin
+    if gratis:
+        e["gratis"] = True
     return e
 
 
@@ -174,8 +181,9 @@ def leer_peter_rock():
         if p and euros(p.group(2)):
             precio = ("desde " if p.group(1) else "") + euros(p.group(2))
         externos = [x for x in re.findall(r'href="(https?://[^"]+)"', bloque) if es_venta(x)]
-        if not externos and not precio:
-            continue  # sin enlace de compra ni precio (p. ej. sesiones gratuitas)
+        gratis = (not precio) and bool(re.search(r"\bgratis\b|entrada libre|gratuit", texto_plano(bloque), re.I))
+        if not externos and not precio and not gratis:
+            continue  # sin enlace de compra, sin precio y sin indicar que es gratis
         url = html_lib.unescape(externos[0]) if externos else "https://www.peterrockclub.es" + href.group(1)
         titulo = bonito(limpio(t.group(1)))
         clave = (href.group(1), dia, hora)
@@ -184,7 +192,7 @@ def leer_peter_rock():
         vistos.add(clave)
         res.append(evento("peter", sala, fecha_hora(dia, hora), titulo, url,
                           "Concierto en Peter Rock Club. Consulta los detalles en la web de la sala.",
-                          "peterrockclub.es", precio=precio))
+                          "peterrockclub.es", precio=precio, gratis=gratis))
     return sala, res
 
 
@@ -353,6 +361,7 @@ def leer_palau_alameda():
         ptxt = limpio(p.group(1)) if p else ""
         num = re.search(r"(\d+(?:[.,]\d+)?)", ptxt)
         precio = (("desde " if "desde" in ptxt.lower() else "") + euros(num.group(1))) if num and euros(num.group(1)) else None
+        gratis = (not precio) and bool(re.search(r"gratis|libre|gratuit", ptxt, re.I))
         url = limpiar_url(html_lib.unescape(u.group(1)))
         clave = (url, dia)
         if clave in vistos:
@@ -360,7 +369,7 @@ def leer_palau_alameda():
         vistos.add(clave)
         res.append(evento("alameda", sala, fecha_hora(dia, hora), bonito(titulo), url,
                           "Concierto en Palau Alameda. Consulta los detalles en la web de la sala.",
-                          "palaualameda.com", precio=precio))
+                          "palaualameda.com", precio=precio, gratis=gratis))
     return sala, res
 
 

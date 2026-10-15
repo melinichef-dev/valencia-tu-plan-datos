@@ -248,6 +248,33 @@ LECTORES = [leer_16_toneladas, leer_loco_club, leer_rock_city] + LECTORES_NUEVOS
 
 
 # ---------------------------------------------------------------------- Principal
+VIGILADOS = {
+    "Festival de les Arts": "https://festivaldelesarts.com/",
+    "BIGSOUND Valencia": "https://www.bigsoundfestival.com/",
+    "Love to Rock": "https://lovetorockfestival.es/",
+    "Deleste Festival": "https://delestefestival.com/",
+    "Festival de Jazz de València (IVC)": "https://ivc.gva.es/es/musica",
+}
+
+
+def vigilar_festivales(informe):
+    """Avisa en el informe si la web de un festival anual ya menciona la edición de 2027."""
+    for nombre, url in VIGILADOS.items():
+        try:
+            pagina = descargar(url)
+        except Exception as error:  # noqa: BLE001
+            informe.append(f"Vigilancia {nombre}: no se pudo leer ({str(error)[:80]})")
+            continue
+        texto = re.sub(r"<script.*?</script>|<style.*?</style>|<[^>]+>", " ", pagina, flags=re.S | re.I)
+        texto = re.sub(r"\s+", " ", html_lib.unescape(texto))
+        m = re.search(r"(?<!\d)2027(?!\d)", texto)
+        if m:
+            fragmento = texto[max(0, m.start() - 80): m.end() + 80]
+            informe.append(f"Vigilancia {nombre}: POSIBLE NOVEDAD, la web menciona 2027: «{fragmento}»")
+        else:
+            informe.append(f"Vigilancia {nombre}: sin novedades (no menciona 2027)")
+
+
 def futuro(e):
     limite = e.get("fechaFin") or e["fecha"]
     return limite[:10] >= HOY.isoformat()
@@ -277,6 +304,22 @@ def main():
             continue
         resultado = [e for e in resultado if e["sala"] != sala] + nuevos
         informe.append(f"{sala}: {len(nuevos)} eventos actualizados (antes {len(antiguos_futuros)})")
+
+    # Eventos escritos a mano (festivales de una edición, salas bloqueadas...)
+    try:
+        with open("eventos_manuales.json", encoding="utf-8") as f:
+            manuales = json.load(f)
+    except FileNotFoundError:
+        manuales = []
+    except ValueError as error:
+        manuales = []
+        informe.append(f"eventos_manuales.json no se pudo leer: {error}")
+    vigentes = [m for m in manuales if isinstance(m, dict) and "id" in m and "fecha" in m and futuro(m)]
+    ids = {m["id"] for m in vigentes}
+    resultado = [e for e in resultado if e["id"] not in ids] + vigentes
+    informe.append(f"Eventos manuales incluidos: {len(vigentes)}")
+
+    vigilar_festivales(informe)
 
     resultado.sort(key=lambda e: e["fecha"])
     with open("eventos.json", "w", encoding="utf-8") as f:
