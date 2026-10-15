@@ -11,6 +11,7 @@ UA = "ValenciaTuPlanBot/1.0 (agenda cultural gratuita sin ánimo de lucro)"
 CABECERAS = {"User-Agent": UA, "Accept-Language": "es-ES,es;q=0.9"}
 PAUSA = 1.0  # segundos entre visitas a la misma web
 
+NOTAS = []  # observaciones que se copian al informe
 _robots = {}
 
 

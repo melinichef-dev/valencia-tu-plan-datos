@@ -7,7 +7,7 @@ import html as html_lib
 import re
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
-from comun import bonito, descargar, es_venta, euros, slug
+from comun import NOTAS, bonito, descargar, es_venta, euros, slug
 
 HOY = datetime.date.today()
 MESES_ES = {"enero": 1, "febrero": 2, "marzo": 3, "abril": 4, "mayo": 5, "junio": 6,
@@ -98,10 +98,13 @@ def leer_palau_musica():
     pagina = descargar("https://palauvalencia.com/")
     excluir = re.compile(r"cine culpable|visuals|mostra365|charla|conferencia|cancelad", re.I)
     res, vistos = [], set()
+    n = {"tarjetas": 0, "pasadas": 0, "excluidas": 0, "venta_oculta": 0, "sin_enlace": 0, "repetidas": 0}
     for m, b in trozos(pagina, r'<div id="event-(\d+)"[^>]*data-date="\d{2}/\d{2}/\d{4}"'):
+        n["tarjetas"] += 1
         d = re.search(r'data-date="(\d{2})/(\d{2})/(\d{4})"', b)
         dia = datetime.date(int(d.group(3)), int(d.group(2)), int(d.group(1)))
         if dia < HOY:
+            n["pasadas"] += 1
             continue
         hora = re.search(r'<span class="notranslate">(\d{1,2}:\d{2})</span>', b)
         hora = hora.group(1).zfill(5) if hora else None
@@ -114,21 +117,31 @@ def leer_palau_musica():
         titulo = limpio(fuerte.group(1)) if fuerte else (lineas[0] if lineas else "")
         resto = [x for x in lineas if x != titulo and titulo not in x][:3]
         if not titulo or excluir.search(titulo + " " + " ".join(resto)):
+            n["excluidas"] += 1
             continue
         vis = re.search(r'<div class="(visible|invisible)">\s*<p class="small text-muted', b)
-        if vis and vis.group(1) == "invisible":
-            continue  # la venta está oculta en la web
+        oculta = bool(vis and vis.group(1) == "invisible")
         enlace = re.search(r'href="(//tickets\.palauvalencia\.com/entradas/[^"]+)"', b)
-        if not enlace:
+        ficha = re.search(r'href="(https://palauvalencia\.com/event\?id=\d+[^"]*)"', b)
+        if oculta and ficha:
+            url = html_lib.unescape(ficha.group(1))  # la venta está oculta: se enlaza la ficha
+            nota = " La venta online aparece oculta en la web: consulta la ficha del concierto."
+            n["venta_oculta"] += 1
+        elif enlace and not oculta:
+            url = "https:" + html_lib.unescape(enlace.group(1))
+            nota = " Consulta los detalles y las entradas en la web del Palau."
+        else:
+            n["sin_enlace"] += 1
             continue
-        url = "https:" + html_lib.unescape(enlace.group(1))
         clave = (m.group(1), dia, hora)
         if clave in vistos:
+            n["repetidas"] += 1
             continue
         vistos.add(clave)
         res.append(evento("palaumusica", sala, fecha_hora(dia, hora), bonito(titulo), url,
-                          "Concierto en el Palau de la Música de València. Consulta los detalles y las entradas en la web del Palau.",
+                          "Concierto en el Palau de la Música de València." + nota,
                           "palauvalencia.com", artista=" · ".join(bonito(x) for x in resto)))
+    NOTAS.append("Palau de la Música: " + ", ".join(f"{k}={v}" for k, v in n.items()))
     return sala, res
 
 
