@@ -39,6 +39,97 @@
     "fechaFin": "2026-10-18"
   },
   {
+    "id": "bancaja-2026-10-15-exposicion-geografias-del-color",
+    "titulo": "Exposición Geografías del color",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-15",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/actividad/exposicion-geografias-del-color/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)",
+    "fechaFin": "2027-01-31"
+  },
+  {
+    "id": "bancaja-2026-10-15-els-concerts-a-la-fundacio-2026-2027",
+    "titulo": "Els Concerts a la Fundació 2026-2027",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-15",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/actividad/els-concerts-a-la-fundacio-2026-2027/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)",
+    "fechaFin": "2027-03-05"
+  },
+  {
+    "id": "bancaja-2026-10-15-e-ac-espacio-arte-contemporaneo",
+    "titulo": "E.ac. Espacio Arte Contemporáneo",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-15",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/exposicion/eac-espacio-arte-contemporaneo/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-12-31"
+  },
+  {
+    "id": "bancaja-2026-10-15-arte-en-la-plaza-tetuan-andreu-alfaro",
+    "titulo": "Arte en la Plaza Tetuán: Andreu Alfaro",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-15",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/exposicion/arte-en-la-plaza-tetuan-andreu-alfaro/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)",
+    "fechaFin": "2026-12-31"
+  },
+  {
+    "id": "bancaja-2026-10-15-andres-garcia-ibanez-una-mirada-al-reali",
+    "titulo": "Andrés García Ibáñez. Una mirada al realismo español",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-15",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/exposicion/andres-garcia-ibanez-una-mirada-al-realismo-espanol/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)",
+    "fechaFin": "2027-01-10"
+  },
+  {
+    "id": "bancaja-2026-10-15-girbent-pintar-en-el-siglo-xxi",
+    "titulo": "Girbent. Pintar en el siglo XXI",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-15",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/exposicion/girbent-pintar-en-el-siglo-xxi/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)",
+    "fechaFin": "2027-01-24"
+  },
+  {
+    "id": "bancaja-2026-10-15-ximo-michavila-centenario-1926-2026",
+    "titulo": "Ximo Michavila. Centenario (1926-2026)",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-15",
+    "categoria": "otros",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/exposicion/ximo-michavila-centenario-1926-2026/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)",
+    "fechaFin": "2027-02-14"
+  },
+  {
     "id": "loco-2026-10-15-2030-will-hoge-night-1",
     "titulo": "Will Hoge – Night 1",
     "artista": "",
@@ -703,6 +794,18 @@
     "urlEntradas": "https://www.jerusalemclub.es/web/conciertos/detalle-evento/2/mimosas-negocios-bikini-laiaya/",
     "descripcion": "Concierto en Sala Jerusalem. Consulta la hora, el precio y las entradas en la web de la sala.",
     "fuente": "jerusalemclub.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "bancaja-2026-10-23-dorantes-els-concerts-a-la-fundacio",
+    "titulo": "Dorantes. Els Concerts a la Fundació",
+    "artista": "",
+    "sala": "Fundación Bancaja",
+    "fecha": "2026-10-23",
+    "categoria": "musica",
+    "precio": null,
+    "urlEntradas": "https://www.fundacionbancaja.es/actividad/dorantes-els-concerts-a-la-fundacio/",
+    "descripcion": "Actividad en la Fundación Bancaja. Consulta la hora, el precio y la reserva en su web.",
+    "fuente": "fundacionbancaja.es (lectura automática 15/10/2026)"
   },
   {
     "id": "palaumusica-2026-10-23T19:30:00-orquesta-nacional-de-espana",
@@ -4345,6 +4448,18 @@
     "urlEntradas": "https://entradas.teatroenvalencia.com/espectaculo/especial-navidad-vlc-comedy/TALESNAV17",
     "descripcion": "Espectáculo en el Teatre Talia. Consulta los detalles, el horario y las entradas en la web de venta. Hora según el horario general de Las noches del Talia.",
     "fuente": "teatretalia.es (lectura automática 15/10/2026)"
+  },
+  {
+    "id": "16t-2026-12-27-1930-surfin-bichos-ander-mornings",
+    "titulo": "Surfin' Bichos + Ander Mornings",
+    "artista": "",
+    "sala": "16 Toneladas",
+    "fecha": "2026-12-27T19:30:00",
+    "categoria": "musica",
+    "precio": "27 € / 30 €",
+    "urlEntradas": "https://movingtickets.com/Entradas-Surfin-Bichos-2026-concierto-en-16-Toneladas-Valencia/",
+    "descripcion": "Concierto en 16 Toneladas. Apertura de puertas: 19:00. Consulta los detalles en la web de la sala.",
+    "fuente": "16toneladas.com (lectura automática 15/10/2026)"
   },
   {
     "id": "talia-2026-12-29-carmen-ballet-flamenco-barcelona",
