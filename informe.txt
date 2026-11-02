@@ -1,22 +1,22 @@
-ACTUALIZACIÓN 26/10/2026 05:25
-16 Toneladas: 71 eventos actualizados (antes 64)
-Loco Club: 52 eventos actualizados (antes 49)
-Rock City: 24 eventos actualizados (antes 23)
-Palau de la Música: 118 eventos actualizados (antes 79)
-Peter Rock Club: 15 eventos actualizados (antes 14)
-La Rambleta: 65 eventos actualizados (antes 62)
-Teatre Talia: 39 eventos actualizados (antes 38)
-Palau de les Arts: 43 eventos actualizados (antes 43)
-Palau Alameda: 7 eventos actualizados (antes 6)
+ACTUALIZACIÓN 02/11/2026 05:51
+16 Toneladas: 67 eventos actualizados (antes 62)
+Loco Club: 53 eventos actualizados (antes 45)
+Rock City: 22 eventos actualizados (antes 22)
+Palau de la Música: 121 eventos actualizados (antes 113)
+Peter Rock Club: 14 eventos actualizados (antes 12)
+La Rambleta: 62 eventos actualizados (antes 57)
+Teatre Talia: 38 eventos actualizados (antes 35)
+Palau de les Arts: 42 eventos actualizados (antes 42)
+Palau Alameda: 7 eventos actualizados (antes 7)
 Teatre Principal (Martín i Soler): 9 eventos actualizados (antes 9)
-Teatre Rialto: 11 eventos actualizados (antes 11)
-Radio City: 13 eventos actualizados (antes 9)
-Sala Jerusalem: 22 eventos actualizados (antes 21)
-Roig Arena: 5 eventos actualizados (antes 4)
+Teatre Rialto: 9 eventos actualizados (antes 9)
+Radio City: 15 eventos actualizados (antes 9)
+Sala Jerusalem: 19 eventos actualizados (antes 19)
+Roig Arena: 7 eventos actualizados (antes 2)
 Teatre Micalet: solo 0 eventos leídos, se conservan los 0 anteriores
-La Mutant: 17 eventos actualizados (antes 17)
-Sala Moon: 23 eventos actualizados (antes 23)
-Fundación Bancaja: 8 eventos actualizados (antes 7)
+La Mutant: 16 eventos actualizados (antes 15)
+Sala Moon: 21 eventos actualizados (antes 22)
+Fundación Bancaja: 10 eventos actualizados (antes 8)
 Eventos manuales incluidos: 3
 Eventos reclasificados como podcast: 1
 Vigilancia Festival de les Arts: sin novedades (no menciona 2027)
@@ -24,14 +24,14 @@ Vigilancia BIGSOUND Valencia: POSIBLE NOVEDAD, la web menciona 2027: « BIGSOUND
 Vigilancia Love to Rock: sin novedades (no menciona 2027)
 Vigilancia Deleste Festival: sin novedades (no menciona 2027)
 Vigilancia Festival de Jazz de València (IVC): sin novedades (no menciona 2027)
-16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 6
-Palau de la Música: tarjetas=123, pasadas=0, excluidas=5, venta_oculta=17, sin_enlace=0, repetidas=0
-Sala Jerusalem: tarjetas encontradas=26, eventos futuros=22
-Roig Arena: https://www.roigarena.com/es/eventos/ leída (124429 caracteres)
-Roig Arena: https://www.roigarena.com/ leída (206666 caracteres)
-Roig Arena: tarjetas=16, deporte=6, sin_fecha=0, pasadas=0, repetidas=6
-Roig Arena eventos: Que Tin y Que Tan - Nanpa Bá 29/10; Tot s'acaba - La Fúmiga 30/10; Tot s'acaba - La Fúmiga 31/10; This is Michael 05/11; House Arena 07/11
+16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 4
+Palau de la Música: tarjetas=128, pasadas=0, excluidas=7, venta_oculta=22, sin_enlace=0, repetidas=0
+Sala Jerusalem: tarjetas encontradas=26, eventos futuros=19
+Roig Arena: https://www.roigarena.com/es/eventos/ leída (128306 caracteres)
+Roig Arena: https://www.roigarena.com/ leída (244146 caracteres)
+Roig Arena: tarjetas=16, deporte=2, sin_fecha=0, pasadas=0, repetidas=7, sin_enlace=1
+Roig Arena eventos: This is Michael 05/11; House Arena 07/11; La Tormenta Perfecta Tour -  07/11; Servando & Florentino 08/11; Roll with the punches - Brya 08/11; St. Paul & The Broken Bones 12/11; Raphaelísimo Tour 2026 - Rap 13/11
 Teatre Micalet: recibidos=0, otra_ciudad=0, sin_fecha_o_enlace=0, pasados=0, taller=0; claves de la respuesta=['events', 'rest_url', 'total', 'total_pages']; total=0; primer evento=null
-Sala Moon: tarjetas encontradas=26, eventos futuros=23
-Fundación Bancaja: tarjetas=26, talleres_y_similares=8
-Total en eventos.json: 545
+Sala Moon: tarjetas encontradas=26, eventos futuros=21
+Fundación Bancaja: tarjetas=27, talleres_y_similares=6
+Total en eventos.json: 535
