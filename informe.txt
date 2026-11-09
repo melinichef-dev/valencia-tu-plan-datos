@@ -1,37 +1,48 @@
-ACTUALIZACIÓN 02/11/2026 05:51
-16 Toneladas: 67 eventos actualizados (antes 62)
-Loco Club: 53 eventos actualizados (antes 45)
-Rock City: 22 eventos actualizados (antes 22)
-Palau de la Música: 121 eventos actualizados (antes 113)
-Peter Rock Club: 14 eventos actualizados (antes 12)
-La Rambleta: 62 eventos actualizados (antes 57)
-Teatre Talia: 38 eventos actualizados (antes 35)
-Palau de les Arts: 42 eventos actualizados (antes 42)
-Palau Alameda: 7 eventos actualizados (antes 7)
-Teatre Principal (Martín i Soler): 9 eventos actualizados (antes 9)
-Teatre Rialto: 9 eventos actualizados (antes 9)
-Radio City: 15 eventos actualizados (antes 9)
-Sala Jerusalem: 19 eventos actualizados (antes 19)
-Roig Arena: 7 eventos actualizados (antes 2)
+ACTUALIZACIÓN 09/11/2026 05:54
+16 Toneladas: 65 eventos actualizados (antes 62)
+Loco Club: 49 eventos actualizados (antes 46)
+Rock City: 22 eventos actualizados (antes 21)
+Palau de la Música: 113 eventos actualizados (antes 110)
+Peter Rock Club: 10 eventos actualizados (antes 10)
+La Rambleta: 66 eventos actualizados (antes 57)
+Teatre Talia: 36 eventos actualizados (antes 35)
+Palau de les Arts: 40 eventos actualizados (antes 39)
+Palau Alameda: 5 eventos actualizados (antes 5)
+Teatre Principal (Martín i Soler): 7 eventos actualizados (antes 7)
+Teatre Rialto: 9 eventos actualizados (antes 8)
+Radio City: 15 eventos actualizados (antes 13)
+Sala Jerusalem: 30 eventos actualizados (antes 18)
+Roig Arena: 6 eventos actualizados (antes 2)
 Teatre Micalet: solo 0 eventos leídos, se conservan los 0 anteriores
-La Mutant: 16 eventos actualizados (antes 15)
-Sala Moon: 21 eventos actualizados (antes 22)
-Fundación Bancaja: 10 eventos actualizados (antes 8)
+leer_la_mutant: ERROR, se conservan los datos anteriores
+Traceback (most recent call last):
+  File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/actualizar_eventos.py", line 320, in main
+    sala, nuevos = lector()
+                   ^^^^^^^^
+  File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/lectores2.py", line 699, in leer_la_mutant
+    pagina = descargar("https://www.valencia.es/cas/la-mutant/portada")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/comun.py", line 41, in descargar
+    r.raise_for_status()
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.valencia.es/cas/la-mutant/portada
+
+Sala Moon: 28 eventos actualizados (antes 20)
+Fundación Bancaja: 9 eventos actualizados (antes 10)
 Eventos manuales incluidos: 3
-Eventos reclasificados como podcast: 1
+Eventos reclasificados como podcast: 0
 Vigilancia Festival de les Arts: sin novedades (no menciona 2027)
 Vigilancia BIGSOUND Valencia: POSIBLE NOVEDAD, la web menciona 2027: « BIGSOUND 2026 Ir al contenido BIGSOUND FESTIVAL ■ 18-19 JUNIO 2027 ■ TORRENT. VALENCIA Abonos Cartel Promo bebida Upgrade Cambio de nombre Info | »
 Vigilancia Love to Rock: sin novedades (no menciona 2027)
 Vigilancia Deleste Festival: sin novedades (no menciona 2027)
 Vigilancia Festival de Jazz de València (IVC): sin novedades (no menciona 2027)
-16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 4
-Palau de la Música: tarjetas=128, pasadas=0, excluidas=7, venta_oculta=22, sin_enlace=0, repetidas=0
-Sala Jerusalem: tarjetas encontradas=26, eventos futuros=19
-Roig Arena: https://www.roigarena.com/es/eventos/ leída (128306 caracteres)
-Roig Arena: https://www.roigarena.com/ leída (244146 caracteres)
-Roig Arena: tarjetas=16, deporte=2, sin_fecha=0, pasadas=0, repetidas=7, sin_enlace=1
-Roig Arena eventos: This is Michael 05/11; House Arena 07/11; La Tormenta Perfecta Tour -  07/11; Servando & Florentino 08/11; Roll with the punches - Brya 08/11; St. Paul & The Broken Bones 12/11; Raphaelísimo Tour 2026 - Rap 13/11
+16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 5
+Palau de la Música: tarjetas=117, pasadas=0, excluidas=4, venta_oculta=14, sin_enlace=0, repetidas=0
+Sala Jerusalem: tarjetas encontradas=31, eventos futuros=30
+Roig Arena: https://www.roigarena.com/es/eventos/ leída (128712 caracteres)
+Roig Arena: https://www.roigarena.com/ leída (210613 caracteres)
+Roig Arena: tarjetas=16, deporte=4, sin_fecha=0, pasadas=0, repetidas=6
+Roig Arena eventos: St. Paul & The Broken Bones 12/11; Raphaelísimo Tour 2026 - Rap 13/11; Ultraswan Tour - Abhir 13/11; Los mejores años de nuestra  14/11; Vincen García 14/11; El Despecho Tour - Jesse & J 15/11
 Teatre Micalet: recibidos=0, otra_ciudad=0, sin_fecha_o_enlace=0, pasados=0, taller=0; claves de la respuesta=['events', 'rest_url', 'total', 'total_pages']; total=0; primer evento=null
-Sala Moon: tarjetas encontradas=26, eventos futuros=21
-Fundación Bancaja: tarjetas=27, talleres_y_similares=6
-Total en eventos.json: 535
+Sala Moon: tarjetas encontradas=35, eventos futuros=28
+Fundación Bancaja: tarjetas=27, talleres_y_similares=9
+Total en eventos.json: 529
