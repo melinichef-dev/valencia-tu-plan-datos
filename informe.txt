@@ -1,48 +1,85 @@
-ACTUALIZACIÓN 09/11/2026 05:54
-16 Toneladas: 65 eventos actualizados (antes 62)
-Loco Club: 49 eventos actualizados (antes 46)
-Rock City: 22 eventos actualizados (antes 21)
-Palau de la Música: 113 eventos actualizados (antes 110)
-Peter Rock Club: 10 eventos actualizados (antes 10)
-La Rambleta: 66 eventos actualizados (antes 57)
-Teatre Talia: 36 eventos actualizados (antes 35)
-Palau de les Arts: 40 eventos actualizados (antes 39)
-Palau Alameda: 5 eventos actualizados (antes 5)
-Teatre Principal (Martín i Soler): 7 eventos actualizados (antes 7)
-Teatre Rialto: 9 eventos actualizados (antes 8)
-Radio City: 15 eventos actualizados (antes 13)
-Sala Jerusalem: 30 eventos actualizados (antes 18)
-Roig Arena: 6 eventos actualizados (antes 2)
-Teatre Micalet: solo 0 eventos leídos, se conservan los 0 anteriores
-leer_la_mutant: ERROR, se conservan los datos anteriores
+ACTUALIZACIÓN 16/11/2026 05:59
+16 Toneladas: 60 eventos actualizados (antes 59)
+Loco Club: 52 eventos actualizados (antes 47)
+Rock City: 21 eventos actualizados (antes 19)
+Palau de la Música: 113 eventos actualizados (antes 106)
+Peter Rock Club: 9 eventos actualizados (antes 7)
+La Rambleta: 65 eventos actualizados (antes 61)
+leer_talia: ERROR, se conservan los datos anteriores
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 494, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/urllib3/util/retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.teatretalia.es', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/actualizar_eventos.py", line 320, in main
     sala, nuevos = lector()
                    ^^^^^^^^
-  File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/lectores2.py", line 699, in leer_la_mutant
-    pagina = descargar("https://www.valencia.es/cas/la-mutant/portada")
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/comun.py", line 41, in descargar
-    r.raise_for_status()
-requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.valencia.es/cas/la-mutant/portada
+  File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/lectores2.py", line 245, in leer_talia
+    pagina = descargar("https://www.teatretalia.es/")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/valencia-tu-plan-datos/valencia-tu-plan-datos/scripts/comun.py", line 40, in descargar
+    r = requests.get(url, headers=CABECERAS, timeout=30)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.teatretalia.es', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)')))
 
-Sala Moon: 28 eventos actualizados (antes 20)
-Fundación Bancaja: 9 eventos actualizados (antes 10)
+Palau de les Arts: lectura sospechosa (8 frente a 38 anteriores), se conservan los anteriores
+Palau Alameda: 5 eventos actualizados (antes 4)
+Teatre Principal (Martín i Soler): 6 eventos actualizados (antes 6)
+Teatre Rialto: 8 eventos actualizados (antes 8)
+Radio City: 16 eventos actualizados (antes 11)
+Sala Jerusalem: 28 eventos actualizados (antes 28)
+Roig Arena: 5 eventos actualizados (antes 0)
+Teatre Micalet: solo 0 eventos leídos, se conservan los 0 anteriores
+La Mutant: 14 eventos actualizados (antes 12)
+Sala Moon: 28 eventos actualizados (antes 28)
+Fundación Bancaja: 9 eventos actualizados (antes 9)
 Eventos manuales incluidos: 3
 Eventos reclasificados como podcast: 0
 Vigilancia Festival de les Arts: sin novedades (no menciona 2027)
-Vigilancia BIGSOUND Valencia: POSIBLE NOVEDAD, la web menciona 2027: « BIGSOUND 2026 Ir al contenido BIGSOUND FESTIVAL ■ 18-19 JUNIO 2027 ■ TORRENT. VALENCIA Abonos Cartel Promo bebida Upgrade Cambio de nombre Info | »
+Vigilancia BIGSOUND Valencia: POSIBLE NOVEDAD, la web menciona 2027: « BIGSOUND 2027 – Festival Música Urbana – Uno de los mayores festivales de música urbana de Es»
 Vigilancia Love to Rock: sin novedades (no menciona 2027)
 Vigilancia Deleste Festival: sin novedades (no menciona 2027)
 Vigilancia Festival de Jazz de València (IVC): sin novedades (no menciona 2027)
-16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 5
-Palau de la Música: tarjetas=117, pasadas=0, excluidas=4, venta_oculta=14, sin_enlace=0, repetidas=0
-Sala Jerusalem: tarjetas encontradas=31, eventos futuros=30
-Roig Arena: https://www.roigarena.com/es/eventos/ leída (128712 caracteres)
-Roig Arena: https://www.roigarena.com/ leída (210613 caracteres)
-Roig Arena: tarjetas=16, deporte=4, sin_fecha=0, pasadas=0, repetidas=6
-Roig Arena eventos: St. Paul & The Broken Bones 12/11; Raphaelísimo Tour 2026 - Rap 13/11; Ultraswan Tour - Abhir 13/11; Los mejores años de nuestra  14/11; Vincen García 14/11; El Despecho Tour - Jesse & J 15/11
+16 Toneladas: campos de cada evento = ['Artists', 'Category', 'categoryId', 'date', 'doorsTime', 'id', 'imageUrl', 'isPublished', 'isStarred', 'poster', 'priceAdvance', 'priceDoor', 'showTime', 'slug', 'status', 'ticketUrl', 'title']; descartados por agotados: 7
+Palau de la Música: tarjetas=116, pasadas=0, excluidas=3, venta_oculta=15, sin_enlace=0, repetidas=0
+Sala Jerusalem: tarjetas encontradas=31, eventos futuros=28
+Roig Arena: https://www.roigarena.com/es/eventos/ leída (128040 caracteres)
+Roig Arena: https://www.roigarena.com/ leída (208727 caracteres)
+Roig Arena: tarjetas=16, deporte=6, sin_fecha=0, pasadas=0, repetidas=3, sin_enlace=2
+Roig Arena eventos: 50 aniversario Orquesta Mond 19/11; Tour 2026 - Lagos 20/11; WOW FC 34 21/11; Todas las luces Tour - Sante 21/11; Omega 30ª Aniversario 22/11
 Teatre Micalet: recibidos=0, otra_ciudad=0, sin_fecha_o_enlace=0, pasados=0, taller=0; claves de la respuesta=['events', 'rest_url', 'total', 'total_pages']; total=0; primer evento=null
-Sala Moon: tarjetas encontradas=35, eventos futuros=28
+Sala Moon: tarjetas encontradas=32, eventos futuros=28
 Fundación Bancaja: tarjetas=27, talleres_y_similares=9
-Total en eventos.json: 529
+Total en eventos.json: 518
